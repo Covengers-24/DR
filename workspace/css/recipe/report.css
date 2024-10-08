@@ -1,8 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+main{
+    margin-top: 40px;
 }
-
 .report-text,
 .report-text1{
     font-family: 'Cute Font', cursive;

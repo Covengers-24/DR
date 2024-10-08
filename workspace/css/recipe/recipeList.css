@@ -12,6 +12,9 @@
     align-items: center;     
     margin: 0 auto;
 }
+main{
+    margin-top: 50px;
+}
 
 /* 나만의 레시피 제목 */
 .recipeList-text1{
@@ -26,6 +29,7 @@
 }
 .recipeList-text1{
     font-size: 30px;
+    margin-bottom: 0;
     color: #317FF0;
     margin-right: 10px;
 }
@@ -85,34 +89,37 @@
 .recipeList-foodTitle{
     margin-bottom: 0px;
     margin-top: 0px;
-    font-size: 20px;
+    font-size: 15px;
 }
 .recipeList-writer, .recipeList-date, .recipeList-select{
     color: lightgrey;
     margin-top: 0px;
+    font-size: 10px;
 }
-img{
+.recipeList-listbox img{
     width: 265px;
     height: 265px;
     border-radius: 5px;
 }
 
 
-/* 페이지 네이션 css */
-.pagination {
+#manage-pages {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .manage-page {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-}
-
-.pagination a {
-    text-decoration: none;
-    color: #333;
-    padding: 10px 15px;
-    margin: 0 5px;
-    border: 1px solid #ddd;
+    font-size: 15px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
     border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
+    cursor: pointer;
+  }
+  
