@@ -1,0 +1,55 @@
+/* 공통 스타일 */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+header{
+  height: 200px;
+  background-color: purple;
+}
+
+footer{
+  height:200px;
+  background-color: purple;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 700px;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.apijoin-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 400px;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.apijoin-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.apijoin-leftTitle{
+  color: #317FF0;
+}
+
+.apijoin-rightTitle{
+  color: #ebaa39;
+}
+
+.apijoin-input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}

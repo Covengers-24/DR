@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DR - API 회원가입</title>
+  <link rel="stylesheet" href="./../../css/user/apiJoin.css">
+</head>
+<body>
+  <header>
+
+  </header>
+  <main>
+   <div class="apijoin-container">
+    <span class="apijoin-leftTitle">회원</span>
+    <span class="apijoin-rightTitle">가입</span>
+   </div>
+   <form action="" id="apijoinForm" class="apijoin-form">
+    <label for="userId" class="apijoin-label">아이디(이메일)</label>
+       <div class="apiinput-withButton">
+        <input type="text" id="userId" name="userId" class="apijoin-input" placeholder="아이디를 입력하세요." required>
+       </div>
+       <!-- 이름 필드 -->
+       <label for="name" class="apisignup-label">이름</label>
+       <input type="text" id="name" name="name" class="apijoin-input" placeholder="이름을 입력하세요." required>
+
+       <!-- 휴대폰 번호 필드 -->
+       <label for="phone" class="apisignup-label">휴대폰 번호</label>
+       <div class="input-withButton">
+        <input type="text" id="phone" name="phone" class="apijoin-input" placeholder="하이픈(-)없이 숫자만 입력해주세요." required>
+        <button type="button" id="sendCode" class="apijoin-eventButton">인증요청</button>
+       </div>
+       <span class="error-message" id="phoneError"></span>
+
+      <!-- 인증번호 필드 -->
+       <label for="authCode" class="apisignup-label">인증번호</label>
+       <div class="input-withButton">
+        <input type="number" id="authCode" name="authCode" class="apijoin-input" placeholder="인증번호를 입력해주세요." required>
+        <button type="button" id="verifyCode" class="apijoin-eventButton">인증확인</button>
+       </div>
+   </form>
+  </main>
+  <footer>
+
+  </footer>
+</body>
+</html>
