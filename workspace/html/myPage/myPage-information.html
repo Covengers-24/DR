@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DR - 내정보</title>
+    <link rel="stylesheet" href="./../../css/myPage/myPage-information.css">
+    <script defer src="./../../js/myPage/myPage-information.js"></script>
+</head>
+
+<body>
+    <main>
+        <!-- 내 정보 타이틀-->
+        <div class="myPage-informationTitle">
+            <span style="color: #317FF0;">내</span>
+            <span style="color: #EBAA39;">정보</span>
+        </div>
+
+        <!-- 마이페이지 -->
+        <div class="myPage-containerBox">
+            <div class="myPage-lengthBar">
+                <div id="myPage-informationPage">&nbsp;마이페이지</div>
+                <div id="myPage-informationSecond">&nbsp;내 정보</div>
+                <div>&nbsp;내가 쓴 레시피</div>
+                <div>&nbsp;내가 쓴 게시글</div>
+                <div>&nbsp;신고 받은 글 </div>
+                <div>&nbsp;출석 체크</div>
+            </div>
+
+            <!-- 마이페이지 이미지 사진 -->
+            <div class="myPage-pictureImage">
+                <div class="myPage-profile">
+                    <img id="profileImage" src="./../../image/basicProfile.png" alt="프로필 이미지" width="150" height="150">
+                    <input type="file" id="imageUpload" style="display: none;">
+                    <!-- 이미지 업로드 버튼 (수레바퀴 이미지) -->
+                    <img src="./../../image/sawtooth.png" alt="이미지 변경" id="uploadIcon" style="width: 20px; height: 20px; cursor: pointer; margin-top: 10px;">
+                </div>
+            </div>
+            <div class="myPage-informationText">
+                <div class="myPage-informationTop"></div>
+                <div class="myPage-informationLeft">성명</div>
+                <div class="myPage-informationRight">정승환</div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
