@@ -89,7 +89,7 @@ li {
     position: absolute;
     top: 170px;
     left: 700px;
-    padding-left: 80px;
+    padding-left: -50px;
 }
 
 .myPage-informationTop {
@@ -104,6 +104,11 @@ li {
 
 .myPage-informationLeft {
     background-color: #F5F5F5;
-    width: 70px;
+    width: 50px;
+    height: 50px;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 90px;
 }
