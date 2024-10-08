@@ -1,4 +1,10 @@
-body{
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.report-text,
+.report-text1{
     font-family: 'Cute Font', cursive;
 }
 .report-mainContainer {
@@ -23,9 +29,10 @@ body{
     margin: 15px;
 }
 
-.report-text2{
+.report-text2 p{
     color: red;
     text-align: center;
+    font-family: 'Cute Font', cursive;
 }
 
 .report-button{

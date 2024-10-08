@@ -1,8 +1,8 @@
-body{
-    font-family: 'Cute Font', cursive;
+*{
     margin: 0;
     padding: 0;
 }
+
 /* 메인 넓이 수정 */
 .recipeList-mainContainer {
     width: 1100px;

@@ -4,49 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./../../css/recipe/report.css">
+    <link rel="stylesheet" href="../../css/main/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
     <title>DR - 신고창 페이지</title>
 </head>
 <body>
-    <!-- 
-    2. 대표컬러
-	네비바 메뉴 글씨 #424242
-	메뉴 호버시 #EBAA39
+    <header>
+        <div class="main-headerContainer">
+            <div class="main-headerTop">
+              <a href="../../html/main/main.html"><img src="/image/logo.png" id="main-logo"></a>
+              <div class="main-searchBar">
+                <select class="main-dropDown">
+                  <option value="꿀팁 게시판">꿀팁 게시판</option>
+                  <option value="나만의 레시피">나만의 레시피</option>
+                  <option value="챗봇 레시피">챗봇 레시피</option>
+                  <option value="자유 게시판">자유 게시판</option>
+                </select>
+                <input type="text" class="main-searchInput">
+                <img src="../../image/searchButton.png" id="main-searchBtn">
+              </div>
+              <div class="main-welcomeUser">
+                <div class="main-profile">
+                  <img src="../../image/basicProfile.png">
+                </div>
+                <div class="main-welcome">정승환님 환영합니다</div>
+                <a href="#로그아웃!!#">
+                  <div class="main-logout">로그아웃</div>
+                </a>
+              </div>
+            </div>
+      
+            <div class="main-headerNav">
+              <ul class="main-navMenu">
+                <li id="main-chatBot"><a href="#냉장봇 페이지로">냉장봇</a></li>
+                <li id="main-rank"><a href="#랭킹 페이지로">환경기여 랭킹</a></li>
+                <li id="main-recipe">
+                  레시피
+                  <ul class="main-recipeList">
+                    <li><a href="#챗봇레시피 페이지로">챗봇레시피</a></li>
+                    <li><a href="#나만의레시피 페이지로">나만의레시피</a></li>
+                  </ul>
+                </li>
+                <li id="main-board">
+                  게시판
+                  <ul class="main-boardList">
+                    <li><a href="#자유게시판 페이지로">자유게시판</a></li>
+                    <li><a href="#꿀팁게시판 페이지로">꿀팁게시판</a></li>
+                  </ul>
+                </li>
+                <li id="main-shop"><a href="#포인트샵 페이지로">포인트샵</a></li>
+                <li id="main-myPage">
+                  마이페이지
+                  <ul class="main-myPageList">
+                    <li><a href="#내 정보 페지이로">내 정보</a></li>
+                    <li><a href="#찜 목록 페이지로">찜 목록</a></li>
+                    <li><a href="#내가 쓴 레시피 페이지로">내가 쓴 레시피</a></li>
+                    <li><a href="#내가 쓴 게시글 페이지로">내가 쓴 게시글</a></li>
+                    <li><a href="#신고 받은 글 페이지로">신고 받은 글</a></li>
+                    <li><a href="#출석체크 페이지로">출석체크</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+    </header>
 
-    3. 각종 버튼
-	버튼 #424242 / 글씨 white
-	border-radius 5px
-	cursor - point
-	* 글씨 클릭 말고 버튼으로 클릭하게 -->
-
+    <main>
     <div class="report-mainContainer">
         <div class="report-mainBox">
             <!-- 제목 부분 -->
             <h1 class="report-text1">게시글/댓글 신고</h1>
-
-            
-
             <!-- 신고사유창 -->
             <div class="report-outbox">
                 <form action="" method="">
                     <label for="obscene">
-                        <input type="checkbox" name="reason" value="음란물" id="obscene"> 음란물 내용을 포함하고 있습니다.
+                        <input type="checkbox" name="reason" value="음란물" id="obscene"> <span class="report-text">음란물 내용을 포함하고 있습니다.</span>
                     </label><br>
 
                     <label for="spam">
-                        <input type="checkbox" name="reason" value="스팸 및 광고" id="spam"> 스팸 및 광고 내용을 포함하고 있습니다.
+                        <input type="checkbox" name="reason" value="스팸 및 광고" id="spam"> <span class="report-text">스팸 및 광고 내용을 포함하고 있습니다.</span>
                     </label><br>
 
                     <label for="abusive">
-                        <input type="checkbox" name="reason" value="욕설 및 비방" id="abusive"> 욕설 및 비방하는 내용을 포함하고 있습니다.
+                        <input type="checkbox" name="reason" value="욕설 및 비방" id="abusive"> <span class="report-text">욕설 및 비방하는 내용을 포함하고 있습니다.</span>
                     </label><br>
 
                     <label for="falseInfo">
-                        <input type="checkbox" name="reason" value="허위 광고" id="falseInfo"> 허위 정보 내용을 포함하고 있습니다.
+                        <input type="checkbox" name="reason" value="허위 광고" id="falseInfo"> <span class="report-text">허위 정보 내용을 포함하고 있습니다.</span>
                     </label><br>
                     
                     <!-- 기타 체크박스 및 입력 필드 -->
-                    <label for="other"><input type="checkbox" name="reason" value="other" > 기타</label>
+                    <label for="other"><input type="checkbox" name="reason" value="other" > <span class="report-text">기타</span></label>
                     <input type="text" name="otherReasonText" placeholder="신고 내용을 작성해주세요">
                 </form>
             </div>
@@ -64,6 +112,7 @@
             </div>
         </div>
     </div>
+</main>
 
     <script src="./../../js/recipe/report.js" defer></script>
 </body>
