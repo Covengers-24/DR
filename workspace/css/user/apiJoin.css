@@ -5,17 +5,9 @@
   font-family: 'Noto Sans KR', sans-serif;
 }
 
-header{
-  height: 200px;
-  background-color: purple;
-}
 
-footer{
-  height:200px;
-  background-color: purple;
-}
 
-body {
+main {
   margin: 0;
   padding: 0;
   height: 700px;
@@ -52,4 +44,60 @@ body {
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
+}
+
+.apijoin-finishButton {
+  width: 100%;
+  padding: 10px;
+  background-color: #ebaa39;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.apijoin-label{
+  font-weight: 600;
+}
+
+
+.apijoin-checkbox {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.apijoin-checkboxInput {
+  margin-right: 10px;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  display: none;
+}
+
+/* 새로 추가된 부분 */
+.input-withButton {
+  position: relative;
+  margin: 8px 0;
+}
+
+.input-withButton .apijoin-input {
+  padding-right: 100px; /* 버튼이 들어갈 공간을 확보 */
+}
+
+.input-withButton .apijoin-eventButton{
+  position: absolute;
+  right: 1px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ebaa39;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  width: 80px;
 }

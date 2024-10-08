@@ -5,17 +5,9 @@
   font-family: 'Noto Sans KR', sans-serif;
 }
 
-header{
-  height: 200px;
-  background-color: purple;
-}
 
-footer{
-  height:200px;
-  background-color: purple;
-}
 
-body {
+main {
   margin: 0;
   padding: 0;
   height: 700px;
