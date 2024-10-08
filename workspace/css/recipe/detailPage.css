@@ -1,0 +1,40 @@
+body{
+    font-family: 'Cute Font', cursive;
+    margin: 0;
+    padding: 0;
+}
+/* 메인 넓이 수정 */
+.detailPage-mainContainer{
+    width: 1100px;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+}
+
+.detailPage-foodTitle{
+    font-size: 20px;
+    margin: 0;
+}
+
+.detailPage-titlebox{
+    padding: 20px;
+}   
+
+.detailPage-infobox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.detailPage-infoFirst{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.detailPage-infoInBox1 img{
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+

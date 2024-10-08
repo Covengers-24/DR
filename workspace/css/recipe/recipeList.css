@@ -1,0 +1,118 @@
+body{
+    font-family: 'Cute Font', cursive;
+    margin: 0;
+    padding: 0;
+}
+/* 메인 넓이 수정 */
+.recipeList-mainContainer {
+    width: 1100px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    margin: 0 auto;
+}
+
+/* 나만의 레시피 제목 */
+.recipeList-text1{
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+.recipeList-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.recipeList-text1{
+    font-size: 30px;
+    color: #317FF0;
+    margin-right: 10px;
+}
+.recipeList-text2{
+    font-size: 30px;
+    color: #EBAA39;
+}
+
+
+/* 나만의 레시피 글작성,최신순,추천순 버튼들 */
+.recipeList-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1100px;
+    height: 30px;
+}
+
+.recipeList-writeButton{
+    width: 150px;
+    height: 50px;
+    background-color: #EBAA39;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+
+}
+.recipeList-rightButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 260px;
+    height: 37px;
+}
+.recipeList-firstButton, .recipeList-secondButton, .recipeList-thirdButton{
+    width: 90px;
+    height: 37px;
+    border: none;
+    cursor: pointer;
+    /* color: white; */
+    border: 1px solid lightgray;
+}
+/* 버튼이 클릭될때마다 배경색깔과 텍스트 색깔이 바뀌는거 설정 */
+.recipeList-rightButton button.active {
+    background-color: #EBAA39;
+    color: white;
+}
+
+/* 나만의 레시피 목록들 */
+.recipeList-outbox{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.recipeList-foodTitle{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 20px;
+}
+.recipeList-writer, .recipeList-date, .recipeList-select{
+    color: lightgrey;
+    margin-top: 0px;
+}
+img{
+    width: 265px;
+    height: 265px;
+    border-radius: 5px;
+}
+
+
+/* 페이지 네이션 css */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.pagination a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
