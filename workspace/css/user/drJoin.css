@@ -5,12 +5,10 @@
   font-family: 'Noto Sans KR', sans-serif;
 }
 
-
-
 main {
   margin: 0;
   padding: 0;
-  height: 700px;
+  height: 1000px;
   width: 1100px;
   margin: 0 auto;
 }
@@ -27,6 +25,7 @@ main {
 .drjoin-title {
   text-align: center;
   margin-bottom: 20px;
+  font-size: 25px;
 }
 
 .drjoin-leftTitle{
@@ -61,7 +60,6 @@ main {
   font-weight: 600;
 }
 
-
 .drjoin-checkbox {
   display: flex;
   align-items: center;
@@ -78,7 +76,6 @@ main {
   display: none;
 }
 
-/* 새로 추가된 부분 */
 .input-withButton {
   position: relative;
   margin: 8px 0;
@@ -90,7 +87,7 @@ main {
 
 .input-withButton .drjoin-eventButton{
   position: absolute;
-  right: 1px;
+  right: 0px;
   top: 50%;
   transform: translateY(-50%);
   background-color: #ebaa39;
@@ -101,3 +98,19 @@ main {
   cursor: pointer;
   width: 80px;
 }
+
+/* 비밀번호 토글 아이콘 스타일 */
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.input-withButton .apijoin-input {
+  padding-right: 40px; /* 토글 이미지가 들어갈 공간 확보 */
+}
+
