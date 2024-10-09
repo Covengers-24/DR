@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DR - 비밀번호 재설정</title>
+  <link rel="stylesheet" href="./../../css/user/PwReset.css">
+  <link rel="stylesheet" href="./../../css/main/main.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+  <script defer src="./../../js/main/main.js"></script>
+</head>
+
+<body>
+  <header>
+    <!-- 비로그인 헤더 -->
+    <div class="main-headerContainer">
+      <div class="main-headerTop">
+        <a href="../../html/main/main.html"><img src="/image/logo.png" id="main-logo"></a>
+        <div class="main-searchBar">
+          <select class="main-dropDown">
+            <option value="꿀팁 게시판">꿀팁 게시판</option>
+            <option value="나만의 레시피">나만의 레시피</option>
+            <option value="챗봇 레시피">챗봇 레시피</option>
+            <option value="자유 게시판">자유 게시판</option>
+          </select>
+          <input type="text" class="main-searchInput" placeholder="로그인 후 이용 가능합니다" readonly>
+          <img src="../../image/searchButton.png" id="main-searchBtn">
+        </div>
+        <div class="main-visitorBtn">
+          <a href="./login.html">
+            <div class="main-login">로그인</div>
+          </a>
+          <a href="./join.html">
+            <div class="main-join">회원가입</div>
+          </a>
+        </div>
+      </div>
+
+      <!--비로그인 네비바 -->
+      <div class="main-headerNav">
+        <ul class="main-navMenu">
+          <li id="main-chatBot"><a href="./login.html">냉장봇</a></li>
+          <li id="main-rank"><a href="./login.html">환경기여 랭킹</a></li>
+          <li id="main-recipe">
+            레시피
+            <ul class="main-recipeList">
+              <li><a href="./login.html">챗봇레시피</a></li>
+              <li><a href="./login.html">나만의레시피</a></li>
+            </ul>
+          </li>
+          <li id="main-board">
+            게시판
+            <ul class="main-boardList">
+              <li><a href="./login.html">자유게시판</a></li>
+              <li><a href="./login.html">꿀팁게시판</a></li>
+            </ul>
+          </li>
+          <li id="main-shop"><a href="./login.html">포인트샵</a></li>
+          <li id="main-myPage">
+            마이페이지
+            <ul class="main-myPageList">
+              <li><a href="./login.html">내 정보</a></li>
+              <li><a href="./login.html">찜 목록</a></li>
+              <li><a href="./login.html">내가 쓴 레시피</a></li>
+              <li><a href="./login.html">내가 쓴 게시글</a></li>
+              <li><a href="./login.html">신고 받은 글</a></li>
+              <li><a href="./login.html">출석체크</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 로그인 헤더 -->
+      <!-- <div class="main-headerContainer">
+      <div class="main-headerTop">
+        <a href="../../html/main/main.html"><img src="../../image/logo.png" id="main-logo"></a>
+        <div class="main-searchBar">
+          <select class="main-dropDown">
+            <option value="꿀팁 게시판">꿀팁 게시판</option>
+            <option value="나만의 레시피">나만의 레시피</option>
+            <option value="챗봇 레시피">챗봇 레시피</option>
+            <option value="자유 게시판">자유 게시판</option>
+          </select>
+          <input type="text" class="main-searchInput">
+          <img src="../../image/searchButton.png" id="main-searchBtn">
+        </div>
+        <div class="main-welcomeUser">
+          <div class="main-profile">
+            <img src="../../image/basicProfile.png">
+          </div>
+          <div class="main-welcome">정승환님 환영합니다</div>
+          <a href="#로그아웃!!#">
+            <div class="main-logout">로그아웃</div>
+          </a>
+        </div>
+      </div> -->
+
+      <!-- 로그인 네비바 -->
+      <!-- <div class="main-headerNav">
+        <ul class="main-navMenu">
+          <li id="main-chatBot"><a href="#냉장봇 페이지로">냉장봇</a></li>
+          <li id="main-rank"><a href="#랭킹 페이지로">환경기여 랭킹</a></li>
+          <li id="main-recipe">
+            레시피
+            <ul class="main-recipeList">
+              <li><a href="#챗봇레시피 페이지로">챗봇레시피</a></li>
+              <li><a href="#나만의레시피 페이지로">나만의레시피</a></li>
+            </ul>
+          </li>
+          <li id="main-board">
+            게시판
+            <ul class="main-boardList">
+              <li><a href="#자유게시판 페이지로">자유게시판</a></li>
+              <li><a href="#꿀팁게시판 페이지로">꿀팁게시판</a></li>
+            </ul>
+          </li>
+          <li id="main-shop"><a href="#포인트샵 페이지로">포인트샵</a></li>
+          <li id="main-myPage">
+            마이페이지
+            <ul class="main-myPageList">
+              <li><a href="#내 정보 페지이로">내 정보</a></li>
+              <li><a href="#찜 목록 페이지로">찜 목록</a></li>
+              <li><a href="#내가 쓴 레시피 페이지로">내가 쓴 레시피</a></li>
+              <li><a href="#내가 쓴 게시글 페이지로">내가 쓴 게시글</a></li>
+              <li><a href="#신고 받은 글 페이지로">신고 받은 글</a></li>
+              <li><a href="#출석체크 페이지로">출석체크</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div> -->
+  </header>
+  <main>
+    <div class="pwreset-container">
+      <div class="pwreset-title">
+        <span class="pwreset-leftTitle">비밀번호</span>
+        <span class="pwreset-rightTitle">변경</span>
+      </div>
+      <form action="" id="drjoinForm" class="pwreset-form">
+        <!-- 비밀번호 필드 -->
+        <label for="password" class="pwreset-label">새 비밀번호</label>
+        <div class="input-withButton">
+          <input type="password" id="password" name="password" class="pwreset-input" placeholder="새 비밀번호를 입력하세요." required>
+          <img src="/image/noview.png" id="passwordToggle" class="toggle-password" alt="비밀번호 보기/숨기기">
+        </div>
+        <span class="error-message" id="passwordError"></span>
+        <br>
+        <!-- 비밀번호 확인 필드 -->
+        <label for="confirmPassword" class="pwreset-label">새 비밀번호 확인</label>
+        <div class="input-withButton">
+          <input type="password" id="confirmPassword" name="confirmPassword" class="pwreset-input"
+            placeholder="새 비밀번호를 한 번 더 입력하세요." required>
+          <img src="/image/noview.png" id="confirmPasswordToggle" class="toggle-password" alt="비밀번호 보기/숨기기">
+        </div>
+        <span class="error-message" id="confirmPasswordError"></span>
+        <!-- 변경완료 버튼 -->
+        <a href="./login.html"><button type="submit" class="pwreset-finishButton">변경완료</button></a>
+      </form>
+    </div>
+  </main>
+  <footer>
+
+  </footer>
+  <script src="./../../js/user/PwReset.js"></script>
+</body>
+
+</html>

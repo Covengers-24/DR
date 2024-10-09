@@ -20,12 +20,14 @@ main {
   max-width: 400px;
   width: 1100px;
   margin: 0 auto;
+  margin-top: 50px;
 }
 
 .apijoin-title {
   text-align: center;
   margin-bottom: 20px;
   font-size: 25px;
+  font: bold;
 }
 
 .apijoin-leftTitle{
@@ -35,6 +37,7 @@ main {
 .apijoin-rightTitle{
   color: #ebaa39;
 }
+
 
 .apijoin-input {
   width: 100%;
@@ -53,7 +56,7 @@ main {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 50px;
 }
 
 .apijoin-label{

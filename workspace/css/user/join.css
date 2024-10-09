@@ -18,13 +18,14 @@ main {
   margin-top: 10px;
   font-size: 25px;
   font-family: 'Cute Font', cursive;
+  font: bold;
 }
 
 .join-joinBox {
   width: 500px;
   height: 300px;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   align-items: center;
