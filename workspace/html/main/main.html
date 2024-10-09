@@ -6,8 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>맛있는 재활용</title>
   <link rel="stylesheet" href="../../css/main/main.css">
+  <!-- 제이쿼리 -->
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
     crossorigin="anonymous"></script>
+  <!-- cute font -->
   <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
   <script defer src="../../js/main/main.js"></script>
 </head>
@@ -132,19 +134,189 @@
       </div>
     </div>
   </header>
-  
+
   <!-- 메인 -->
   <main>
-    <section class="section1">
 
+    <!-- 슬로건, 출처 -->
+    <section class="main-section1">
+      <div class="main-section1Container">
+        <div class="main-section1Frame">
+          <img src="../../image/refrigerator.png" id="main-refrigerator">
+          <img src="../../image/font.png" id="main-logoFont">
+          <p class="main-slogan">: 음식물 쓰레기 감소를 위한<br>
+            챗봇 레시피</p>
+          <p class="main-ourcesFrom">데이터 출처 : 공공데이터 포털<br>
+            계산식 출처 : 음식물의 에너지 소모량 및 온실가스 배출량 산정 연구(환경부,2010)</p>
+        </div>
+      </div>
     </section>
-    <section class="section2">
 
+    <!-- 월별 음식물쓰레기 배출량 -->
+    <section class="main-section2">
+      <div class="main-section2Container">
+        <div class="main-section2Frame">
+          <h1 class="main-sectionTitle">음<span id="main-titleText">쓰</span> NOW</h1>
+          <h2 class="main-sectionSubTitle">2024년 11월 총 배출량</h2>
+          <div class="main-sectionInfo">
+            <span>84372.9 톤 = 117.3 백만인분</sapn>
+          </div>
+          <div id="main-dataGraph">
+            <div class="main-weight">
+              <div>90,000톤</div>
+              <div>80,000톤</div>
+              <div>60,000톤</div>
+              <div>50,000톤</div>
+              <div>40,000톤</div>
+              <div>30,000톤</div>
+              <div>70,000톤</div>
+              <div>20,000톤</div>
+              <div>10,000톤</div>
+              <div>0 톤</div>
+            </div>
+            <div class="main-graphBlock">
+              <div class="main-lastMonth"></div>
+              <div class="main-lastMonth"></div>
+              <div class="main-lastMonth"></div>
+              <div class="main-lastMonth"></div>
+              <div class="main-lastMonth"></div>
+              <div class="main-lastMonth"></div>
+              <div class="main-lastMonth"></div>
+              <div class="main-lastMonth"></div>
+              <div class="main-lastMonth"></div>
+              <div class="main-lastMonth"></div>
+              <div class="main-thisMonth"></div>
+              <div class="main-nextMonth"></div>
+            </div>
+          </div>
+          <div class="main-month">
+            <div id="main-space"></div>
+            <div id="main-monthArray">
+              <div>1월</div>
+              <div>2월</div>
+              <div>3월</div>
+              <div>4월</div>
+              <div>5월</div>
+              <div>6월</div>
+              <div>7월</div>
+              <div>8월</div>
+              <div>9월</div>
+              <div>10월</div>
+              <div>11월</div>
+              <div>12월</div>
+            </div>
+          </div>
+          <div class="main-blank"></div>
+          <div class="main-resultTitleFrame">
+            <div class="main-resultTitle">
+              온실가스 배출량
+            </div>
+            <div class="main-resultTitle">
+              에너지 소비량
+            </div>
+          </div>
+          <div class="topResult">
+            <div class="main-resultBox">
+              <img src="../../image/earth.png">
+              <div class="resultName">온실가스 배출량</div>
+              <div class="main-result">143434 tCO2eq.</div>
+            </div>
+            <div class="main-resultBox">
+              <img src="../../image/tree.png">
+              <div class="resultName">소나무 1년 탄소흡수량</div>
+              <div class="main-result">17.3 백만 그루</div>
+            </div>
+            <div class="main-resultBox">
+              <img src="../../image/electricity.png">
+              <div class="resultName">전기에너지</div>
+              <div class="main-result">140.9Gwh</div>
+            </div>
+            <div class="main-resultBox">
+              <img src="../../image/washer.png">
+              <div class="resultName">세탁기 사용</div>
+              <div class="main-result">1012.5백만 회</div>
+            </div>
+          </div>
+          <div class="main-blank"></div>
+          <div class="main-resultTitle">
+            처리비용
+          </div>
+          <div class="topResult">
+            <div class="main-resultBox">
+              <div class="resultName">수집/운반 처리비</div>
+              <div class="main-result">153.6억 원</div>
+            </div>
+            <div class="main-resultBox">
+              <div class="resultName">처리장 공사비</div>
+              <div class="main-result">219369.6억 원</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="section3">
 
+    <!-- 음쓰 계산기 -->
+    <section class="main-section3">
+      <div class="main-section3Container">
+        <div class="main-section3Frame">
+          <h1 class="main-sectionTitle">음<span id="main-titleText">쓰</span> 계산기</h1>
+          <div class="main-blank"></div>
+          <div class="main-resultTitle">음식물쓰레기 무게</div>
+
+          <div class="main-calculator">
+            <form>
+              <input type="number" id="qnt" class="main-weightInput" step="0.01" placeholder="kg 입력"> kg
+            </form>
+            <div class="main-equals"> = </div>
+            <div id="portion" class="main-calcResult">0 인분</div>
+          </div>
+
+          <div class="main-blank"></div>
+          <div class="main-resultTitleFrame">
+            <div class="main-resultTitle">온실가스 배출량</div>
+            <div class="main-resultTitle">에너지 소비량</div>
+          </div>
+          <div class="topResult">
+            <div class="main-resultBox">
+              <img src="../../image/earth.png">
+              <div class="resultName">온실가스 배출량</div>
+              <div id="co2" class="main-result">0 kgCO2eq.</div>
+            </div>
+            <div class="main-resultBox">
+              <img src="../../image/tree.png">
+              <div class="resultName">소나무 1년 탄소흡수량</div>
+              <div id="tree" class="main-result">0 그루</div>
+            </div>
+            <div class="main-resultBox">
+              <img src="../../image/electricity.png">
+              <div class="resultName">전기에너지</div>
+              <div id="energy" class="main-result">0 kWh</div>
+            </div>
+            <div class="main-resultBox">
+              <img src="../../image/washer.png">
+              <div class="resultName">세탁기 사용</div>
+              <div id="washingMachine" class="main-result">0 회</div>
+            </div>
+          </div>
+
+          <div class="main-blank"></div>
+          <div class="main-resultTitle">처리비용</div>
+          <div class="topResult">
+            <div class="main-resultBox">
+              <div class="resultName">수집/운반 처리비</div>
+              <div id="transCost" class="main-result">0 원</div>
+            </div>
+            <div class="main-resultBox">
+              <div class="resultName">처리장 공사비</div>
+              <div id="processCost" class="main-result">0 원</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="section4">
+
+    <!-- 베스트, 워스트 지역 -->
+    <section class="main-section4">
 
     </section>
   </main>
