@@ -5,26 +5,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>회원관리</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.css" />
   <link rel="stylesheet" href="./../../css/manager/manageUser.css">
 </head>
 
 <body>
-  <img class="manager-logoImg" src="./../../image/logo.png">
+  <a href="./../../html/manager/dashBoard.html">
+    <img class="manager-logoImg" src="./../../image/logo.png">
+  </a>
   <div id="manager-dashBoardBox">
-
     <div id="dashBoard-list">
-      <ul class="dashBoard-ul">
+      <ul>
+        <a href="./../../html/manager/dashBoard.html">
         <li id="dashBoard-admin">
           <img id="dashBoard-profile" src="./../../image/basicProfile.png">
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           이재서
         </li>
-        <li id="dashBoard-user">회원관리</li>
+        </a>
+        <a href="./../../html/manager/manageUser.html">
+          <li id="dashBoard-user">회원관리</li>
+        </a>
+        <a href="./../../html/manager/manageBoard.html">
         <li id="dashBoard-board">게시글/레시피 관리</li>
+        </a>
+        <a href="./../../html/manager/manageComment.html">
         <li id="dashBoard-comment">댓글관리</li>
+        </a>
+        <a href="./../../html/manager/managePoint.html">
         <li id="dashBoard-point">포인트관리</li>
+        </a>
+        <a href="./../../html/manager/manageReport.html">
         <li id="dashBoard-report">신고관리</li>
+        </a>
+        <a href="./../../html/manager/manageProduct.html">
         <li id="dashBoard-product">상품관리</li>
+        </a>
       </ul>
     </div>
 
@@ -47,87 +66,142 @@
 
           <li>
             <input type="checkbox" value="전체선택">
-            <span>101</span>
-            <span>이재서</span>
-            <span>일반회원</span>
-            <span>010-4750-1923</span>
-            <span>jaeseo1227@gmail.com</span>
+            <span class="con-num">101</span>
+            <span class="con-name">이재서</span>
+            <span class="con-div">일반회원</span>
+            <span class="con-phone">010-4750-1923</span>
+            <span class="con-email">jaeseo1227@gmail.com</span>
           </li>
+          
           <li>
             <input type="checkbox" value="전체선택">
             <span>102</span>
-            <span>이재서</span>
+            <span>김철수</span>
             <span>일반회원</span>
-            <span>010-4750-1923</span>
-            <span>jaeseo1227@gmail.com</span>
+            <span>010-1234-5678</span>
+            <span>cheolsu@gmail.com</span>
           </li>
           <li>
             <input type="checkbox" value="전체선택">
             <span>103</span>
-            <span>이재서</span>
+            <span>이영희</span>
             <span>일반회원</span>
-            <span>010-4750-1923</span>
-            <span>jaeseo1227@gmail.com</span>
+            <span>010-9876-5432</span>
+            <span>younghee@gmail.com</span>
           </li>
           <li>
             <input type="checkbox" value="전체선택">
             <span>104</span>
-            <span>이재서</span>
+            <span>박민수</span>
             <span>일반회원</span>
-            <span>010-4750-1923</span>
-            <span>jaeseo1227@gmail.com</span>
+            <span>010-1111-2222</span>
+            <span>minsu@gmail.com</span>
           </li>
           <li>
             <input type="checkbox" value="전체선택">
             <span>105</span>
-            <span>이재서</span>
+            <span>이순신</span>
             <span>일반회원</span>
-            <span>010-4750-1923</span>
-            <span>jaeseo1227@gmail.com</span>
+            <span>010-3333-4444</span>
+            <span>soonshin@gmail.com</span>
           </li>
           <li>
             <input type="checkbox" value="전체선택">
             <span>106</span>
-            <span>이재서</span>
+            <span>홍길동</span>
             <span>일반회원</span>
-            <span>010-4750-1923</span>
-            <span>jaeseo1227@gmail.com</span>
+            <span>010-5555-6666</span>
+            <span>gildong@gmail.com</span>
           </li>
           <li>
             <input type="checkbox" value="전체선택">
             <span>107</span>
-            <span>이재서</span>
+            <span>김유진</span>
             <span>일반회원</span>
-            <span>010-4750-1923</span>
-            <span>jaeseo1227@gmail.com</span>
+            <span>010-7777-8888</span>
+            <span>yujin@gmail.com</span>
           </li>
           <li>
             <input type="checkbox" value="전체선택">
             <span>108</span>
-            <span>이재서</span>
+            <span>정우성</span>
             <span>일반회원</span>
-            <span>010-4750-1923</span>
-            <span>jaeseo1227@gmail.com</span>
+            <span>010-9999-0000</span>
+            <span>woosung@gmail.com</span>
           </li>
           <li>
             <input type="checkbox" value="전체선택">
             <span>109</span>
-            <span>이재서</span>
+            <span>최지은</span>
             <span>일반회원</span>
-            <span>010-4750-1923</span>
-            <span>jaeseo1227@gmail.com</span>
+            <span>010-4444-3333</span>
+            <span>jieun@gmail.com</span>
           </li>
           <li>
             <input type="checkbox" value="전체선택">
             <span>110</span>
-            <span>이재서</span>
+            <span>이민호</span>
             <span>일반회원</span>
-            <span>010-4750-1923</span>
-            <span>jaeseo1227@gmail.com</span>
+            <span>010-2222-1111</span>
+            <span>minho@gmail.com</span>
           </li>
+          <li>
+            <input type="checkbox" value="전체선택">
+            <span>111</span>
+            <span>이재명</span>
+            <span>일반회원</span>
+            <span>010-1234-5678</span>
+            <span>jaemyeong@gmail.com</span>
+          </li>
+          <li>
+            <input type="checkbox" value="전체선택">
+            <span>112</span>
+            <span>이상민</span>
+            <span>일반회원</span>
+            <span>010-8765-4321</span>
+            <span>sangmin@gmail.com</span>
+          </li>
+          <li>
+            <input type="checkbox" value="전체선택">
+            <span>113</span>
+            <span>홍길동</span>
+            <span>일반회원</span>
+            <span>010-2345-6789</span>
+            <span>gildong2@gmail.com</span>
+          </li>
+          <li>
+            <input type="checkbox" value="전체선택">
+            <span>114</span>
+            <span>김사랑</span>
+            <span>일반회원</span>
+            <span>010-3456-7890</span>
+            <span>sarang@gmail.com</span>
+          </li>
+          <li>
+            <input type="checkbox" value="전체선택">
+            <span>115</span>
+            <span>이준호</span>
+            <span>일반회원</span>
+            <span>010-4567-8901</span>
+            <span>junho@gmail.com</span>
+          </li>
+          <li>
+            <input type="checkbox" value="전체선택">
+            <span>116</span>
+            <span>최민수</span>
+            <span>일반회원</span>
+            <span>010-5678-9012</span>
+            <span>minsu2@gmail.com</span>
+          </li>
+    
+        
+        
         </ul>
-      </div>
 
+      
+        <div id="pagination"></div>
+
+      </div>
     </div>
 
 

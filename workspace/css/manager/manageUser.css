@@ -4,6 +4,12 @@
   font-family: 'Noto Sans KR', sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
 #dashBoard-user {
   color: #EBAA39;
 }
@@ -12,12 +18,12 @@
   position: absolute;
   top: 20px;
   left: 20px;
-  width: 170px;
+  width: 150px;
   cursor: pointer;
 }
 
 #manager-dashBoardBox {
-  width: 1000px;
+  width: 1380px;
   height: 600px;
   margin-top: 20px;
   display: flex;
@@ -37,15 +43,14 @@
   border-radius: 5px;
 }
 
-.dashBoard-ul {
+#dashBoard-list ul {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  
 }
 
-.dashBoard-ul li {
+#dashBoard-list li {
   margin-left: 10px;
   height: 50px;
   cursor: pointer;
@@ -54,10 +59,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
-  
+  border-radius: 5px; 
 }
-
 #dashBoard-admin {
   color: black;
 }
@@ -97,7 +100,7 @@
 #memberPause {
   position: absolute;
   top: 13%;
-  right: 11%;
+  right: 10%;
   width: 70px;
   height: 30px;
   background-color: #F66F58;
@@ -110,7 +113,7 @@
 #memberOut {
   position: absolute;
   top: 13%;
-  right: 3%;
+  right: 4%;
   width: 70px;
   height: 30px;
   background-color: #EBAA39;
@@ -135,8 +138,10 @@
 }
 
 #manage-memberUl li {
+  margin-left: 50px;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
+  gap: 100px;
   height: 28px;
   line-height: 24px;
   border-bottom: 1px solid black;
@@ -151,32 +156,32 @@
 
 #title-check {
   position: absolute;
-  left: 26.8%;
+  left: 26.6%;
   top: 21%;
 
 }
 
 #title-num {
   position: absolute;
-  left: 33%;
+  left: 34.8%;
   top: 19.5%;
 }
 
 #title-name {
   position: absolute;
-  left: 41.5%;
+  left: 44%;
   top: 19.5%;
 }
 
 #title-div {
   position: absolute;
-  left: 51%;
+  left: 55%;
   top: 19.5%;
 }
 
 #title-phone {
   position: absolute;
-  left: 64%;
+  left: 67%;
   top: 19.5%;
 }
 
@@ -184,6 +189,34 @@
   position: absolute;
   left: 84%;
   top: 19.5%;
+}
+
+
+
+#manage-pages {
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.manage-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#pagination {
+  position: absolute;
+  bottom: 4%;
+  right: 40%;
 }
 
 

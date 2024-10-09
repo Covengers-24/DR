@@ -9,39 +9,61 @@
 </head>
 
 <body>
-  <img class="manager-logoImg" src="./../../image/logo.png">
+  <a href="./../../html/manager/dashBoard.html">
+    <img class="manager-logoImg" src="./../../image/logo.png">
+  </a>
   <div id="manager-dashBoardBox">
 
     <div id="dashBoard-list">
       <ul>
+        <a href="./../../html/manager/dashBoard.html">
         <li id="dashBoard-admin">
           <img id="dashBoard-profile" src="./../../image/basicProfile.png">
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           이재서
         </li>
-        <li id="dashBoard-user">회원관리</li>
+        </a>
+        <a href="./../../html/manager/manageUser.html">
+          <li id="dashBoard-user">회원관리</li>
+        </a>
+        <a href="./../../html/manager/manageBoard.html">
         <li id="dashBoard-board">게시글/레시피 관리</li>
+        </a>
+        <a href="./../../html/manager/manageComment.html">
         <li id="dashBoard-comment">댓글관리</li>
+        </a>
+        <a href="./../../html/manager/managePoint.html">
         <li id="dashBoard-point">포인트관리</li>
+        </a>
+        <a href="./../../html/manager/manageReport.html">
         <li id="dashBoard-report">신고관리</li>
+        </a>
+        <a href="./../../html/manager/manageProduct.html">
         <li id="dashBoard-product">상품관리</li>
+        </a>
       </ul>
     </div>
 
     <div id="dashBoard-contentBox">
       <div id="dashBoard-top">
         <div class="dashBoard-top-box">
-          <span>총 회원수</span>
-          <span>56명</span>
-        </div>
+            <a href="./../../html/manager/manageUser.html">
+            <span>총 회원수</span>
+            <span>56명</span>
+          </a>
+          </div>
         <div class="dashBoard-top-box">
+          <a href="./../../html/manager/manageReport.html">
           <span>새로운 신고</span>
           <span>22건</span>
+          <br><br><br>
 
           <span class="dashBoard-light">게시피/레시피 신고 12건<br>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             댓글 10건</span>
+            </a>
         </div>
+
         <div class="dashBoard-top-box">
           <div class="dashBoard-calender">
             <img id="dashBoard-calImg" src="./../../image/calendar.png">

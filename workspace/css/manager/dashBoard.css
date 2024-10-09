@@ -4,16 +4,21 @@
   font-family: 'Noto Sans KR', sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .manager-logoImg {
   position: absolute;
   top: 20px;
   left: 20px;
-  width: 170px;
+  width: 150px;
   cursor: pointer;
 }
 
 #manager-dashBoardBox {
-  width: 1000px;
+  width: 1380px;
   height: 600px;
   margin-top: 20px;
   display: flex;
