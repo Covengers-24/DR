@@ -251,7 +251,8 @@ li {
 }
 
 .main-section2Container,
-.main-section3Container {
+.main-section3Container,
+.main-section4Container {
   width: 100%;
   height: 1462px;
   background-color: #FFD507;
@@ -260,7 +261,8 @@ li {
 }
 
 .main-section2Frame,
-.main-section3Frame {
+.main-section3Frame,
+.main-section4Frame {
   width: 1100px;
   padding: 54px 9px 0 9px;
   display: flex;
@@ -351,16 +353,17 @@ li {
   display: flex;
   justify-content: space-between;
 }
+
 .main-blank {
   height: 36px;
 }
 
-.main-resultTitleFrame{
+.main-resultTitleFrame {
   width: 100%;
   display: flex;
 }
 
-.main-resultTitle{
+.main-resultTitle {
   width: 100%;
   height: 36px;
   font-size: 24px;
@@ -377,53 +380,129 @@ li {
   justify-content: space-around;
 }
 
-.main-resultBox{
+.main-resultBox {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.main-resultBox img{
+.main-resultBox img {
   width: 168px;
   height: 168px;
   margin: 10px;
 }
 
-.resultName{
+.resultName {
   font-size: 20px;
   letter-spacing: -0.5px;
   margin: 5px 0;
   color: #353535;
 }
 
-.main-result{
+.main-result {
   font-size: 30px;
   letter-spacing: -0.8px;
   color: #353535;
 }
 
-.main-section3Container{
+.main-section3Container {
   width: 100%;
   height: 905px;
   background-color: white;
 }
 
-.main-calculator{
+.main-calculator {
   width: 500px;
   display: flex;
   justify-content: space-between;
 }
 
-.main-calculator div{
+.main-calculator div {
   font-size: 40px;
 }
 
-.main-weightInput{
+.main-weightInput {
   width: 200px;
   height: 70px;
   font-size: 40px;
 }
 
+.main-section4Container {
+  height: 1000px;
+}
+
+.main-boxFrame {
+  display: flex;
+}
+
+.main-bestAndWorst{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-bestBox,
+.main-worstBox {
+  width: 500px;
+  height: 620px;
+  padding: 10px;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.main-boxTable {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-boxTitle {
+  margin: 10px 0;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+.main-boxTableText,
+.main-boxTableTextWorst {
+  width: 520px;
+  height: 55px;
+  display: flex;
+  border-top: 1px solid #317FF0;
+  border-bottom: 1px solid #317FF0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-boxTableText span,
+.main-boxTableTextWorst span{
+  width: 130px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-tableTitle,
+#main-tableTitleWorst {
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #317FF0;
+  color: white;
+}
+
+#main-tableTitleWorst{
+  background-color: tomato;
+}
+
+.main-boxTableTextWorst{
+  border-top: 1px solid tomato;
+  border-bottom: 1px solid tomato;
+}
 
 /* 푸터 */
 .main-footerContainer {
