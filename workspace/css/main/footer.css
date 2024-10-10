@@ -1,0 +1,521 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: inherit;
+  outline: none;
+}
+
+/* 헤더 */
+image {
+  display: block;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 92.5px;
+}
+
+.main-headerContainer {
+  width: 100%;
+  height: 92.5px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  position: fixed;
+  z-index: 5;
+}
+
+.main-headerTop {
+  width: 1100px;
+  height: 57.1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 61.1px;
+}
+
+#main-logo {
+  cursor: pointer;
+  width: 130px;
+}
+
+.main-searchBar {
+  position: relative;
+  width: 450px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-dropDown {
+  cursor: pointer;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+  padding: 5px;
+  border: none;
+  appearance: none;
+  outline: none;
+  background: #fff url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="black"><polygon points="0,0 10,10 20,0"/></svg>') no-repeat right 10px center;
+  /* 역삼각형 화살표 */
+  background-size: 10px;
+  /* 화살표 크기 조정 */
+}
+
+.main-searchInput {
+  width: 290px;
+  border: none;
+  outline: none;
+  font-size: 12px;
+}
+
+#main-searchBtn {
+  cursor: pointer;
+  width: 35px;
+}
+
+.main-welcomeUser {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+.main-profile {
+  width: 33px;
+  height: 33px;
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  margin-right: 5px;
+  overflow: hidden;
+}
+
+.main-profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-welcome {
+  margin-right: 10px;
+}
+
+.main-visitorBtn {
+  position: relative;
+  display: flex;
+  color: white;
+  font-size: 12px;
+}
+
+.main-join,
+.main-login,
+.main-logout {
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #EBAA39;
+  width: 70px;
+  height: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-join {
+  margin-left: 10px;
+}
+
+.main-login {
+  width: 60px;
+}
+
+.main-logout {
+  color: white;
+}
+
+/* 네비바 */
+ul,
+li {
+  list-style-type: none;
+}
+
+.main-headerNav {
+  width: 1100px;
+  height: 31.5px;
+}
+
+.main-navMenu {
+  width: 1100px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 25px;
+}
+
+.main-navMenu li,
+.main-recipeList li a,
+.main-boardList li a,
+.main-myPageList li a,
+#main-chatBot a,
+#main-rank a,
+#main-shop a {
+  font-family: 'Cute Font', cursive;
+  cursor: pointer;
+}
+
+#main-rank {
+  color: #EBAA39;
+}
+
+.main-recipeList,
+.main-boardList,
+.main-myPageList {
+  display: none;
+  position: fixed;
+  background-color: white;
+  top: 95px;
+  border-radius: 5px;
+  padding: 7px;
+  z-index: 5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.main-recipeList li:hover,
+.main-boardList li:hover,
+.main-myPageList li:hover {
+  color: #317FF0;
+}
+
+/* 메인섹션 */
+.main-section1Container {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+}
+
+.main-section1Frame {
+  width: 1100px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#main-refrigerator {
+  width: 500px;
+  height: 300px;
+  margin-top: 50px;
+}
+
+#main-logoFont {
+  width: 250px;
+}
+
+.main-slogan {
+  font-weight: bold;
+  font-size: 21px;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  color: #424242;
+}
+
+.main-ourcesFrom {
+  position: relative;
+  left: 100px;
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+.main-section2Container,
+.main-section3Container,
+.main-section4Container {
+  width: 100%;
+  height: 1462px;
+  background-color: #FFD507;
+  display: flex;
+  justify-content: center;
+}
+
+.main-section2Frame,
+.main-section3Frame,
+.main-section4Frame {
+  width: 1100px;
+  padding: 54px 9px 0 9px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-sectionTitle,
+.main-sectionSubTitle {
+  letter-spacing: -1.5px;
+  font-size: 36px;
+  margin: 10px 0;
+  color: #222222;
+}
+
+#main-titleText {
+  color: #F44336;
+}
+
+.main-sectionSubTitle {
+  margin-top: 80px;
+  font-size: 30px;
+}
+
+.main-sectionInfo span {
+  font-weight: lighter;
+  font-size: 45px;
+  color: #222222;
+}
+
+#main-dataGraph {
+  width: 100%;
+  height: 531px;
+  display: flex;
+}
+
+.main-weight {
+  width: 80px;
+  height: 531px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 12px;
+  color: gray;
+}
+
+.main-graphBlock {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.main-graphBlock div {
+  width: 70px;
+}
+
+.main-lastMonth {
+  height: 350px;
+  background-color: powderblue;
+}
+
+.main-thisMonth {
+  height: 300px;
+  background-color: tomato;
+}
+
+.main-month {
+  width: 100%;
+  font-size: 14px;
+  margin-top: 5px;
+  color: gray;
+  display: flex;
+}
+
+.main-hSpace {
+  width: 74.58px;
+}
+
+.main-month div {
+  width: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+#main-monthArray {
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-blank {
+  height: 36px;
+}
+
+.main-resultTitleFrame {
+  width: 100%;
+  display: flex;
+}
+
+.main-resultTitle {
+  width: 100%;
+  height: 36px;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  color: #353535;
+}
+
+.topResult {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-resultBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-resultBox img {
+  width: 168px;
+  height: 168px;
+  margin: 10px;
+}
+
+.resultName {
+  font-size: 20px;
+  letter-spacing: -0.5px;
+  margin: 5px 0;
+  color: #353535;
+}
+
+.main-result {
+  font-size: 30px;
+  letter-spacing: -0.8px;
+  color: #353535;
+}
+
+.main-section3Container {
+  width: 100%;
+  height: 905px;
+  background-color: white;
+}
+
+.main-calculator {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-calculator div {
+  font-size: 40px;
+}
+
+.main-weightInput {
+  width: 200px;
+  height: 70px;
+  font-size: 40px;
+}
+
+.main-section4Container {
+  height: 1000px;
+}
+
+.main-boxFrame {
+  display: flex;
+}
+
+.main-bestAndWorst{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-bestBox,
+.main-worstBox {
+  width: 500px;
+  height: 620px;
+  padding: 10px;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.main-boxTable {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-boxTitle {
+  margin: 10px 0;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+.main-boxTableText,
+.main-boxTableTextWorst {
+  width: 520px;
+  height: 55px;
+  display: flex;
+  border-top: 1px solid #317FF0;
+  border-bottom: 1px solid #317FF0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-boxTableText span,
+.main-boxTableTextWorst span{
+  width: 130px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-tableTitle,
+#main-tableTitleWorst {
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #317FF0;
+  color: white;
+}
+
+#main-tableTitleWorst{
+  background-color: tomato;
+}
+
+.main-boxTableTextWorst{
+  border-top: 1px solid tomato;
+  border-bottom: 1px solid tomato;
+}
+
+/* 푸터 */
+.main-footerContainer {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-footerText {
+  width: 1100px;
+  font-size: 13px;
+}
