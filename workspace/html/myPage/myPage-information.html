@@ -7,10 +7,132 @@
     <title>DR - 내정보</title>
     <link rel="stylesheet" href="./../../css/myPage/myPage-information.css">
     <script defer src="./../../js/myPage/myPage-information.js"></script>
+    <link rel="stylesheet" href="../../css/main/main.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+    <script defer src="../../js/main/main.js"></script>
+
 </head>
 
 <body>
+    <header>
+        <!-- 비로그인 헤더 -->
+        <!-- <div class="main-headerContainer">
+    <div class="main-headerTop">
+      <a href="../../html/main/main.html"><img src="/image/logo.png" id="main-logo"></a>
+      <div class="main-searchBar">
+        <select class="main-dropDown">
+          <option value="꿀팁 게시판">꿀팁 게시판</option>
+          <option value="나만의 레시피">나만의 레시피</option>
+          <option value="챗봇 레시피">챗봇 레시피</option>
+          <option value="자유 게시판">자유 게시판</option>
+        </select>
+        <input type="text" class="main-searchInput" placeholder="로그인 후 이용 가능합니다" readonly>
+        <img src="../../image/searchButton.png" id="main-searchBtn">
+      </div>
+      <div class="main-visitorBtn">
+        <a href="#로그인 페이지로">
+          <div class="main-login">로그인</div>
+        </a>
+        <a href="#회원가입 페이지로#">
+          <div class="main-join">회원가입</div>
+        </a>
+      </div>
+    </div> -->
 
+        <!--비로그인 네비바 -->
+        <!-- <div class="main-headerNav">
+  <ul class="main-navMenu">
+    <li id="main-chatBot"><a href="#로그인 페이지로">냉장봇</a></li>
+    <li id="main-rank"><a href="#로그인 페이지로">환경기여 랭킹</a></li>
+    <li id="main-recipe">
+      레시피
+      <ul class="main-recipeList">
+        <li><a href="#로그인 페이지로">챗봇레시피</a></li>
+        <li><a href="#로그인 페이지로">나만의레시피</a></li>
+      </ul>
+    </li>
+    <li id="main-board">
+      게시판
+      <ul class="main-boardList">
+        <li><a href="#로그인 페이지로">자유게시판</a></li>
+        <li><a href="#로그인 페이지로">꿀팁게시판</a></li>
+      </ul>
+    </li>
+    <li id="main-shop"><a href="#로그인 페이지로">포인트샵</a></li>
+    <li id="main-myPage">
+      마이페이지
+      <ul class="main-myPageList">
+        <li><a href="#로그인 페이지로">내 정보</a></li>
+        <li><a href="#로그인 페이지로">찜 목록</a></li>
+        <li><a href="#로그인 페이지로">내가 쓴 레시피</a></li>
+        <li><a href="#로그인 페이지로">내가 쓴 게시글</a></li>
+        <li><a href="#로그인 페이지로">신고 받은 글</a></li>
+        <li><a href="#로그인 페이지로">출석체크</a></li>
+      </ul>
+    </li>
+  </ul>
+</div> -->
+
+        <!-- 로그인 헤더 -->
+        <div class="main-headerContainer">
+            <div class="main-headerTop">
+                <a href="../../html/main/main.html"><img src="../../image/logo.png" id="main-logo"></a>
+                <div class="main-searchBar">
+                    <select class="main-dropDown">
+        <option value="꿀팁 게시판">꿀팁 게시판</option>
+        <option value="나만의 레시피">나만의 레시피</option>
+        <option value="챗봇 레시피">챗봇 레시피</option>
+        <option value="자유 게시판">자유 게시판</option>
+      </select>
+                    <input type="text" class="main-searchInput">
+                    <img src="../../image/searchButton.png" id="main-searchBtn">
+                </div>
+                <div class="main-welcomeUser">
+                    <div class="main-profile">
+                        <img src="../../image/basicProfile.png">
+                    </div>
+                    <div class="main-welcome">정승환님 환영합니다</div>
+                    <a href="#로그아웃!!#">
+                        <div class="main-logout">로그아웃</div>
+                    </a>
+                </div>
+            </div>
+            <!-- 로그인 네비바 -->
+            <div class="main-headerNav">
+                <ul class="main-navMenu">
+                    <li id="main-chatBot"><a href="#냉장봇 페이지로">냉장봇</a></li>
+                    <li id="main-rank"><a href="#랭킹 페이지로">환경기여 랭킹</a></li>
+                    <li id="main-recipe">
+                        레시피
+                        <ul class="main-recipeList">
+                            <li><a href="#챗봇레시피 페이지로">챗봇레시피</a></li>
+                            <li><a href="#나만의레시피 페이지로">나만의레시피</a></li>
+                        </ul>
+                    </li>
+                    <li id="main-board">
+                        게시판
+                        <ul class="main-boardList">
+                            <li><a href="#자유게시판 페이지로">자유게시판</a></li>
+                            <li><a href="#꿀팁게시판 페이지로">꿀팁게시판</a></li>
+                        </ul>
+                    </li>
+                    <li id="main-shop"><a href="#포인트샵 페이지로">포인트샵</a></li>
+                    <li id="main-myPage">
+                        마이페이지
+                        <ul class="main-myPageList">
+                            <li><a href="#내 정보 페지이로">내 정보</a></li>
+                            <li><a href="#찜 목록 페이지로">찜 목록</a></li>
+                            <li><a href="#내가 쓴 레시피 페이지로">내가 쓴 레시피</a></li>
+                            <li><a href="#내가 쓴 게시글 페이지로">내가 쓴 게시글</a></li>
+                            <li><a href="#신고 받은 글 페이지로">신고 받은 글</a></li>
+                            <li><a href="#출석체크 페이지로">출석체크</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
     <main>
         <!-- 내 정보 타이틀-->
         <div class="myPage-informationTitle">
@@ -23,12 +145,12 @@
             <div class="myPage-lengthBar">
                 <div id="myPage-informationPage">&nbsp;마이페이지</div>
                 <div id="myPage-informationSecond">&nbsp;내 정보</div>
+                <div>&nbsp;찜목록</div>
                 <div>&nbsp;내가 쓴 레시피</div>
                 <div>&nbsp;내가 쓴 게시글</div>
                 <div>&nbsp;신고 받은 글 </div>
                 <div>&nbsp;출석 체크</div>
             </div>
-
             <!-- 마이페이지 이미지 사진 -->
             <div class="myPage-pictureImage">
                 <div class="myPage-profile">
@@ -38,12 +160,33 @@
                     <img src="./../../image/sawtooth.png" alt="이미지 변경" id="uploadIcon" style="width: 20px; height: 20px; cursor: pointer; margin-top: 10px;">
                 </div>
             </div>
+            <!-- 마이페이지 내 정보 -->
             <div class="myPage-informationText">
                 <div class="myPage-informationTop"></div>
-                <div class="myPage-informationLeft">성명</div>
-                <div class="myPage-informationRight">정승환</div>
+                <div class="myPage-informationName">
+                    <div class="myPage-informationLeft">성명</div>
+                    <div class="myPage-informationRight">정승환</div>
+                </div>
+                <div class="myPage-informationId">
+                    <div class="mypage-informationIdLeft">아이디</div>
+                    <div class="myPge-informationEmail">shjeong1944@gmail.com</div>
+                    <div class="myPage-informationPhone">휴대폰번호</div>
+                    <div class="myPage-informationNumber">010-4828-2574</div>
+                </div>
+                <div class="myPage-informationScore">
+                    <div class="myPage-informationMyScore">내 환경기여 점수</div>
+                    <div class="myPage-informationScoreNumber">154점</div>
+                    <div class="myPage-informationRank">내 환경기여 랭킹</div>
+                    <div class="myPage-informationRankNumber">1등</div>
+                </div>
+                <div class="myPage-informationPoint">
+                    <div class="myPage-informationPointText">포인트</div>
+                    <div class="myPage-informationPointNumber"> 2300 point</div>
+                </div>
             </div>
         </div>
+        <div class="myPage-outGo">회원탈퇴</div>
+        <div class="myPage-completeWrite">수정완료</div>
     </main>
 </body>
 

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DR - 내가 쓴 레시피</title>
+    <link rel="stylesheet" href="./../../css/myPage/myPage-myRecipe.css">
+    <link rel="stylesheet" href="../../css/main/main.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+    <script defer src="../../js/main/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <!-- 비로그인 헤더 -->
+        <!-- <div class="main-headerContainer">
+<div class="main-headerTop">
+  <a href="../../html/main/main.html"><img src="/image/logo.png" id="main-logo"></a>
+  <div class="main-searchBar">
+    <select class="main-dropDown">
+      <option value="꿀팁 게시판">꿀팁 게시판</option>
+      <option value="나만의 레시피">나만의 레시피</option>
+      <option value="챗봇 레시피">챗봇 레시피</option>
+      <option value="자유 게시판">자유 게시판</option>
+    </select>
+    <input type="text" class="main-searchInput" placeholder="로그인 후 이용 가능합니다" readonly>
+    <img src="../../image/searchButton.png" id="main-searchBtn">
+  </div>
+  <div class="main-visitorBtn">
+    <a href="#로그인 페이지로">
+      <div class="main-login">로그인</div>
+    </a>
+    <a href="#회원가입 페이지로#">
+      <div class="main-join">회원가입</div>
+    </a>
+  </div>
+</div> -->
+
+        <!--비로그인 네비바 -->
+        <!-- <div class="main-headerNav">
+<ul class="main-navMenu">
+<li id="main-chatBot"><a href="#로그인 페이지로">냉장봇</a></li>
+<li id="main-rank"><a href="#로그인 페이지로">환경기여 랭킹</a></li>
+<li id="main-recipe">
+  레시피
+  <ul class="main-recipeList">
+    <li><a href="#로그인 페이지로">챗봇레시피</a></li>
+    <li><a href="#로그인 페이지로">나만의레시피</a></li>
+  </ul>
+</li>
+<li id="main-board">
+  게시판
+  <ul class="main-boardList">
+    <li><a href="#로그인 페이지로">자유게시판</a></li>
+    <li><a href="#로그인 페이지로">꿀팁게시판</a></li>
+  </ul>
+</li>
+<li id="main-shop"><a href="#로그인 페이지로">포인트샵</a></li>
+<li id="main-myPage">
+  마이페이지
+  <ul class="main-myPageList">
+    <li><a href="#로그인 페이지로">내 정보</a></li>
+    <li><a href="#로그인 페이지로">찜 목록</a></li>
+    <li><a href="#로그인 페이지로">내가 쓴 레시피</a></li>
+    <li><a href="#로그인 페이지로">내가 쓴 게시글</a></li>
+    <li><a href="#로그인 페이지로">신고 받은 글</a></li>
+    <li><a href="#로그인 페이지로">출석체크</a></li>
+  </ul>
+</li>
+</ul>
+</div> -->
+
+        <!-- 로그인 헤더 -->
+        <div class="main-headerContainer">
+            <div class="main-headerTop">
+                <a href="../../html/main/main.html"><img src="../../image/logo.png" id="main-logo"></a>
+                <div class="main-searchBar">
+                    <select class="main-dropDown">
+    <option value="꿀팁 게시판">꿀팁 게시판</option>
+    <option value="나만의 레시피">나만의 레시피</option>
+    <option value="챗봇 레시피">챗봇 레시피</option>
+    <option value="자유 게시판">자유 게시판</option>
+  </select>
+                    <input type="text" class="main-searchInput">
+                    <img src="../../image/searchButton.png" id="main-searchBtn">
+                </div>
+                <div class="main-welcomeUser">
+                    <div class="main-profile">
+                        <img src="../../image/basicProfile.png">
+                    </div>
+                    <div class="main-welcome">정승환님 환영합니다</div>
+                    <a href="#로그아웃!!#">
+                        <div class="main-logout">로그아웃</div>
+                    </a>
+                </div>
+            </div>
+            <!-- 로그인 네비바 -->
+            <div class="main-headerNav">
+                <ul class="main-navMenu">
+                    <li id="main-chatBot"><a href="#냉장봇 페이지로">냉장봇</a></li>
+                    <li id="main-rank"><a href="#랭킹 페이지로">환경기여 랭킹</a></li>
+                    <li id="main-recipe">
+                        레시피
+                        <ul class="main-recipeList">
+                            <li><a href="#챗봇레시피 페이지로">챗봇레시피</a></li>
+                            <li><a href="#나만의레시피 페이지로">나만의레시피</a></li>
+                        </ul>
+                    </li>
+                    <li id="main-board">
+                        게시판
+                        <ul class="main-boardList">
+                            <li><a href="#자유게시판 페이지로">자유게시판</a></li>
+                            <li><a href="#꿀팁게시판 페이지로">꿀팁게시판</a></li>
+                        </ul>
+                    </li>
+                    <li id="main-shop"><a href="#포인트샵 페이지로">포인트샵</a></li>
+                    <li id="main-myPage">
+                        마이페이지
+                        <ul class="main-myPageList">
+                            <li><a href="#내 정보 페지이로">내 정보</a></li>
+                            <li><a href="#찜 목록 페이지로">찜 목록</a></li>
+                            <li><a href="#내가 쓴 레시피 페이지로">내가 쓴 레시피</a></li>
+                            <li><a href="#내가 쓴 게시글 페이지로">내가 쓴 게시글</a></li>
+                            <li><a href="#신고 받은 글 페이지로">신고 받은 글</a></li>
+                            <li><a href="#출석체크 페이지로">출석체크</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- 내가 쓴 레시피 타이틀-->
+        <div class="myPage-myRecipeTitle">
+            <span style="color: #317FF0;">내가 쓴</span>
+            <span style="color: #EBAA39;">레시피</span>
+        </div>
+        <!-- 왼쪽 마이페이지 네비바>-->
+        <div class="myPage-steamedListContainer">
+            <div class="myPage-lengthBar">
+                <div id="myPage-informationPage">&nbsp;마이페이지</div>
+                <div id="myPage-informationSecond">&nbsp;내 정보</div>
+                <div id="myPage-informationThree">&nbsp;찜목록</div>
+                <div id="myPage-informationForth">&nbsp;내가 쓴 레시피</div>
+                <div>&nbsp;내가 쓴 게시글</div>
+                <div>&nbsp;신고 받은 글 </div>
+                <div>&nbsp;출석 체크</div>
+            </div>
+            <!-- 내가 쓴 레시피 이미지 및 글 맨 위-->
+            <div class="myPage-myRecipeWrap">
+                <div class="myPage-myRecipeprideOne">
+                    <div clss="myPage-myRecipeLeft"><img id="myPage-myRecipeOne" src="./../../image/myPage/egg.jpg"></div>
+                    <div class="myPage-myRecipeInside">
+                        <div class="myPage-myRecipeSide">
+                            <div class="myPage-myRecipeMiddleTitle">숙주나물 무침</div>
+                            <div class="myPage-myRecipeName">2024-10-03</div>
+                            <div class="myPage-myRecipeListDelete">추천수 43</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="myPage-myRecipeprideTwo">
+                    <div clss="myPage-myRecipeLeft"><img id="myPage-myRecipeOne" src="./../../image/myPage/sausage.jpg"></div>
+                    <div class="myPage-myRecipeInside">
+                        <div class="myPage-myRecipeSide">
+                            <div class="myPage-myRecipeMiddleTitle">숙주나물 무침</div>
+                            <div class="myPage-myRecipeName">2024-10-03</div>
+                            <div class="myPage-myRecipeListDelete">추천수 43</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="myPage-myRecipeprideThree">
+                    <div clss="myPage-myRecipeLeft"><img id="myPage-myRecipeOne" src="./../../image/myPage/tofu.jpg"></div>
+                    <div class="myPage-myRecipeInside">
+                        <div class="myPage-myRecipeSide">
+                            <div class="myPage-myRecipeMiddleTitle">숙주나물 무침</div>
+                            <div class="myPage-myRecipeName">2024-10-03</div>
+                            <div class="myPage-myRecipeListDelete">추천수 43</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 내가 쓴 레시피 이미지 및 글 중간 -->
+            <div class="myPage-myRecipeWrapMiddle">
+                <div class="myPage-myRecipeprideOne">
+                    <div clss="myPage-myRecipeLeft"><img id="myPage-myRecipeOne" src="./../../image/myPage/egg.jpg"></div>
+                    <div class="myPage-myRecipeInside">
+                        <div class="myPage-myRecipeSide">
+                            <div class="myPage-myRecipeMiddleTitle">숙주나물 무침</div>
+                            <div class="myPage-myRecipeName">2024-10-03</div>
+                            <div class="myPage-myRecipeListDelete">추천수 43</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="myPage-myRecipeprideTwo">
+                    <div clss="myPage-myRecipeLeft"><img id="myPage-myRecipeOne" src="./../../image/myPage/sausage.jpg"></div>
+                    <div class="myPage-myRecipeInside">
+                        <div class="myPage-myRecipeSide">
+                            <div class="myPage-myRecipeMiddleTitle">숙주나물 무침</div>
+                            <div class="myPage-myRecipeName">2024-10-03</div>
+                            <div class="myPage-myRecipeListDelete">추천수 43</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="myPage-myRecipeprideThree">
+                    <div clss="myPage-myRecipeLeft"><img id="myPage-myRecipeOne" src="./../../image/myPage/tofu.jpg"></div>
+                    <div class="myPage-myRecipeInside">
+                        <div class="myPage-myRecipeSide">
+                            <div class="myPage-myRecipeMiddleTitle">숙주나물 무침</div>
+                            <div class="myPage-myRecipeName">2024-10-03</div>
+                            <div class="myPage-myRecipeListDelete">추천수 43</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 내가 쓴 레시피 이미지 및 글 중간 -->
+            <div class="myPage-myRecipeWrapFinal">
+                <div class="myPage-myRecipeprideOne">
+                    <div clss="myPage-myRecipeLeft"><img id="myPage-myRecipeOne" src="./../../image/myPage/egg.jpg"></div>
+                    <div class="myPage-myRecipeInside">
+                        <div class="myPage-myRecipeSide">
+                            <div class="myPage-myRecipeMiddleTitle">숙주나물 무침</div>
+                            <div class="myPage-myRecipeName">2024-10-03</div>
+                            <div class="myPage-myRecipeListDelete">추천수 43</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="myPage-myRecipeprideTwo">
+                    <div clss="myPage-myRecipeLeft"><img id="myPage-myRecipeOne" src="./../../image/myPage/sausage.jpg"></div>
+                    <div class="myPage-myRecipeInside">
+                        <div class="myPage-myRecipeSide">
+                            <div class="myPage-myRecipeMiddleTitle">숙주나물 무침</div>
+                            <div class="myPage-myRecipeName">2024-10-03</div>
+                            <div class="myPage-myRecipeListDelete">추천수 43</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="myPage-myRecipeprideThree">
+                    <div clss="myPage-myRecipeLeft"><img id="myPage-myRecipeOne" src="./../../image/myPage/tofu.jpg"></div>
+                    <div class="myPage-myRecipeInside">
+                        <div class="myPage-myRecipeSide">
+                            <div class="myPage-myRecipeMiddleTitle">숙주나물 무침</div>
+                            <div class="myPage-myRecipeName">2024-10-03</div>
+                            <div class="myPage-myRecipeListDelete">추천수 43</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 페이지 네이션 -->
+        <div id="myPage-myRecipePages">
+            <div class="myPage-myRecipePage">
+                &lt
+            </div>
+            <div class="myPage-myRecipePage">
+                1
+            </div>
+            <div class="myPage-myRecipePage">
+                2
+            </div>
+            <div class="myPage-myRecipePage">
+                3
+            </div>
+            <div class="myPage-myRecipePage">
+                4
+            </div>
+            <div class="myPage-myRecipePage">
+                5
+            </div>
+            <div class="myPage-myRecipePage">
+                &gt
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
