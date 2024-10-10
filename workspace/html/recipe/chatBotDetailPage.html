@@ -5,13 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./../../css/recipe/chatBotDetailPage.css">
+  <link rel="stylesheet" href="../../css/main/header.css">
+  <link rel="stylesheet" href="../../css/main/footer.css">
+  <!-- 네비바 폰트 -->
   <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../css/main/main.css">
+  <!-- 제이쿼리 -->
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
     crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
-  <script defer src="../../js/main/main.js"></script>
-  <title>DR - 나만의 레시피 상세페이지</title>
+  <script defer src="../../js/main/header.js"></script>
+
+  <title>DR - 챗봇 레시피 상세페이지</title>
 </head>
 
 <body>
@@ -78,11 +81,6 @@
   <main>
     <div class="chatBotDetailPage-mainContainer">
       <div class="chatBotDetailPage-mainBox">
-
-        <div class="chatBotDetailPage-titlebox">
-          <p class="chatBotDetailPage-foodTitle">숙주나물 무침</p>
-        </div>
-
         <div class="chatBotDetailPage-infobox">
           <div class="chatBotDetailPage-infoFirst">
             <div class="chatBotDetailPage-infoInBox1">
@@ -90,6 +88,7 @@
             </div>
             <div class="chatBotDetailPage-infoInBox2">
               <p class="chatBotDetailPage-writeName">김찰수</p>
+              <p class="chatBotDetailPage-foodTitle">숙주나물 무침</p>
               <p class="chatBotDetailPage-date">2024-10-04 14:50</p>
             </div>
           </div>
@@ -97,7 +96,7 @@
           <div class="chatBotDetailPage-infoSecond">
             <div class="chatBotDetailPage-firstButton">
               <button class="chatBotDetailPage-buttonOne">수정</button>
-              <button class="chatBotDetailPage-buttonOne">삭제</button>
+              <button id="deleteButton" class="chatBotDetailPage-buttonOne">삭제</button>
             </div>
 
             <div class="chatBotDetailPage-secondButton">
@@ -111,7 +110,6 @@
         </div>
         <!-- 글 내용 -->
         <div class="chatBotDetailPage-writetext">
-          <img src="./../../image/recipe/숙주나물무침.png" alt="">
           <p class="chatBotDetailPage-texts">
             바쁜 일상 속에서 푸짐한 식탁을 차리는 건 쉽지 않죠. 하지만 걱정 마세요! 오늘 소개할 "아삭아삭 숙주나물 무침" 레시피는 단 5분 만에 뚝딱 만들 수 있는 초간단 요리입니다. 숙주나물은
             섬유질이 풍부하여 다이어트에도 좋고, 비타민과 미네랄이 풍부하여 건강에도 이로운 채소입니다. 특히 숙주나물 무침은 밑반찬으로도 좋고, 시원한 술안주로도 손색없습니다. 아삭아삭 숙주나물 무침의
@@ -123,6 +121,8 @@
             [출처] 아삭아삭 숙주나물 무침 레시피| 초간단 5분 완성 | 숙주나물 요리, 밑반찬, 술안주|작성자 소예공방
             [출처] 아삭아삭 숙주나물 무침 레시피| 초간단 5분 완성 | 숙주나물 요리, 밑반찬, 술안주|작성자 소예공방
           </p>
+          <img src="./../../image/recipe/숙주나물무침.png" alt="">
+
 
           <div class="chatBotDetailPage-recommendImg">
             <img src="./../../image/recommend.png" alt="">
@@ -142,6 +142,10 @@
                     </div>
                     <div class="chatBotDetailPage-commentText">그 뒤로는 크리스마스까지 공휴일 없음</div>
                     <div class="chatBotDetailPage-commentTime">14:53:14</div>
+                    <div class="chatBotDetailPage-buttonGroup">
+                      <button class="chatBotDetailPage-editBtn">수정</button>
+                      <button class="chatBotDetailPage-deleteBtn">삭제</button>
+                    </div>
                 </div>
             </div>
         
@@ -177,7 +181,7 @@
                 <textarea placeholder="댓글을 입력하세요..."></textarea>
                 <div class="chatBotDetailPage-commentActions">
                     <button class="chatBotDetailPage-editBtn">수정</button>
-                    <button class="chatBotDetailPage-deleteBtn">삭제</button>
+                    <button id="deleteButtons" class="chatBotDetailPage-deleteBtn">삭제</button>
                 </div>
             </div>
         </div>
@@ -189,6 +193,19 @@
       </div>
     </div>
   </main>
+
+  <!-- 푸터 -->
+  <footer>
+    <div class="main-footerContainer">
+      <div id="main-footerText">
+        <p><strong><a href="#이용약관 페이지로">이용약관</a> | <a href="#개인정보처리방침 페이지로">개인정보처리방침</a></strong></p>
+        <br>
+        <p>(04377)서울특별시 강남구 테헤란로 146 현익빌딩, <br>(06236)서울특별시 강남구 테헤란로26길 12 제일비전타워</p>
+        <p>대표이사 : 정승환 | 사업자등록번호 : 13-72011641</p>
+        <p>사업자명 : ㈜맛있는 재활용 | 대표이메일 : shjeong19943@gmail.com</p>
+      </div>
+    </div>
+  </footer>
 
   <script src="./../../js/recipe/chatBotDetailPage.js" defer></script>
 </body>
