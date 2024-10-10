@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+main{
+    margin-top: 40px;
+}
+.report-text,
+.report-text1{
+    font-family: 'Cute Font', cursive;
+}
+.report-mainContainer {
+    width: 1100px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    margin: 0 auto;
+}
+.report-outbox{
+    background-color: lightgray;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 30px;
+}
+.report-outbox input{
+    margin: 15px;
+}
+
+.report-text2 p{
+    color: red;
+    text-align: center;
+    font-family: 'Cute Font', cursive;
+}
+
+.report-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.back-button{
+    margin-right: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    width: 150px;
+    height: 50px;
+    border: none;
+    font-size: 20px;
+    background-color: #424242;
+
+}
+.right-button{
+    background-color: #EBAA39;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    width: 150px;
+    height: 50px;
+    border: none;
+    font-size: 20px;
+}
