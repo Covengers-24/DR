@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>레시피/게시판 관리</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.css" />
+  <link rel="stylesheet" href="./../../css/manager/manageReport.css">
+</head>
+
+<body>
+  <a href="./../../html/manager/dashBoard.html">
+    <img class="manager-logoImg" src="./../../image/logo.png">
+  </a>
+  <div id="manager-dashBoardBox">
+
+    <div id="dashBoard-list">
+      <ul>
+        <a href="./../../html/manager/dashBoard.html">
+        <li id="dashBoard-admin">
+          <img id="dashBoard-profile" src="./../../image/basicProfile.png">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          이재서
+        </li>
+        </a>
+        <a href="./../../html/manager/manageUser.html">
+          <li id="dashBoard-user">회원관리</li>
+        </a>
+        <a href="./../../html/manager/manageBoard.html">
+        <li id="dashBoard-board">게시글/레시피 관리</li>
+        </a>
+        <a href="./../../html/manager/manageComment.html">
+        <li id="dashBoard-comment">댓글관리</li>
+        </a>
+        <a href="./../../html/manager/managePoint.html">
+        <li id="dashBoard-point">포인트관리</li>
+        </a>
+        <a href="./../../html/manager/manageReport.html">
+        <li id="dashBoard-report">신고관리</li>
+        </a>
+        <a href="./../../html/manager/manageProduct.html">
+        <li id="dashBoard-product">상품관리</li>
+        </a>
+      </ul>
+    </div>
+
+    <div id="manage-member">
+      <div id="manage-memberTop">
+        <p id="manage-memberBold">신고 관리</p>
+        <button id="memberOut">삭제</button>
+      </div>
+      <div id="manage-memberList">
+        <ul id="manage-memberUl">
+          <li id="manage-memberTitle">
+            <input id="title-check" type="checkbox" value="전체선택">
+            <span id="title-num">No.</span>
+            <span id="title-name">이름</span>
+            <span id="title-con">내용</span>
+            <span id="title-reason">사유</span>
+            <span id="title-type">신고대상</span>
+            <span id="title-date">신고 날짜</span>
+          </li>
+
+          <li>
+            <input type="checkbox" value="1번">
+            <span>101</span>
+            <span>이재서</span>
+            <span>으흐흐흐...</span>
+            <span>음란물</span>
+            <span>게시글</span>
+            <span>2024-10-06 15:57:26</span>
+          </li>
+          <li>
+            <input type="checkbox" value="2번">
+            <span>102</span>
+            <span>김민수</span>
+            <span>부적절한 내용입니다.</span>
+            <span>욕설</span>
+            <span>댓글</span>
+            <span>2024-10-06 16:00:00</span>
+          </li>
+
+          <li>
+            <input type="checkbox" value="3번">
+            <span>103</span>
+            <span>박지혜</span>
+            <span>허위 정보가 포함되어.</span>
+            <span>허위사실</span>
+            <span>게시글</span>
+            <span>2024-10-06 16:05:00</span>
+          </li>
+
+          <li>
+            <input type="checkbox" value="4번">
+            <span>104</span>
+            <span>최영수</span>
+            <span>사기성 게시물입니다.</span>
+            <span>사기</span>
+            <span>게시글</span>
+            <span>2024-10-06 16:10:00</span>
+          </li>
+
+          <li>
+            <input type="checkbox" value="5번">
+            <span>105</span>
+            <span>이유진</span>
+            <span>성적인 내용</span>
+            <span>음란물</span>
+            <span>댓글</span>
+            <span>2024-10-06 16:15:00</span>
+          </li>
+
+          <li>
+            <input type="checkbox" value="6번">
+            <span>106</span>
+            <span>홍길동</span>
+            <span>스팸 메시지입니다.</span>
+            <span>스팸</span>
+            <span>댓글</span>
+            <span>2024-10-06 16:20:00</span>
+          </li>
+
+          <li>
+            <input type="checkbox" value="7번">
+            <span>107</span>
+            <span>김수현</span>
+            <span>폭력적인 내용</span>
+            <span>폭력</span>
+            <span>게시글</span>
+            <span>2024-10-06 16:25:00</span>
+          </li>
+
+          <li>
+            <input type="checkbox" value="8번">
+            <span>108</span>
+            <span>이준호</span>
+            <span>사생활 침해가 있습니다.</span>
+            <span>사생활침해</span>
+            <span>댓글</span>
+            <span>2024-10-06 16:30:00</span>
+          </li>
+
+          <li>
+            <input type="checkbox" value="9번">
+            <span>109</span>
+            <span>정하나</span>
+            <span>혐오 표현이 포함되어 있습니다.</span>
+            <span>혐오</span>
+            <span>게시글</span>
+            <span>2024-10-06 16:35:00</span>
+          </li>
+
+          <li>
+            <input type="checkbox" value="10번">
+            <span>110</span>
+            <span>박재민</span>
+            <span>부정확한 정보입니다.</span>
+            <span>허위사실</span>
+            <span>댓글</span>
+            <span>2024-10-06 16:40:00</span>
+          </li>
+
+          <li>
+            <input type="checkbox" value="11번">
+            <span>111</span>
+            <span>이하늘</span>
+            <span>불법적인 내용입니다.</span>
+            <span>불법</span>
+            <span>게시글</span>
+            <span>2024-10-06 16:45:00</span>
+          </li>
+
+          <li>
+            <input type="checkbox" value="12번">
+            <span>112</span>
+            <span>김태희</span>
+            <span>모욕적인 내용입니다.</span>
+            <span>모욕</span>
+            <span>댓글</span>
+            <span>2024-10-06 16:50:00</span>
+          </li>
+
+          <li>
+            <input type="checkbox" value="13번">
+            <span>113</span>
+            <span>최민수</span>
+            <span>상업적 광고입니다.</span>
+            <span>스팸</span>
+            <span>게시글</span>
+            <span>2024-10-06 16:55:00</span>
+          </li>
+
+          <li>
+            <input type="checkbox" value="14번">
+            <span>114</span>
+            <span>이진아</span>
+            <span>신뢰할 수 없는 링크입니다.</span>
+            <span>피싱</span>
+            <span>댓글</span>
+            <span>2024-10-06 17:00:00</span>
+          </li>
+
+          <li>
+            <input type="checkbox" value="15번">
+            <span>115</span>
+            <span>박상민</span>
+            <span>허위 광고입니다.</span>
+            <span>허위광고</span>
+            <span>게시글</span>
+            <span>2024-10-06 17:05:00</span>
+          </li>
+
+          <li>
+            <input type="checkbox" value="16번">
+            <span>116</span>
+            <span>정세현</span>
+            <span>불법적인 내용 포함.</span>
+            <span>불법</span>
+            <span>댓글</span>
+            <span>2024-10-06 17:10:00</span>
+          </li>
+
+        </ul>
+
+
+        <div id="pagination"></div>
+
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <script src="./../../js/manager/manageReport.js"></script>
+</body>
+
+</html>
