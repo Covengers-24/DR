@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   font-family: 'Noto Sans KR', sans-serif;
@@ -8,7 +8,7 @@
 main {
   margin: 0;
   padding: 0;
-  height: 1000px;
+  height: 700px;
   width: 1100px;
   margin: 0 auto;
 }
@@ -21,7 +21,7 @@ main {
   width: 150px;
   cursor: pointer;
 }
- 
+
 #login-loginBox {
   width: 500px;
   height: 300px;
@@ -78,7 +78,7 @@ main {
 #login-loginButton {
   margin-top: 10px;
   width: 400px;
-  height: 40px; 
+  height: 40px;
   color: white;
   border-radius: 5px;
   background-color: #424242;
@@ -91,9 +91,9 @@ main {
   height: 35px;
   position: absolute;
   bottom: 120px;
-  right: 50px;
+  right: 55px;
   cursor: pointer;
-  top: 163px;
+  top: 160px;
 }
 
 .login-formTogleTwo {
@@ -101,10 +101,10 @@ main {
   height: 35px;
   position: absolute;
   bottom: 120px;
-  right: 50px;
+  right: 55px;
   display: none;
   cursor: pointer;
-  top: 163px;
+  top: 160px;
 }
 
 a {
@@ -112,16 +112,17 @@ a {
   color: white;
 }
 
-.login-formTwo , .login-formThree{
+.login-formTwo,
+.login-formThree {
   align-items: center;
   text-align: center;
   gap: 15px;
 }
 
-#login-kakaoButton{
+#login-kakaoButton {
   margin-top: 10px;
   width: 400px;
-  height: 40px; 
+  height: 40px;
   color: black;
   border-radius: 5px;
   background-color: #424242;
@@ -130,10 +131,10 @@ a {
   border: none;
 }
 
-#login-naverButton{
+#login-naverButton {
   margin-top: 10px;
   width: 400px;
-  height: 40px; 
+  height: 40px;
   color: white;
   border-radius: 5px;
   background-color: #424242;
@@ -142,3 +143,22 @@ a {
   border: none;
 }
 
+.login-socialHr {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.35);
+  font-size: 12px;
+  margin: 8px 0px;
+}
+
+.login-socialHr::before,
+.login-socialHr::after {
+  content: "";
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.35);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0px 16px;
+}
