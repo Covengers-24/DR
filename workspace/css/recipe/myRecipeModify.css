@@ -4,7 +4,7 @@
 }
 
 /* 메인 넓이 수정 */
-.chatBotRecipeWriter-mainContainer {
+.myRecipeModify-mainContainer {
     width: 1100px;
     /* border: 1px solid black; */
     display: flex;
@@ -18,7 +18,7 @@ main{
 }
 
 /* 나만의 레시피 제목 */
-.chatBotRecipeWriter-text1{
+.myRecipeModify-text1{
     margin-bottom: 30px;
     margin-right: 10px;
     text-align: center;
@@ -27,27 +27,27 @@ main{
     margin-bottom: 0;
     font-weight: bold;
 }
-.chatBotRecipeWriter-title{
+.myRecipeModify-title{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
 }
 
-.chatBotRecipeWriter-text2{
+.myRecipeModify-text2{
     font-size: 35px;
     color: #EBAA39;
     font-weight: bold;
 }
 
-.chatBotRecipeWriter-warning{
+.myRecipeModify-warning{
     margin-top: 30px;
-    margin-bottom: 30px;
 }
-.chatBotRecipeWriter-warningText{
+.myRecipeModify-warningText{
     color: red;
     font-size: 10px;
     margin-bottom: 10px;
 }
-.chatBotRecipeWriter-warningText:last-child{
+.myRecipeModify-warningText:last-child{
     margin-bottom: 0;
 }

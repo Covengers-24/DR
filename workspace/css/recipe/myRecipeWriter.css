@@ -13,27 +13,28 @@
     margin: 0 auto;
 }
 main{
-    margin-top: 50px;
+    margin-top: 100px;
+    margin-bottom: 30px;
 }
 
 /* 나만의 레시피 제목 */
 .myRecipeWriter-text1{
     margin-bottom: 30px;
+    margin-right: 10px;
     text-align: center;
-    font-size: 30px;
+    color: #317FF0;
+    font-size: 35px;
+    margin-bottom: 0;
+    font-weight: bold;
 }
 .myRecipeWriter-title{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.myRecipeWriter-text1{
-    font-size: 30px;
-    margin-bottom: 0;
-    color: #317FF0;
-    margin-right: 10px;
+    margin-bottom: 30px;
 }
 .myRecipeWriter-text2{
-    font-size: 30px;
+    font-size: 35px;
     color: #EBAA39;
+    font-weight: bold;
 }

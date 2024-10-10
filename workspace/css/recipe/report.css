@@ -4,15 +4,17 @@
     font-family: 'Noto Sans KR', sans-serif;
   }
 main{
-    margin-top: 40px;
+    margin-top: 100px;
+    margin-bottom: 30px;
 }
-.report-text,
 .report-text1{
-    font-family: 'Cute Font', cursive;
+    font-size: 35px;
+}
+.report-text{
+    font-size: 15px;
 }
 .report-mainContainer {
     width: 1100px;
-    /* border: 1px solid black; */
     display: flex;
     justify-content: center; 
     align-items: center;     
@@ -25,17 +27,20 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 20px;
     font-size: 30px;
 }
 .report-outbox input{
     margin: 15px;
 }
-
+.report-text2{
+    margin-top: 30px;
+}
 .report-text2 p{
     color: red;
     text-align: center;
-    font-family: 'Cute Font', cursive;
+    font-size: 10px;
+    margin-bottom: 15px;
 }
 
 .report-button{
