@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>레시피/게시판 관리</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.css" />
+  <link rel="stylesheet" href="./../../css/manager/manageBoard.css">
+</head>
+
+<body>
+  <a href="./../../html/manager/dashBoard.html">
+    <img class="manager-logoImg" src="./../../image/logo.png">
+  </a>
+  <div id="manager-dashBoardBox">
+
+    <div id="dashBoard-list">
+      <ul>
+        <a href="./../../html/manager/dashBoard.html">
+        <li id="dashBoard-admin">
+          <img id="dashBoard-profile" src="./../../image/basicProfile.png">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          이재서
+        </li>
+        </a>
+        <a href="./../../html/manager/manageUser.html">
+          <li id="dashBoard-user">회원관리</li>
+        </a>
+        <a href="./../../html/manager/manageBoard.html">
+        <li id="dashBoard-board">게시글/레시피 관리</li>
+        </a>
+        <a href="./../../html/manager/manageComment.html">
+        <li id="dashBoard-comment">댓글관리</li>
+        </a>
+        <a href="./../../html/manager/managePoint.html">
+        <li id="dashBoard-point">포인트관리</li>
+        </a>
+        <a href="./../../html/manager/manageReport.html">
+        <li id="dashBoard-report">신고관리</li>
+        </a>
+        <a href="./../../html/manager/manageProduct.html">
+        <li id="dashBoard-product">상품관리</li>
+        </a>
+      </ul>
+    </div>
+
+    <div id="manage-member">
+      <div id="manage-memberTop">
+        <p id="manage-memberBold">레시피/게시판 관리</p>
+        <button id="memberOut">삭제</button>
+      </div>
+      <div id="manage-memberList">
+        <ul id="manage-memberUl">
+          <li id="manage-memberTitle">
+            <input id="title-check" type="checkbox" value="전체선택">
+            <span id="title-num">No.</span>
+            <span id="title-title">제목</span>
+            <span id="title-name">작성자</span>
+            <span id="title-good">추천수</span>
+            <span id="title-date">작성일</span>
+          </li>
+
+          <li>
+            <input type="checkbox" value="전체선택">
+            <span class="con-num">101</span>
+            <span class="con-name">안녕하세요 !!오랜만이에요</span>
+            <span class="con-div">이재서</span>
+            <span class="con-phone">323</span>
+            <span class="con-email">2024-10-06 15:57:26</span>
+          </li>
+
+          <li>
+            <input type="checkbox" value="2번">
+            <span class="con-num">102</span>
+            <span class="con-name">축하합니다! 당첨되셨습니다.</span>
+            <span class="con-div">김철수</span>
+            <span class="con-good">10</span>
+            <span class="con-date">2024-10-07 09:12:45</span>
+          </li>
+          <li>
+            <input type="checkbox" value="3번">
+            <span class="con-num">103</span>
+            <span class="con-name">새로운 소식이 있습니다!</span>
+            <span class="con-div">이영희</span>
+            <span class="con-good">8</span>
+            <span class="con-date">2024-10-08 11:30:00</span>
+          </li>
+          <li>
+            <input type="checkbox" value="4번">
+            <span class="con-num">104</span>
+            <span class="con-name">모임 공지입니다.</span>
+            <span class="con-div">박민수</span>
+            <span class="con-good">3</span>
+            <span class="con-date">2024-10-09 14:20:18</span>
+          </li>
+          <li>
+            <input type="checkbox" value="5번">
+            <span class="con-num">105</span>
+            <span class="con-name">이번 주말에 만나요!</span>
+            <span class="con-div">이순신</span>
+            <span class="con-good">12</span>
+            <span class="con-date">2024-10-10 16:45:32</span>
+          </li>
+          <li>
+            <input type="checkbox" value="6번">
+            <span class="con-num">106</span>
+            <span class="con-name">이벤트에 참여하세요!</span>
+            <span class="con-div">홍길동</span>
+            <span class="con-good">7</span>
+            <span class="con-date">2024-10-11 13:15:55</span>
+          </li>
+          <li>
+            <input type="checkbox" value="7번">
+            <span class="con-num">107</span>
+            <span class="con-name">상품 리뷰를 남겨주세요!</span>
+            <span class="con-div">김유진</span>
+            <span class="con-good">15</span>
+            <span class="con-date">2024-10-12 10:05:10</span>
+          </li>
+          <li>
+            <input type="checkbox" value="8번">
+            <span class="con-num">108</span>
+            <span class="con-name">신제품 출시 안내</span>
+            <span class="con-div">정우성</span>
+            <span class="con-good">20</span>
+            <span class="con-date">2024-10-13 18:30:00</span>
+          </li>
+          <li>
+            <input type="checkbox" value="9번">
+            <span class="con-num">109</span>
+            <span class="con-name">여행 후기 공유</span>
+            <span class="con-div">최지은</span>
+            <span class="con-good">6</span>
+            <span class="con-date">2024-10-14 12:25:15</span>
+          </li>
+          <li>
+            <input type="checkbox" value="10번">
+            <span class="con-num">110</span>
+            <span class="con-name">다음 회의 일정</span>
+            <span class="con-div">이민호</span>
+            <span class="con-good">4</span>
+            <span class="con-date">2024-10-15 09:00:00</span>
+          </li>
+          <li>
+            <input type="checkbox" value="11번">
+            <span class="con-num">111</span>
+            <span class="con-name">비밀번호 변경 안내</span>
+            <span class="con-div">이재명</span>
+            <span class="con-good">5</span>
+            <span class="con-date">2024-10-16 14:15:30</span>
+          </li>
+          <li>
+            <input type="checkbox" value="12번">
+            <span class="con-num">112</span>
+            <span class="con-name">회원가입 이벤트 진행 중</span>
+            <span class="con-div">이상민</span>
+            <span class="con-good">9</span>
+            <span class="con-date">2024-10-17 11:45:00</span>
+          </li>
+          <li>
+            <input type="checkbox" value="13번">
+            <span class="con-num">113</span>
+            <span class="con-name">설문조사에 참여하세요!</span>
+            <span class="con-div">홍길동</span>
+            <span class="con-good">11</span>
+            <span class="con-date">2024-10-18 16:25:25</span>
+          </li>
+          <li>
+            <input type="checkbox" value="14번">
+            <span class="con-num">114</span>
+            <span class="con-name">최신 뉴스 업데이트</span>
+            <span class="con-div">김사랑</span>
+            <span class="con-good">8</span>
+            <span class="con-date">2024-10-19 13:10:10</span>
+          </li>
+          <li>
+            <input type="checkbox" value="15번">
+            <span class="con-num">115</span>
+            <span class="con-name">가을 세일 안내</span>
+            <span class="con-div">이준호</span>
+            <span class="con-good">14</span>
+            <span class="con-date">2024-10-20 09:30:30</span>
+          </li>
+        </ul>
+
+
+        <div id="pagination"></div>
+
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <script src="./../../js/manager/manageBoard.js"></script>
+</body>
+
+</html>
