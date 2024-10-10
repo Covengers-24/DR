@@ -1,4 +1,4 @@
-const buttons = document.querySelectorAll('.recipeList-rightButton button');
+const buttons = document.querySelectorAll('.chatBotRecipeList-rightButton button');
 
     // 기본적으로 첫 번째 버튼에 스타일을 적용합니다.
     buttons[0].classList.add('active');
