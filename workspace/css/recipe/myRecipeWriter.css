@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* 메인 넓이 수정 */
+.myRecipeWriter-mainContainer {
+    width: 1100px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    margin: 0 auto;
+}
+main{
+    margin-top: 50px;
+}
+
+/* 나만의 레시피 제목 */
+.myRecipeWriter-text1{
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+.myRecipeWriter-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myRecipeWriter-text1{
+    font-size: 30px;
+    margin-bottom: 0;
+    color: #317FF0;
+    margin-right: 10px;
+}
+.myRecipeWriter-text2{
+    font-size: 30px;
+    color: #EBAA39;
+}
