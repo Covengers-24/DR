@@ -7,14 +7,14 @@
 main {
     width: 1100px;
     margin: 0 auto;
-    height: 1500px;
+    height: 900px;
 }
 
 li {
     list-style: none;
 }
 
-.myPage-myRecipeTitle {
+.myPage-myPostTitleTop {
     font-weight: bold;
     text-align: center;
     margin-top: 100px;
@@ -71,3 +71,182 @@ li {
 
 
 /* -------왼쪽 마이페이지 메뉴바 ------ */
+
+.vertical-bar {
+    width: 2px;
+    height: 20px;
+    background-color: #333333;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.vertical-barSecond {
+    width: 1px;
+    height: 20px;
+    background-color: #333333;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.myPage-myPostTitleMain li {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid #424242;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.myPage-myPostMain {
+    display: flex;
+}
+
+.myPage-myPostTitle {
+    font-size: 25px;
+    font-weight: bold;
+    color: #525252;
+}
+
+.myPage-myPostTitleType {
+    font-size: 25px;
+    font-weight: bold;
+    color: #525252;
+}
+
+.myPage-myPostTitleContentType {
+    font-size: 22px;
+    font-weight: bold;
+    color: #525252;
+    width: 120px;
+}
+
+.myPage-myPostTitleDate {
+    font-size: 22px;
+    font-weight: bold;
+    color: #525252;
+    width: 180px;
+}
+
+.myPage-myPostTitleContent {
+    font-size: 22px;
+    font-weight: bold;
+    color: #525252;
+    width: 400px;
+}
+
+.myPage-myPostTitleMain {
+    padding-top: 45px;
+    padding-left: 50px;
+}
+
+.myPage-myPostTitleCause {
+    font-size: 22px;
+    font-weight: bold;
+    color: #525252;
+    width: 100px;
+}
+
+.myPage-myPostTitleNumber {
+    font-size: 22px;
+    font-weight: bold;
+    color: #525252;
+    width: 53px;
+}
+
+.myPage-myPostTitleNumberZero {
+    font-size: 20px;
+    color: #525252;
+    width: 54px;
+}
+
+.myPage-myPostTitleContentOne {
+    font-size: 20px;
+    color: #525252;
+    width: 100%;
+    display: inline-block;
+    /* 또는 block */
+    width: 400px;
+    /* 원하는 너비 값 설정 */
+    white-space: nowrap;
+    /* 텍스트 줄 바꿈 방지 */
+    overflow: hidden;
+    /* 넘치는 텍스트 숨기기 */
+    text-overflow: ellipsis;
+    /* 넘치는 텍스트를 생략(...) 처리 */
+}
+
+.myPage-myPostTitleContentTypeTwo {
+    font-size: 20px;
+    color: #525252;
+    width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+
+.myPage-myPostTitleCauseThree {
+    font-size: 20px;
+    color: #525252;
+    width: 105px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+
+.myPage-myPostTitleDateFour {
+    font-size: 20px;
+    color: #525252;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.myPage-myPostTitleMainOne {
+    padding-left: 50px;
+}
+
+.myPage-myPostTitleMainOne li {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px dotted #424242;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.myPage-myPostTitleMainFinal {
+    padding-left: 50px;
+}
+
+.myPage-myPostTitleMainFinal li {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #424242;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+/* 페이지네이션 메뉴바 */
+
+#myPage-myPostPages {
+    display: flex;
+    height: 50px;
+    gap: 10px;
+    margin-left: 540px;
+    margin-top: -20px;
+}
+
+.myPage-myPostPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
