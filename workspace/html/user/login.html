@@ -6,11 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DR - 로그인</title>
   <link rel="stylesheet" href="./../../css/user/login.css">
-  <link rel="stylesheet" href="./../../css/main/main.css">
+  <link rel="stylesheet" href="../../css/main/header.css">
+  <link rel="stylesheet" href="../../css/main/footer.css">
+  <!-- 네비바 폰트 -->
+  <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+  <!-- 제이쿼리 -->
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
     crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
-  <script defer src="./../../js/main/main.js"></script>
+  <script defer src="../../js/main/header.js"></script>
 </head>
 
 <body>
@@ -160,7 +163,7 @@
       <div class="login-formThree">
         <div class="login-socialHr">소셜미디어 계정으로 로그인</div>
         <br><br>
-        <button id="login-kakaoButton">카카오 계정으로 로그인</button>
+        <a href="https://kauth.kakao.com/oauth/authorize"><button id="login-kakaoButton">카카오 계정으로 로그인</button></a>
         <button id="login-naverButton">네이버 계정으로 로그인</button>
       </div>
 
