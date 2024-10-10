@@ -18,7 +18,7 @@ a {
   position: absolute;
   top: 20px;
   left: 20px;
-  width: 150px;
+  width: 100px;
   cursor: pointer;
 }
 
@@ -97,10 +97,23 @@ a {
   font-weight: bold;
 }
 
-#memberPause {
+#memberUpdate {
   position: absolute;
   top: 13%;
   right: 10%;
+  width: 70px;
+  height: 30px;
+  background-color:tomato;
+  color: white;
+  border-radius: 5px;
+  border: white;
+  cursor: pointer;
+}
+
+#memberPause {
+  position: absolute;
+  top: 13%;
+  right: 16%;
   width: 70px;
   height: 30px;
   background-color: #F66F58;
@@ -140,8 +153,6 @@ a {
 #manage-memberUl li {
   margin-left: 50px;
   display: flex;
-  justify-content: space-between;
-  gap: 120px;
   height: 28px;
   line-height: 24px;
   border-bottom: 1px solid black;
@@ -163,28 +174,27 @@ a {
 
 #title-num {
   position: absolute;
-  left: 42%;
+  left: 34%;
   top: 19.5%;
 }
 
 #title-name {
   position: absolute;
-  left: 58%;
+  left: 42%;
   top: 19.5%;
 }
 
 #title-point {
   position: absolute;
-  left: 75%;
+  left: 54%;
   top: 19.5%;
 }
 
 #title-stock {
   position: absolute;
-  left: 94%;
+  left: 69%;
   top: 19.5%;
 }
-
 
 #manage-pages {
   display: flex;
@@ -212,5 +222,21 @@ a {
   right: 40%;
 }
 
+.product-num {
+  width: 20%;
+  text-align: center;
+}
+
+.product-name {
+width: 20%;
+}
+
+.product-point {
+  width: 20%;
+}
+
+.product-stock {
+  width: 20%;
+}
 
 
