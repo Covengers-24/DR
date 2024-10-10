@@ -51,3 +51,35 @@ main{
 .chatBotRecipeWriter-warningText:last-child{
     margin-bottom: 0;
 }
+
+.chatBotRecipeWriter-write{
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .chatBotRecipeWriter-writeButton{
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #EBAA39;
+    border: none;
+    color: white;
+  }
+
+  .chatBotRecipeWriter-inputContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom: 1px solid lightgray; /* 밑줄 추가 */
+    padding-bottom: 5px;
+  }
+  
+  .chatBotRecipeWriter-titleInput {
+    width: 1100px; /* 너비 조정 */
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: grey;
+  }

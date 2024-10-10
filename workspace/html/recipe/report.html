@@ -80,7 +80,7 @@
     <div class="report-mainContainer">
         <div class="report-mainBox">
             <!-- 제목 부분 -->
-            <h1 class="report-text1">게시글/댓글 신고</h1>
+            <h1 class="report-text1">레시피/댓글 신고</h1>
             <!-- 신고사유창 -->
             <div class="report-outbox">
                 <form action="" method="">
@@ -102,7 +102,7 @@
                     
                     <!-- 기타 체크박스 및 입력 필드 -->
                     <label for="other"><input type="checkbox" name="reason" value="other" > <span class="report-text">기타</span></label>
-                    <input type="text" name="otherReasonText" placeholder="신고 내용을 작성해주세요">
+                    <input type="text" name="otherReasonText" class="report-inputText" placeholder="신고 내용을 작성해주세요">
                 </form>
             </div>
 
@@ -114,7 +114,8 @@
 
             <!-- 신고 버튼 -->
             <div class="report-button">
-                <button class="back-button">취소</button>
+              <a href="./myDetailPage.html"><button class="back-button">취소</button></a>
+                <!-- <button class="back-button">취소</button> -->
                 <button class="right-button">신고</button>
             </div>
         </div>
