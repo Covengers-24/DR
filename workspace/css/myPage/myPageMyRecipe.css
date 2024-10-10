@@ -14,7 +14,7 @@ li {
     list-style: none;
 }
 
-.myPage-steamedListTitle {
+.myPage-myRecipeTitle {
     font-weight: bold;
     text-align: center;
     margin-top: 100px;
@@ -32,7 +32,7 @@ li {
     font-size: 21px;
 }
 
-#myPage-informationThree {
+#myPage-informationForth {
     color: #EBAA39;
 }
 
@@ -76,22 +76,23 @@ li {
     display: flex;
 }
 
-.myPage-pictureInside {
+.myPage-myRecipeInside {
     display: flex;
 }
 
-#myPage-pictureOne {
+#myPage-myRecipeOne {
     width: 250px;
     height: 250px;
     border-radius: 5px;
 }
 
-.myPage-pictureWrap {
+.myPage-myRecipeWrap {
     margin-top: 70px;
     margin-left: 40px;
+    display: flex;
 }
 
-.myPage-pictureTitle {
+.myPage-myRecipeMiddleTitle {
     font-weight: 700;
     color: #000000;
     font-size: 15px;
@@ -99,54 +100,45 @@ li {
     padding-top: 5px;
 }
 
-.myPage-pictureName {
-    font-size: 13px;
-    color: #333333;
+.myPage-myRecipeName {
+    font-size: 12px;
+    color: #999999;
     font-weight: bold;
     padding-left: 5px;
     padding-top: 5px;
 }
 
-.myPage-pictureListDelete {
-    border: none;
-    color: white;
-    background-color: #EBAA39;
-    cursor: pointer;
-    border-radius: 5px;
-    width: 55px;
-    height: 33px;
+.myPage-myRecipeListDelete {
+    font-size: 12px;
+    color: #999999;
     font-weight: bold;
-    font-size: 13px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 95px;
-    margin-top: 10px;
+    padding-left: 5px;
+    padding-top: 5px;
 }
 
 
-/* 찜목록 글 및 이미지 */
+/* 내가 쓴 레시피 글 및 이미지 */
 
-.myPage-pictureWrap {
+.myPage-myRecipeWrap {
     display: flex;
 }
 
-.myPage-pictureprideOne {
+.myPage-myRecipeprideOne {
     padding-right: 50px;
     padding-left: 15px;
 }
 
-.myPage-pictureprideTwo {
+.myPage-myRecipeprideTwo {
     padding-right: 50px;
 }
 
-.myPage-pictureWrapMiddle {
+.myPage-myRecipeWrapMiddle {
     display: flex;
     margin-top: 450px;
     margin-left: -870px;
 }
 
-.myPage-pictureWrapFinal {
+.myPage-myRecipeWrapFinal {
     display: flex;
     margin-top: 830px;
     margin-left: -870px;
@@ -155,16 +147,15 @@ li {
 
 /* 페이지네이션 메뉴바 */
 
-#myPage-steamedListPages {
+#myPage-myRecipePages {
     display: flex;
     height: 50px;
-    justify-content: center;
-    align-items: center;
     gap: 10px;
     margin-top: 50px;
+    margin-left: 540px;
 }
 
-.myPage-steamedPage {
+.myPage-myRecipePage {
     display: flex;
     justify-content: center;
     align-items: center;
