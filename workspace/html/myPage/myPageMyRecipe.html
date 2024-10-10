@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DR - 찜목록</title>
-    <link rel="stylesheet" href="./../../css/myPage/myPage-steamedList.css">
+    <title>DR - 내가 쓴 레시피</title>
+    <link rel="stylesheet" href="./../../css/myPage/myPageMyRecipe.css">
     <link rel="stylesheet" href="../../css/main/main.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
@@ -132,10 +132,10 @@
         </div>
     </header>
     <main>
-        <!-- 찜목록 타이틀-->
-        <div class="myPage-steamedListTitle">
-            <span style="color: #317FF0;">찜</span>
-            <span style="color: #EBAA39;">목록</span>
+        <!-- 내가 쓴 레시피 타이틀-->
+        <div class="myPage-myRecipeTitle">
+            <span style="color: #317FF0;">내가 쓴</span>
+            <span style="color: #EBAA39;">레시피</span>
         </div>
         <!-- 왼쪽 마이페이지 네비바>-->
         <div class="myPage-steamedListContainer">
@@ -143,150 +143,132 @@
                 <div id="myPage-informationPage">&nbsp;마이페이지</div>
                 <div id="myPage-informationSecond">&nbsp;내 정보</div>
                 <div id="myPage-informationThree">&nbsp;찜목록</div>
-                <div>&nbsp;내가 쓴 레시피</div>
+                <div id="myPage-informationForth">&nbsp;내가 쓴 레시피</div>
                 <div>&nbsp;내가 쓴 게시글</div>
                 <div>&nbsp;신고 받은 글 </div>
                 <div>&nbsp;출석 체크</div>
             </div>
-            <!-- 찜목록 이미지 및 글 맨 위-->
-            <div class="myPage-pictureWrap">
-                <div class="myPage-pictureprideOne">
-                    <div clss="myPage-pictureLeft"><img id="myPage-pictureOne" src="./../../image/myPage/egg.jpg"></div>
-                    <div class="myPage-pictureInside">
-                        <div class="myPage-pictureSide">
-                            <div class="myPage-pictureTitle">숙주나물 무침</div>
-                            <div class="myPage-pictureName">송아성</div>
-                        </div>
-                        <div class="myPage-pictureSideRight">
-                            <div class="myPage-pictureListDelete">찜 삭제</div>
+            <!-- 내가 쓴 레시피 이미지 및 글 맨 위-->
+            <div class="myPage-myRecipeWrap">
+                <div class="myPage-myRecipeprideOne">
+                    <div clss="myPage-myRecipeLeft"><img id="myPage-myRecipeOne" src="./../../image/myPage/egg.jpg"></div>
+                    <div class="myPage-myRecipeInside">
+                        <div class="myPage-myRecipeSide">
+                            <div class="myPage-myRecipeMiddleTitle">숙주나물 무침</div>
+                            <div class="myPage-myRecipeName">2024-10-03</div>
+                            <div class="myPage-myRecipeListDelete">추천수 43</div>
                         </div>
                     </div>
                 </div>
-                <div class="myPage-pictureprideTwo">
-                    <div clss="myPage-pictureLeft"><img id="myPage-pictureOne" src="./../../image/myPage/sausage.jpg"></div>
-                    <div class="myPage-pictureInside">
-                        <div class="myPage-pictureSide">
-                            <div class="myPage-pictureTitle">베이컨덮밥♡</div>
-                            <div class="myPage-pictureName">송아성</div>
-                        </div>
-                        <div class="myPage-pictureSideRight">
-                            <div class="myPage-pictureListDelete">찜 삭제</div>
+                <div class="myPage-myRecipeprideTwo">
+                    <div clss="myPage-myRecipeLeft"><img id="myPage-myRecipeOne" src="./../../image/myPage/sausage.jpg"></div>
+                    <div class="myPage-myRecipeInside">
+                        <div class="myPage-myRecipeSide">
+                            <div class="myPage-myRecipeMiddleTitle">숙주나물 무침</div>
+                            <div class="myPage-myRecipeName">2024-10-03</div>
+                            <div class="myPage-myRecipeListDelete">추천수 43</div>
                         </div>
                     </div>
                 </div>
-                <div class="myPage-pictureprideThree">
-                    <div clss="myPage-pictureLeft"><img id="myPage-pictureOne" src="./../../image/myPage/tofu.jpg"></div>
-                    <div class="myPage-pictureInside">
-                        <div class="myPage-pictureSide">
-                            <div class="myPage-pictureTitle">두부말이구이</div>
-                            <div class="myPage-pictureName">송아성</div>
-                        </div>
-                        <div class="myPage-pictureSideRight">
-                            <div class="myPage-pictureListDelete">찜 삭제</div>
+                <div class="myPage-myRecipeprideThree">
+                    <div clss="myPage-myRecipeLeft"><img id="myPage-myRecipeOne" src="./../../image/myPage/tofu.jpg"></div>
+                    <div class="myPage-myRecipeInside">
+                        <div class="myPage-myRecipeSide">
+                            <div class="myPage-myRecipeMiddleTitle">숙주나물 무침</div>
+                            <div class="myPage-myRecipeName">2024-10-03</div>
+                            <div class="myPage-myRecipeListDelete">추천수 43</div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- 찜목록 이미지 및 글 중간-->
-            <div class="myPage-pictureWrapMiddle">
-                <div class="myPage-pictureprideOne">
-                    <div clss="myPage-pictureLeft"><img id="myPage-pictureOne" src="./../../image/myPage/appetizer.jpg"></div>
-                    <div class="myPage-pictureInside">
-                        <div class="myPage-pictureSide">
-                            <div class="myPage-pictureTitle">숙주나물 무침</div>
-                            <div class="myPage-pictureName">송아성</div>
-                        </div>
-                        <div class="myPage-pictureSideRight">
-                            <div class="myPage-pictureListDelete">찜 삭제</div>
+            <!-- 내가 쓴 레시피 이미지 및 글 중간 -->
+            <div class="myPage-myRecipeWrapMiddle">
+                <div class="myPage-myRecipeprideOne">
+                    <div clss="myPage-myRecipeLeft"><img id="myPage-myRecipeOne" src="./../../image/myPage/egg.jpg"></div>
+                    <div class="myPage-myRecipeInside">
+                        <div class="myPage-myRecipeSide">
+                            <div class="myPage-myRecipeMiddleTitle">숙주나물 무침</div>
+                            <div class="myPage-myRecipeName">2024-10-03</div>
+                            <div class="myPage-myRecipeListDelete">추천수 43</div>
                         </div>
                     </div>
                 </div>
-                <div class="myPage-pictureprideTwo">
-                    <div clss="myPage-pictureLeft"><img id="myPage-pictureOne" src="./../../image/myPage/egg.jpg"></div>
-                    <div class="myPage-pictureInside">
-                        <div class="myPage-pictureSide">
-                            <div class="myPage-pictureTitle">숙주나물 무침</div>
-                            <div class="myPage-pictureName">송아성</div>
-                        </div>
-                        <div class="myPage-pictureSideRight">
-                            <div class="myPage-pictureListDelete">찜 삭제</div>
+                <div class="myPage-myRecipeprideTwo">
+                    <div clss="myPage-myRecipeLeft"><img id="myPage-myRecipeOne" src="./../../image/myPage/sausage.jpg"></div>
+                    <div class="myPage-myRecipeInside">
+                        <div class="myPage-myRecipeSide">
+                            <div class="myPage-myRecipeMiddleTitle">숙주나물 무침</div>
+                            <div class="myPage-myRecipeName">2024-10-03</div>
+                            <div class="myPage-myRecipeListDelete">추천수 43</div>
                         </div>
                     </div>
                 </div>
-                <div class="myPage-pictureprideThree">
-                    <div clss="myPage-pictureLeft"><img id="myPage-pictureOne" src="./../../image/myPage/egg.jpg"></div>
-                    <div class="myPage-pictureInside">
-                        <div class="myPage-pictureSide">
-                            <div class="myPage-pictureTitle">숙주나물 무침</div>
-                            <div class="myPage-pictureName">송아성</div>
-                        </div>
-                        <div class="myPage-pictureSideRight">
-                            <div class="myPage-pictureListDelete">찜 삭제</div>
+                <div class="myPage-myRecipeprideThree">
+                    <div clss="myPage-myRecipeLeft"><img id="myPage-myRecipeOne" src="./../../image/myPage/tofu.jpg"></div>
+                    <div class="myPage-myRecipeInside">
+                        <div class="myPage-myRecipeSide">
+                            <div class="myPage-myRecipeMiddleTitle">숙주나물 무침</div>
+                            <div class="myPage-myRecipeName">2024-10-03</div>
+                            <div class="myPage-myRecipeListDelete">추천수 43</div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- 찜목록 이미지 및 글 끝-->
-            <div class="myPage-pictureWrapFinal">
-                <div class="myPage-pictureprideOne">
-                    <div clss="myPage-pictureLeft"><img id="myPage-pictureOne" src="./../../image/myPage/egg.jpg"></div>
-                    <div class="myPage-pictureInside">
-                        <div class="myPage-pictureSide">
-                            <div class="myPage-pictureTitle">숙주나물 무침</div>
-                            <div class="myPage-pictureName">송아성</div>
-                        </div>
-                        <div class="myPage-pictureSideRight">
-                            <div class="myPage-pictureListDelete">찜 삭제</div>
+            <!-- 내가 쓴 레시피 이미지 및 글 중간 -->
+            <div class="myPage-myRecipeWrapFinal">
+                <div class="myPage-myRecipeprideOne">
+                    <div clss="myPage-myRecipeLeft"><img id="myPage-myRecipeOne" src="./../../image/myPage/egg.jpg"></div>
+                    <div class="myPage-myRecipeInside">
+                        <div class="myPage-myRecipeSide">
+                            <div class="myPage-myRecipeMiddleTitle">숙주나물 무침</div>
+                            <div class="myPage-myRecipeName">2024-10-03</div>
+                            <div class="myPage-myRecipeListDelete">추천수 43</div>
                         </div>
                     </div>
                 </div>
-                <div class="myPage-pictureprideTwo">
-                    <div clss="myPage-pictureLeft"><img id="myPage-pictureOne" src="./../../image/myPage/appetizer.jpg"></div>
-                    <div class="myPage-pictureInside">
-                        <div class="myPage-pictureSide">
-                            <div class="myPage-pictureTitle">숙주나물 무침</div>
-                            <div class="myPage-pictureName">송아성</div>
-                        </div>
-                        <div class="myPage-pictureSideRight">
-                            <div class="myPage-pictureListDelete">찜 삭제</div>
+                <div class="myPage-myRecipeprideTwo">
+                    <div clss="myPage-myRecipeLeft"><img id="myPage-myRecipeOne" src="./../../image/myPage/sausage.jpg"></div>
+                    <div class="myPage-myRecipeInside">
+                        <div class="myPage-myRecipeSide">
+                            <div class="myPage-myRecipeMiddleTitle">숙주나물 무침</div>
+                            <div class="myPage-myRecipeName">2024-10-03</div>
+                            <div class="myPage-myRecipeListDelete">추천수 43</div>
                         </div>
                     </div>
                 </div>
-                <div class="myPage-pictureprideThree">
-                    <div clss="myPage-pictureLeft"><img id="myPage-pictureOne" src="./../../image/myPage/sausage.jpg"></div>
-                    <div class="myPage-pictureInside">
-                        <div class="myPage-pictureSide">
-                            <div class="myPage-pictureTitle">숙주나물 무침</div>
-                            <div class="myPage-pictureName">송아성</div>
-                        </div>
-                        <div class="myPage-pictureSideRight">
-                            <div class="myPage-pictureListDelete">찜 삭제</div>
+                <div class="myPage-myRecipeprideThree">
+                    <div clss="myPage-myRecipeLeft"><img id="myPage-myRecipeOne" src="./../../image/myPage/tofu.jpg"></div>
+                    <div class="myPage-myRecipeInside">
+                        <div class="myPage-myRecipeSide">
+                            <div class="myPage-myRecipeMiddleTitle">숙주나물 무침</div>
+                            <div class="myPage-myRecipeName">2024-10-03</div>
+                            <div class="myPage-myRecipeListDelete">추천수 43</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- 페이지 네이션 -->
-        <div id="myPage-steamedListPages">
-            <div class="myPage-steamedPage">
+        <div id="myPage-myRecipePages">
+            <div class="myPage-myRecipePage">
                 &lt
             </div>
-            <div class="myPage-steamedPage">
+            <div class="myPage-myRecipePage">
                 1
             </div>
-            <div class="myPage-steamedPage">
+            <div class="myPage-myRecipePage">
                 2
             </div>
-            <div class="myPage-steamedPage">
+            <div class="myPage-myRecipePage">
                 3
             </div>
-            <div class="myPage-steamedPage">
+            <div class="myPage-myRecipePage">
                 4
             </div>
-            <div class="myPage-steamedPage">
+            <div class="myPage-myRecipePage">
                 5
             </div>
-            <div class="myPage-steamedPage">
+            <div class="myPage-myRecipePage">
                 &gt
             </div>
         </div>
