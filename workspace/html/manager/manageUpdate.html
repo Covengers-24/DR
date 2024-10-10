@@ -9,7 +9,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.min.js"></script>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.css" />
-  <link rel="stylesheet" href="./../../css/manager/registerProduct.css">
+  <link rel="stylesheet" href="./../../css/manager/manageUpdate.css">
 </head>
 
 <body>
@@ -50,7 +50,7 @@
 
     <div id="manage-member">
       <div id="manage-memberTop">
-        <p id="manage-memberBold">상품 등록</p>
+        <p id="manage-memberBold">상품 수정</p>
       </div>
 
       <div id="manage-register">
@@ -69,7 +69,7 @@
             상품코드
           </div>
           <div class="register-left-con">
-
+            
           </div>
           <div class="register-left-con">
             소모 포인트
@@ -78,18 +78,16 @@
 
         <div id="register-right">
           <div class="register-right-con">
-            <input type="text" name="productName" placeholder="ex&#41; 비타500">
+            <input type="text" name="productName">
           </div>
           <div id="register-right-img">
-            <input type="file" class="real-upload" accept="image/*" required multiple>
-            <div class="upload"></div>
-
+            <img id="vita500" src="./../../image/vita500.jpeg">
           </div>
           <div class="register-right-con">
-            <input type="text" name="productNumber" placeholder="ex&#41; 10개">
+            <input type="text" name="productNumber">
           </div>
           <div class="register-right-con">
-            <input type="text" name="productCode" placeholder="ex&#41; F51K5">
+            <input type="text" name="productCode">
             &nbsp;
             <button id="numberUp">+</button>
           </div>
@@ -97,7 +95,7 @@
             
           </div>
           <div class="register-right-con">
-            <input type="text" name="productPoint"  placeholder="ex&#41; 500">
+            <input type="text" name="productPoint">
           </div>
         </div>
 
@@ -113,7 +111,7 @@
   </div>
 
 
-  <script src="./../../js/manager/registerProduct.js"></script>
+  <script src="./../../js/manager/manageUpdate.js"></script>
 </body>
 
 </html>
