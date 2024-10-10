@@ -54,9 +54,9 @@ main{
   border: none;
   cursor: pointer;
 }
-.honeyboarddetail-buttonOne:last-child{
+/* .honeyboarddetail-buttonOne:last-child{
   margin-right: 0;
-}
+} */
 .honeyboarddetail-secondButton{
   display: flex;
   align-items: center;
