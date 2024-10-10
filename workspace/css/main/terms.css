@@ -19,3 +19,17 @@
 .terms-pageTitle span {
   color: #EBAA39;
 }
+
+.terms-contentsContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.terms-contentsContainer ol li{
+list-style-type: decimal;
+}
+
+.terms-contents{
+  width: 800px;
+  padding: 100px 200px;
+}
