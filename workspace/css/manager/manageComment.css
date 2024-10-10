@@ -139,7 +139,6 @@ a {
 #manage-memberUl li {
   margin-left: 50px;
   display: flex;
-  justify-content: space-between;
   height: 28px;
   line-height: 24px;
   border-bottom: 1px solid black;
@@ -161,31 +160,31 @@ a {
 
 #title-num {
   position: absolute;
-  left: 34.8%;
+  left: 32%;
   top: 19.5%;
 }
 
 #title-comment {
   position: absolute;
-  left: 46%;
+  left: 40%;
   top: 19.5%;
 }
 
 #title-name {
   position: absolute;
-  left: 61%;
+  left: 55.5%;
   top: 19.5%;
 }
 
 #title-phone {
   position: absolute;
-  left: 72%;
+  left: 68%;
   top: 19.5%;
 }
 
 #title-date {
   position: absolute;
-  left: 90%;
+  left: 84%;
   top: 19.5%;
 }
 
@@ -215,6 +214,28 @@ a {
   position: absolute;
   bottom: 4%;
   right: 40%;
+}
+
+.con-num {
+  width: 15%;
+  text-align: center;
+}
+
+.con-title {
+  width: 25%;
+  
+}
+
+.con-name {
+  width: 15%;
+}
+
+.con-phone {
+  width: 20%;
+}
+
+.con-email {
+  width: 20%;
 }
 
 

@@ -140,7 +140,6 @@ a {
 #manage-memberUl li {
   margin-left: 50px;
   display: flex;
-  justify-content: space-between;
   height: 28px;
   line-height: 24px;
   border-bottom: 1px solid black;
@@ -162,44 +161,39 @@ a {
 
 #title-num {
   position: absolute;
-  left: 34%;
+  left: 32%;
   top: 19.5%;
 }
 
 #title-name {
   position: absolute;
-  left: 43%;
+  left: 38.5%;
   top: 19.5%;
 }
 
 #title-con {
   position: absolute;
-  left: 54%;
+  left: 52%;
   top: 19.5%;
 }
 
 #title-reason {
   position: absolute;
-  left: 66%;
+  left: 65%;
   top: 19.5%;
 }
 
 #title-type {
   position: absolute;
-  left: 75%;
+  left: 74%;
   top: 19.5%;
 }
 
 #title-date {
   position: absolute;
-  left: 90%;
+  left: 85%;
   top: 19.5%;
 }
-
-
-
-
-
 
 #manage-pages {
   display: flex;
@@ -227,5 +221,28 @@ a {
   right: 40%;
 }
 
+.report-num {
+  width: 15%;
+  text-align: center;
+}
 
+.report-name {
+  width: 15%;
+}
+
+.report-con {
+  width: 30%;
+}
+
+.report-type1 {
+  width: 15%;
+}
+
+.report-type2 {
+  width: 15%;
+}
+
+.report-date {
+  width: 20%;
+}
 

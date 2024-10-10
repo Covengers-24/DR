@@ -100,8 +100,8 @@ a {
 #memberPause {
   position: absolute;
   top: 13%;
-  right: 11%;
-  width: 70px;
+  right: 9%;
+  width: 80px;
   height: 30px;
   background-color: #F66F58;
   color: white;
@@ -143,8 +143,6 @@ a {
   line-height: 24px;
   border-bottom: 1px solid black;
   display: flex;
- 
-  justify-content: space-between;
 }
 
 
@@ -164,43 +162,43 @@ a {
 
 #title-num {
   position: absolute;
-  left: 29.5%;
+  left: 28%;
   top: 19.5%;
 }
 
 #title-name {
   position: absolute;
-  left: 37%;
+  left: 34%;
   top: 19.5%;
 }
 
 #title-email {
   position: absolute;
-  left: 49%;
+  left: 45%;
   top: 19.5%;
 }
 
 #title-points {
   position: absolute;
-  left: 61%;
+  left: 55%;
   top: 19.5%;
 }
 
 #title-point {
   position: absolute;
-  left: 71%;
+  left: 64%;
   top: 19.5%;
 }
 
 #title-date {
   position: absolute;
-  left: 81%;
+  left: 79%;
   top: 19.5%;
 }
 
 #title-sum {
   position: absolute;
-  left: 91%;
+  left: 89%;
   top: 19.5%;
 }
 
@@ -239,6 +237,35 @@ a {
   position: absolute;
   bottom: 4%;
   right: 40%;
+}
+
+.point-num {
+  width: 15%;
+  text-align: center;
+}
+
+.point-name {
+  width: 10%;
+}
+
+.point-email {
+  width: 25%;
+}
+
+.point-check {
+  width: 15%;
+}
+
+.point-point {
+  width: 15%;
+}
+
+.point-date {
+  width: 25%;
+}
+
+.point-sum {
+  width: 10%;
 }
 
  
