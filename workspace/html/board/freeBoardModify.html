@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DR - 꿀팁게시판 글쓰기</title>
-  <link rel="stylesheet" href="./../../css/board/honeyBoardWrite.css">
+  <title>DR - 자유게시판 글 수정</title>
+  <link rel="stylesheet" href="./../../css/board/freeBoardModify.css">
   <link rel="stylesheet" href="../../css/main/header.css">
   <link rel="stylesheet" href="../../css/main/footer.css">
   <link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
@@ -78,16 +78,16 @@
     </div>
   </header>
   <main>
-    <div class="honeyboardwrite-mainContainer">
-      <div class="honeyboardwrite-mainBox">
-        <div class="honeyboardwrite-title">
-          <span class="honeyboardwrite-text1">꿀팁게시판</span>
-          <span class="honeyboardwrite-text2">글쓰기</span>
+    <div class="freeboardmodify-mainContainer">
+      <div class="freeboardmodify-mainBox">
+        <div class="freeboardmodify-title">
+          <span class="freeboardmodify-text1">자유게시판</span>
+          <span class="freeboardmodify-text2">글쓰기</span>
         </div>
         <br><br>
 
-        <div class="honeyboardwrite-inputContainer">
-          <input type="text" class="honeyboardwrite-titleInput" placeholder="제목을 입력하세요">
+        <div class="freeboardmodify-inputContainer">
+          <input type="text" class="freeboardmodify-titleInput" placeholder="제목을 입력하세요">
         </div>
 
         <script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
@@ -101,9 +101,9 @@
             placeholder: '내용을 입력해 주세요.',
           });
         </script>
-
-        <div class="honeyboardwrite-write">
-          <a href="./chatBotRecipeList.html"><button class="honeyboardwrite-writeButton">등록</button></a>
+        <div class="freeboardmodify-write">
+          <a href="./chatBotDetailPage.html"><button class="freeboardmodify-writeButton">취소</button></a>
+          <a href="./freeboardmodify.html"><button class="freeboardmodify-writeButton">수정</button></a>
         </div>
       </div>
     </div>
@@ -120,7 +120,7 @@
       </div>
     </div>
   </footer>
-  <script src="./../../js/board/honeyBoardWrite.js"></script>
+  <script src="./../../js/board/freeBoardModify.js"></script>
 </body>
 
 </html>
