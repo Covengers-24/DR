@@ -4,7 +4,7 @@
 }
 
 /* 메인 넓이 수정 */
-.myRecipeWriter-mainContainer {
+.chatBotRecipeModify-mainContainer {
     width: 1100px;
     /* border: 1px solid black; */
     display: flex;
@@ -18,7 +18,7 @@ main{
 }
 
 /* 나만의 레시피 제목 */
-.myRecipeWriter-text1{
+.chatBotRecipeModify-text1{
     margin-bottom: 30px;
     margin-right: 10px;
     text-align: center;
@@ -27,33 +27,45 @@ main{
     margin-bottom: 0;
     font-weight: bold;
 }
-.myRecipeWriter-title{
+.chatBotRecipeModify-title{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
 }
-.myRecipeWriter-text2{
+.chatBotRecipeModify-text2{
     font-size: 35px;
     color: #EBAA39;
     font-weight: bold;
 }
 
-.myRecipeWriter-write{
+.chatBotRecipeModify-warning{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.chatBotRecipeModify-warningText{
+    color: red;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+.chatBotRecipeModify-warningText:last-child{
+    margin-bottom: 0;
+}
+.chatBotRecipeModify-write{
     margin-top: 40px;
     display: flex;
     justify-content: flex-end;
   }
-  .myRecipeWriter-writeButton{
-    width: 200px;
+  .chatBotRecipeModify-writeButton{
+    width: 100px;
     height: 50px;
     border-radius: 5px;
-    background-color: #EBAA39;
+    background-color: #ebaa39;
     border: none;
     color: white;
+    margin-right: 10px;
   }
 
-  .myRecipeWriter-inputContainer {
+  .chatBotRecipeModify-inputContainer {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -62,7 +74,7 @@ main{
     padding-bottom: 5px;
   }
   
-  .myRecipeWriter-titleInput {
+  .chatBotRecipeModify-titleInput {
     width: 1100px; /* 너비 조정 */
     height: 40px;
     border: none;
