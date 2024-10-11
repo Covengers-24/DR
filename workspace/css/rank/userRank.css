@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+main {
+    width: 1100px;
+    margin: 0 auto;
+    height: 1500px;
+}
+
+li {
+    list-style: none;
+}
+
+.userRankTitle {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+
+/* 환경 기여 랭킹 내 점수 */
+
+.userRankMyScore {
+    display: flex;
+    color: #333333;
+    font-weight: bold;
+    font-size: 26px;
+    justify-content: center;
+    margin-top: 80px;
+    position: relative;
+}
+
+.userRankMyScoreNumber {
+    padding-right: 150px;
+}
+
+.userRankquestion {
+    margin-left: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 29px;
+    position: relative;
+    cursor: pointer;
+    /* 애니메이션 추가 */
+    animation: bounce 2.5s infinite;
+}
+
+
+/* 위아래로 움직이는 애니메이션 정의 */
+
+@keyframes bounce {
+    0%,
+    100% {
+        transform: translateY(5px);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.userRankAnswer {
+    width: 330px;
+    height: 260px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: #888888;
+    color: white;
+    font-size: 13px;
+    letter-spacing: -0.3px;
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 750px;
+}
