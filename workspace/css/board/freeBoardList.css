@@ -2,13 +2,14 @@
 * {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
   font-family: 'Noto Sans KR', sans-serif;
 }
 
 main {
   margin: 0;
   padding: 0;
-  height: 900px;
+  height: 1000px;
   width: 1100px;
   margin: 0 auto;
 }
@@ -75,7 +76,7 @@ main {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 .freeboardlist-page {
