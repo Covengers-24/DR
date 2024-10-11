@@ -4,7 +4,7 @@
 }
 
 /* 메인 넓이 수정 */
-.honeyboardwrite-mainContainer {
+.freeboardmodify-mainContainer {
   width: 1100px;
   display: flex;
   justify-content: center; 
@@ -17,7 +17,7 @@ main{
 }
 
 /* 나만의 레시피 제목 */
-.honeyboardwrite-text1{
+.freeboardmodify-text1{
   margin-bottom: 30px;
   margin-right: 10px;
   text-align: center;
@@ -26,43 +26,46 @@ main{
   margin-bottom: 0;
   font-weight: bold;
 }
-.honeyboardwrite-title{
+.freeboardmodify-title{
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.honeyboardwrite-text2{
+.freeboardmodify-text2{
   font-size: 35px;
   color: #EBAA39;
   font-weight: bold;
 }
 
-.honeyboardwrite-warning{
+.freeboardmodify-warning{
   margin-top: 30px;
   margin-bottom: 30px;
 }
-
-.honeyboardwrite-warningText:last-child{
+.freeboardmodify-warningText{
+  color: red;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.freeboardmodify-warningText:last-child{
   margin-bottom: 0;
 }
-
-.honeyboardwrite-write{
+.freeboardmodify-write{
   margin-top: 40px;
   display: flex;
   justify-content: flex-end;
 }
-.honeyboardwrite-writeButton{
-  width: 200px;
+.freeboardmodify-writeButton{
+  width: 100px;
   height: 50px;
   border-radius: 5px;
-  background-color: #EBAA39;
+  background-color: #ebaa39;
   border: none;
   color: white;
+  margin-right: 10px;
   cursor: pointer;
 }
 
-.honeyboardwrite-inputContainer {
+.freeboardmodify-inputContainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -71,7 +74,7 @@ main{
   padding-bottom: 5px;
 }
 
-.honeyboardwrite-titleInput {
+.freeboardmodify-titleInput {
   width: 1100px; /* 너비 조정 */
   height: 40px;
   border: none;
