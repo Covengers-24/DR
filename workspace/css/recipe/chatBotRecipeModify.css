@@ -44,7 +44,7 @@ main{
 }
 .chatBotRecipeModify-warningText{
     color: red;
-    font-size: 10px;
+    font-size: 15px;
     margin-bottom: 10px;
 }
 .chatBotRecipeModify-warningText:last-child{
@@ -63,6 +63,7 @@ main{
     border: none;
     color: white;
     margin-right: 10px;
+    cursor: pointer;
   }
 
   .chatBotRecipeModify-inputContainer {
