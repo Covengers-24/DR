@@ -74,3 +74,54 @@ li {
 
 
 /* -------출석체크 란 -------- */
+
+.myPage-checkMainWrap {
+    display: flex;
+}
+
+#calendar {
+    width: 920px;
+    margin-left: 30px;
+}
+
+
+/* 날짜 숫자 스타일 */
+
+.fc-daygrid-day-number {
+    display: flex;
+    /* Flexbox 사용 */
+    justify-content: center;
+    /* 가로 중앙 정렬 */
+    align-items: center;
+    /* 세로 중앙 정렬 */
+    height: 100%;
+    /* 전체 높이 차지 */
+    font-size: 18px;
+    /* 숫자 크기 조정 */
+    color: black;
+    /* 숫자 색상 */
+}
+
+
+/* 오늘 날짜 스타일 */
+
+.fc-daygrid-day.fc-day-today.active {
+    position: relative;
+}
+
+
+/* 체크 이미지 스타일 */
+
+#checkInButton {
+    border: none;
+    color: white;
+    background-color: #EBAA39;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-left: 600px;
+}
