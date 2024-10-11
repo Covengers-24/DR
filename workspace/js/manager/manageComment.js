@@ -1,27 +1,33 @@
 
 $(function () {
-  const items = $('#manage-memberUl li:not(#manage-memberTitle)'); // 제목을 제외한 모든 li 요소 선택
-
-  // 처음 10개 항목만 보이게 하고 나머지는 숨김
-  items.hide().slice(0, 10).show();
-
+  
   // 전체 선택 체크박스
   const masterCheckbox = $('#title-check'); // 전체 선택 체크박스
   const checkboxes = $('#manage-memberUl li input[type="checkbox"]:not(#title-check)'); // 전체선택 체크박스를 제외한 모든 체크박스 선택
-
+  
   // 전체 선택 체크박스 클릭 시
   function selectAll() {
     // 전체 선택 체크박스가 체크되면 모든 개별 체크박스를 체크, 해제되면 모든 개별 체크박스를 해제
     checkboxes.prop('checked', masterCheckbox.prop('checked'));
   }
-
+  
   // 개별 체크박스 상태에 따라 전체 선택 체크박스 상태 업데이트
   function updateMasterCheckbox() {
     // 모든 개별 체크박스가 체크되어 있는지 확인
     const allChecked = checkboxes.length === checkboxes.filter(':checked').length;
     masterCheckbox.prop('checked', allChecked);
   }
+  // 전체 선택 체크박스 클릭 시 selectAll() 함수 실행
+  masterCheckbox.on('click', selectAll);
+  
+  // 각 개별 체크박스 클릭 시 updateMasterCheckbox 함수 실행
+  checkboxes.on('change', updateMasterCheckbox);
+  
+  const items = $('#manage-memberUl li:not(#manage-memberTitle)'); // 제목을 제외한 모든 li 요소 선택
 
+  // 처음 10개 항목만 보이게 하고 나머지는 숨김
+  items.hide().slice(0, 10).show();
+  
   // 페이지네이션 설정
   const container = $('#pagination');
   container.pagination({
@@ -36,12 +42,6 @@ $(function () {
       updateMasterCheckbox();
     }
   });
-
-  // 전체 선택 체크박스 클릭 시 selectAll() 함수 실행
-  masterCheckbox.on('click', selectAll);
-
-  // 각 개별 체크박스 클릭 시 updateMasterCheckbox 함수 실행
-  checkboxes.on('change', updateMasterCheckbox);
 
   // 처음 로드 시 첫 번째 페이지의 항목만 보여주기
   container.pagination('goToPage', 1);

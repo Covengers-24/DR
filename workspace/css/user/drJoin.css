@@ -75,7 +75,6 @@ main {
 .error-message {
   color: red;
   font-size: 12px;
-  display: none;
 }
 
 .input-withButton {
