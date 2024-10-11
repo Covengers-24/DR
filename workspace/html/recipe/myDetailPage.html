@@ -21,7 +21,7 @@
   <header>
     <div class="main-headerContainer">
       <div class="main-headerTop">
-        <a href="../../html/main/main.html"><img src="/image/logo.png" id="main-logo"></a>
+        <a href="../../html/main/main.html"><img src="../../image/logo.png" id="main-logo"></a>
         <div class="main-searchBar">
           <select class="main-dropDown">
             <option value="꿀팁 게시판">꿀팁 게시판</option>
@@ -37,40 +37,41 @@
             <img src="../../image/basicProfile.png">
           </div>
           <div class="main-welcome">정승환님 환영합니다</div>
-          <a href="#로그아웃!!#">
-            <div class="main-logout">로그아웃</div>
-          </a>
+          <form action="#로그아웃!!" method="">
+            <button class="main-logout">로그아웃</button>
+          </form>
         </div>
       </div>
 
+      <!-- 로그인 네비바 -->
       <div class="main-headerNav">
         <ul class="main-navMenu">
-          <li id="main-chatBot"><a href="#냉장봇 페이지로">냉장봇</a></li>
-          <li id="main-rank"><a href="#랭킹 페이지로">환경기여 랭킹</a></li>
+          <li id="main-chatBot"><a href="../../html/chatBot/nangjangbot.html">냉장봇</a></li>
+          <li id="main-rank"><a href="../../html/rank/userRank.html">환경기여 랭킹</a></li>
           <li id="main-recipe">
             레시피
             <ul class="main-recipeList">
-              <li><a href="#챗봇레시피 페이지로">챗봇레시피</a></li>
-              <li><a href="#나만의레시피 페이지로">나만의레시피</a></li>
+              <li><a href="../../html/recipe/chatBotRecipeList.html">챗봇레시피</a></li>
+              <li><a href="../../html/recipe/myRecipeList.html">나만의레시피</a></li>
             </ul>
           </li>
           <li id="main-board">
             게시판
             <ul class="main-boardList">
-              <li><a href="#자유게시판 페이지로">자유게시판</a></li>
-              <li><a href="#꿀팁게시판 페이지로">꿀팁게시판</a></li>
+              <li><a href="../../html/board/freeBoardList.html">자유게시판</a></li>
+              <li><a href="../../html/board/honeyBoardList.html">꿀팁게시판</a></li>
             </ul>
           </li>
-          <li id="main-shop"><a href="#포인트샵 페이지로">포인트샵</a></li>
+          <li id="main-shop"><a href="../../html/shop/pointShop.html">포인트샵</a></li>
           <li id="main-myPage">
             마이페이지
             <ul class="main-myPageList">
-              <li><a href="#내 정보 페지이로">내 정보</a></li>
-              <li><a href="#찜 목록 페이지로">찜 목록</a></li>
-              <li><a href="#내가 쓴 레시피 페이지로">내가 쓴 레시피</a></li>
-              <li><a href="#내가 쓴 게시글 페이지로">내가 쓴 게시글</a></li>
-              <li><a href="#신고 받은 글 페이지로">신고 받은 글</a></li>
-              <li><a href="#출석체크 페이지로">출석체크</a></li>
+              <li><a href="../../html/myPage/myPageInformation.html">내 정보</a></li>
+              <li><a href="../../html/myPage/myPageSteamedList.html">찜 목록</a></li>
+              <li><a href="../../html/myPage/myPageMyRecipe.html">내가 쓴 레시피</a></li>
+              <li><a href="../../html/myPage/myPageMyPost.html">내가 쓴 게시글</a></li>
+              <li><a href="../../html/myPage/myPageMyComplaint.html">신고 받은 글</a></li>
+              <li><a href="../../html/myPage/myPageCheck.html">출석체크</a></li>
             </ul>
           </li>
         </ul>
@@ -97,7 +98,7 @@
             <div class="myDetailPage-firstButton">
               <a href="./myRecipeModify.html"><button class="myDetailPage-buttonOne">수정</button></a>
               <!-- <button class="myDetailPage-buttonOne">수정</button> -->
-               <a href="./myRecipeList.html"><button  id="deleteButton" class="myDetailPage-buttonOne">삭제</button></a>
+              <a href="./myRecipeList.html"><button id="deleteButton" class="myDetailPage-buttonOne">삭제</button></a>
               <!-- <button id="deleteButton" class="myDetailPage-buttonOne">삭제</button> -->
             </div>
 
@@ -106,7 +107,7 @@
                 <img id="heartImage" src="./../../image/heartGray.png" alt="">
               </div>
 
-              <button class="myDetailPage-buttonTwo">신고</button>
+              <a href="./report.html"><button class="myDetailPage-buttonTwo">신고</button></a>
             </div>
           </div>
         </div>
@@ -139,19 +140,19 @@
             <div class="myDetailPage-commentContent">
               <div class="myDetailPage-commentHeader">
                 <span class="myDetailPage-commentUsername">홍상철</span>
-                <button class="myDetailPage-reportBtn">신고</button>
+                <a href="./report.html"><button class="myDetailPage-reportBtn">신고</button></a>
               </div>
               <div class="myDetailPage-commentText">그 뒤로는 크리스마스까지 공휴일 없음</div>
               <div class="myDetailPage-commentTime">14:53:14</div>
-              
+
               <!-- 신고 버튼 밑에 수정 및 삭제 버튼 추가 -->
               <div class="myDetailPage-buttonGroup">
-                <button class="myDetailPage-editBtn">수정</button>
+                <button class="myDetailPage-editBtn" onclick="showEditComment()">수정</button>
                 <button class="myDetailPage-deleteBtn">삭제</button>
               </div>
             </div>
           </div>
-        
+
           <div class="myDetailPage-reply">
             <div class="myDetailPage-replyUserImg">
               <img src="./../../image/basicProfile.png" alt="User Image">
@@ -165,7 +166,7 @@
               <div class="myDetailPage-replyTime">15:03:25</div>
             </div>
           </div>
-        
+
           <div class="myDetailPage-comment">
             <div class="myDetailPage-commentUserImg">
               <img src="./../../image/basicProfile.png" alt="User Image">
@@ -179,8 +180,8 @@
               <div class="myDetailPage-commentTime">14:53:14</div>
             </div>
           </div>
-        
-          <div class="myDetailPage-commentInput">
+
+          <div class="myDetailPage-commentInput" id="commentInput">
             <textarea placeholder="댓글을 입력하세요..."></textarea>
             <div class="myDetailPage-commentActions">
               <button class="myDetailPage-editBtn">수정</button>
@@ -188,11 +189,11 @@
             </div>
           </div>
         </div>
-        
-        
-      
-      
-      
+
+
+
+
+
 
       </div>
     </div>
