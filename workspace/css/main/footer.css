@@ -22,7 +22,6 @@ a:active {
 
 /* 푸터 */
 .main-footerContainer {
-  position: relative;
   width: 100%;
   height: 180px;
   background-color: lightgray;

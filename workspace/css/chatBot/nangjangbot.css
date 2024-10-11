@@ -8,9 +8,64 @@ img {
   display: block;
 }
 
-.nangjangbot-titleContainer {
+main {
+  position: relative;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 850px;
+  /* background-color: #f7f7f7; */
+}
+
+#nangjangbot-sideBar {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  width: 350px;
+  height: 900px;
+  border-radius: 10px;
+  background-color: #eeeeee;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: left 0.5s;
+  z-index: 5;
+}
+
+#nangjangbot-closeBtn {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  float: right;
+  cursor: pointer;
+}
+
+#nangjangbot-newChatBtn {
+  width: 30px;
+  cursor: pointer;
+}
+
+#nangjangbot-newChatContainer {
+  width: 40px;
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3px 0 0 10px;
+}
+
+#nangjangbot-newChat {
+  font-size: 11px;
+  font-weight: bold;
+  color: #404040;
+}
+
+#nangjangbot-sideMenu {
+  
+}
+
+#nangjangbot-sideBarTitle {
+  margin: 20px 0 10px 10px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .nangjangbot-pageTitle {
@@ -22,4 +77,52 @@ img {
 
 .nangjangbot-pageTitle span {
   color: #EBAA39;
+}
+
+#nangjangbot-text {
+  font-size: 40px;
+  margin: 100px 0 50px 0;
+  letter-spacing: -3px;
+  color: #323232;
+}
+
+#nangjangbot-chating {
+  /* transform: translateY(600%); */
+  display: flex;
+  align-items: center;
+}
+
+#nangjangbot-sendMsg {
+  width: 700px;
+  height: 30px;
+  padding: 15px;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#nangjangbot-sendBtn,
+#nangjangbot-btnContainer {
+  width: 65px;
+  height: 65px;
+  margin-left: 10px;
+  border: 2px solid black;
+  border-radius: 35px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#nangjangbot-btnContainer {
+  margin-right: 10px;
+}
+
+#nangjangbot-sendBtn img,
+#nangjangbot-listBtn {
+  width: 45px;
+  border-radius: 26px;
 }
