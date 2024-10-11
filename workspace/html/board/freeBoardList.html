@@ -8,11 +8,15 @@
   <link rel="stylesheet" href="./../../css/board/freeBoardList.css">
   <link rel="stylesheet" href="../../css/main/header.css">
   <link rel="stylesheet" href="../../css/main/footer.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.css" />
   <!-- 네비바 폰트 -->
   <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
   <!-- 제이쿼리 -->
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-    crossorigin="anonymous"></script>
+  crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.min.js"></script>
   <script defer src="../../js/main/header.js"></script>
 </head>
 
@@ -76,86 +80,196 @@
       </div>
     </div>
   </header>
+
   <main>
     <div class="freeboardlist-container">
+
       <div class="freeboardlist-title">
         <span class="freeboardlist-leftTitle">자유</span>
         <span class="freeboardlist-rightTitle">게시판</span>
       </div>
+
       <br>
       <span class="freeboardlist-smallTitle">회원들의 이야기가 담긴 자유 게시판입니다.</span>
       <br><br><br>
-      <div class="freeboardlist-grid">
-        <div class="freeboardlist-header">제목</div>
-        <div class="freeboardlist-header">이름</div>
-        <div class="freeboardlist-header">추천 수</div>
-        <div class="freeboardlist-header">날짜</div>
 
-        <div class="freeboardlist-row">이븐하게 익었어요</div>
-        <div class="freeboardlist-row">안성재</div>
-        <div class="freeboardlist-row">23,065</div>
-        <div class="freeboardlist-row">17/01/30</div>
-
-        <div class="freeboardlist-row">빠스 아니야 ?</div>
-        <div class="freeboardlist-row">백주부</div>
-        <div class="freeboardlist-row">12,065</div>
-        <div class="freeboardlist-row">17/01/30</div>
-
-        <div class="freeboardlist-row">아야 ~</div>
-        <div class="freeboardlist-row">김승진</div>
-        <div class="freeboardlist-row">42,065</div>
-        <div class="freeboardlist-row">17/01/30</div>
-
-        <div class="freeboardlist-row">아 배고파</div>
-        <div class="freeboardlist-row">양혁수</div>
-        <div class="freeboardlist-row">22,065</div>
-        <div class="freeboardlist-row">17/01/30</div>
-
-        <div class="freeboardlist-row">멀리서 응원할게요.</div>
-        <div class="freeboardlist-row">이재서</div>
-        <div class="freeboardlist-row">31,065</div>
-        <div class="freeboardlist-row">17/01/30</div>
-
-        <div class="freeboardlist-row">밥 뭐먹지</div>
-        <div class="freeboardlist-row">정승환</div>
-        <div class="freeboardlist-row">52,065</div>
-        <div class="freeboardlist-row">17/01/30</div>
-
-        <div class="freeboardlist-row">나 2팀장 송아성</div>
-        <div class="freeboardlist-row">송아성</div>
-        <div class="freeboardlist-row">72,065</div>
-        <div class="freeboardlist-row">17/01/30</div>
+      <div class="freeboardlist-row header">
+        <div class="freeboardlist-titleColumn">제목</div>
+        <div class="freeboardlist-nameColumn">이름</div>
+        <div class="freeboardlist-voteColumn">추천 수</div>
+        <div class="freeboardlist-dateColumn">날짜</div>
       </div>
 
-      <div id="freeboardlist-pages">
-        <div class="freeboardlist-page">
-          &lt
-        </div>
-        <div class="freeboardlist-page">
-          1
-        </div>
-        <div class="freeboardlist-page">
-          2
-        </div>
-        <div class="freeboardlist-page">
-          3
-        </div>
-        <div class="freeboardlist-page">
-          4
-        </div>
-        <div class="freeboardlist-page">
-          5
-        </div>
-        <div class="freeboardlist-page">
-          >
+      <div id="freeboardlist-page">
+        <div class="freeboardlist-row">
+          <div class="freeboardlist-titleColumn">이븐하게 익었어요</div>
+          <div class="freeboardlist-nameColumn">안성재</div>
+          <div class="freeboardlist-voteColumn">23,065</div>
+          <div class="freeboardlist-dateColumn">17/01/30</div>
         </div>
 
+        <div class="freeboardlist-row">
+          <div class="freeboardlist-titleColumn">빠스 아니야 ?</div>
+          <div class="freeboardlist-nameColumn">백주부</div>
+          <div class="freeboardlist-voteColumn">12,065</div>
+          <div class="freeboardlist-dateColumn">17/01/30</div>
+        </div>
+
+        <div class="freeboardlist-row">
+          <div class="freeboardlist-titleColumn">아야 ~</div>
+          <div class="freeboardlist-nameColumn">김승진</div>
+          <div class="freeboardlist-voteColumn">42,065</div>
+          <div class="freeboardlist-dateColumn">17/01/30</div>
+        </div>
+
+        <div class="freeboardlist-row">
+          <div class="freeboardlist-titleColumn">아 배고파</div>
+          <div class="freeboardlist-nameColumn">양혁수</div>
+          <div class="freeboardlist-voteColumn">22,065</div>
+          <div class="freeboardlist-dateColumn">17/01/30</div>
+        </div>
+
+        <div class="freeboardlist-row">
+          <div class="freeboardlist-titleColumn">멀리서 응원할게요.</div>
+          <div class="freeboardlist-nameColumn">이재서</div>
+          <div class="freeboardlist-voteColumn">31,065</div>
+          <div class="freeboardlist-dateColumn">17/01/30</div>
+        </div>
+
+        <div class="freeboardlist-row">
+          <div class="freeboardlist-titleColumn">밥 뭐먹지</div>
+          <div class="freeboardlist-nameColumn">정승환</div>
+          <div class="freeboardlist-voteColumn">52,065</div>
+          <div class="freeboardlist-dateColumn">17/01/30</div>
+        </div>
+
+        <div class="freeboardlist-row">
+          <div class="freeboardlist-titleColumn">나 2팀장 송아성</div>
+          <div class="freeboardlist-nameColumn">송아성</div>
+          <div class="freeboardlist-voteColumn">72,065</div>
+          <div class="freeboardlist-dateColumn">17/01/30</div>
+        </div>
+
+        
+        <div class="freeboardlist-row">
+          <div class="freeboardlist-titleColumn">아야 ~</div>
+          <div class="freeboardlist-nameColumn">김승진</div>
+          <div class="freeboardlist-voteColumn">42,065</div>
+          <div class="freeboardlist-dateColumn">17/01/30</div>
+        </div>
+
+        
+        <div class="freeboardlist-row">
+          <div class="freeboardlist-titleColumn">아야 ~</div>
+          <div class="freeboardlist-nameColumn">김승진</div>
+          <div class="freeboardlist-voteColumn">42,065</div>
+          <div class="freeboardlist-dateColumn">17/01/30</div>
+        </div>
+
+        
+        <div class="freeboardlist-row">
+          <div class="freeboardlist-titleColumn">아야 ~</div>
+          <div class="freeboardlist-nameColumn">김승진</div>
+          <div class="freeboardlist-voteColumn">42,065</div>
+          <div class="freeboardlist-dateColumn">17/01/30</div>
+        </div>
+
+        
+        <div class="freeboardlist-row">
+          <div class="freeboardlist-titleColumn">아야 ~</div>
+          <div class="freeboardlist-nameColumn">김승진</div>
+          <div class="freeboardlist-voteColumn">42,065</div>
+          <div class="freeboardlist-dateColumn">17/01/30</div>
+        </div>
+
+        
+        <div class="freeboardlist-row">
+          <div class="freeboardlist-titleColumn">아야 ~</div>
+          <div class="freeboardlist-nameColumn">김승진</div>
+          <div class="freeboardlist-voteColumn">42,065</div>
+          <div class="freeboardlist-dateColumn">17/01/30</div>
+        </div>
+
+        
+        <div class="freeboardlist-row">
+          <div class="freeboardlist-titleColumn">아야 ~</div>
+          <div class="freeboardlist-nameColumn">김승진</div>
+          <div class="freeboardlist-voteColumn">42,065</div>
+          <div class="freeboardlist-dateColumn">17/01/30</div>
+        </div>
+
+        
+        <div class="freeboardlist-row">
+          <div class="freeboardlist-titleColumn">아야 ~</div>
+          <div class="freeboardlist-nameColumn">김승진</div>
+          <div class="freeboardlist-voteColumn">42,065</div>
+          <div class="freeboardlist-dateColumn">17/01/30</div>
+        </div>
+
+        <div class="freeboardlist-row">
+          <div class="freeboardlist-titleColumn">아 배고파</div>
+          <div class="freeboardlist-nameColumn">양혁수</div>
+          <div class="freeboardlist-voteColumn">22,065</div>
+          <div class="freeboardlist-dateColumn">17/01/30</div>
+        </div>
+
+        <div class="freeboardlist-row">
+          <div class="freeboardlist-titleColumn">멀리서 응원할게요.</div>
+          <div class="freeboardlist-nameColumn">이재서</div>
+          <div class="freeboardlist-voteColumn">31,065</div>
+          <div class="freeboardlist-dateColumn">17/01/30</div>
+        </div>
+
+        <div class="freeboardlist-row">
+          <div class="freeboardlist-titleColumn">아 배고파</div>
+          <div class="freeboardlist-nameColumn">양혁수</div>
+          <div class="freeboardlist-voteColumn">22,065</div>
+          <div class="freeboardlist-dateColumn">17/01/30</div>
+        </div>
+
+        <div class="freeboardlist-row">
+          <div class="freeboardlist-titleColumn">멀리서 응원할게요.</div>
+          <div class="freeboardlist-nameColumn">이재서</div>
+          <div class="freeboardlist-voteColumn">31,065</div>
+          <div class="freeboardlist-dateColumn">17/01/30</div>
+        </div>
+
+        <div class="freeboardlist-row">
+          <div class="freeboardlist-titleColumn">아 배고파</div>
+          <div class="freeboardlist-nameColumn">양혁수</div>
+          <div class="freeboardlist-voteColumn">22,065</div>
+          <div class="freeboardlist-dateColumn">17/01/30</div>
+        </div>
+
+        <div class="freeboardlist-row">
+          <div class="freeboardlist-titleColumn">멀리서 응원할게요.</div>
+          <div class="freeboardlist-nameColumn">이재서</div>
+          <div class="freeboardlist-voteColumn">31,065</div>
+          <div class="freeboardlist-dateColumn">17/01/30</div>
+        </div>
+
+        <div class="freeboardlist-row">
+          <div class="freeboardlist-titleColumn">아 배고파</div>
+          <div class="freeboardlist-nameColumn">양혁수</div>
+          <div class="freeboardlist-voteColumn">22,065</div>
+          <div class="freeboardlist-dateColumn">17/01/30</div>
+        </div>
+
+        <div class="freeboardlist-row">
+          <div class="freeboardlist-titleColumn">멀리서 응원할게요.</div>
+          <div class="freeboardlist-nameColumn">이재서</div>
+          <div class="freeboardlist-voteColumn">31,065</div>
+          <div class="freeboardlist-dateColumn">17/01/30</div>
+        </div>
+        <div id="pagination"></div>
+
+        <a href="./../board/freeBoardWrite.html">
+          <button class="freeboardlist-writeButton">글 작성</button>
+        </a>
       </div>
-
-      <a href="./../board/freeBoardWrite.html"><button class="freeboardlist-writeButton">글 작성</button></a>
     </div>
-
   </main>
+
   <footer>
     <div class="main-footerContainer">
       <div id="main-footerText">
@@ -167,6 +281,7 @@
       </div>
     </div>
   </footer>
+  <script src="./../../js/board/freeBoardList.js"></script>
 </body>
 
 </html>
