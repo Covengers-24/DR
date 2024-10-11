@@ -84,3 +84,129 @@ li {
     top: 45px;
     left: 750px;
 }
+
+.userRankType {
+    display: flex;
+    color: #333333;
+    background-color: #E6EAF3;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.userRankRanking {
+    width: 150px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.userRankImage {
+    width: 200px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.userRankName {
+    width: 250px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-right: 150px;
+}
+
+.userRankNameContributingScore {
+    width: 150px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.userRankTypeOne {
+    display: flex;
+    color: #333333;
+}
+
+.userRankRankingOne {
+    width: 150px;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.userRankImageOne {
+    width: 200px;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.userRankNameOne {
+    width: 250px;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-right: 150px;
+}
+
+.userRankNameContributingScoreOne {
+    width: 150px;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+/* 1등 ~ 3등 메달 이미지 */
+
+.userRankOneTwoThree {
+    width: 100px;
+}
+
+
+/* 이미지 사진 */
+
+.userRankOneImgSet {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin-top: 20px;
+}
+
+
+/* --- 페이지 네이션 --- */
+
+#myPage-steamedListPages {
+    display: flex;
+    height: 50px;
+    gap: 10px;
+    margin-top: 50px;
+    margin-left: 440px;
+}
+
+.myPage-steamedPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
