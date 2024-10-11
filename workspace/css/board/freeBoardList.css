@@ -29,51 +29,53 @@ main {
   font-weight: bold;
 }
 
-.freeboardlist-leftTitle{
+.freeboardlist-leftTitle {
   color: #317FF0;
 }
 
-.freeboardlist-rightTitle{
+.freeboardlist-rightTitle {
   color: #ebaa39;
 }
 
-.freeboardlist-smallTitle{
+.freeboardlist-smallTitle {
   color: rgba(0, 0, 0, 0.35);
   font-size: 25px;
-  left: 1px;
 }
 
-.freeboardlist-grid {
-  display: grid;
-  grid-template-columns: 4fr 1fr 1fr 1fr; /* 제목은 3배 크기로, 나머지 열은 동일한 크기로 */
-  border-collapse: collapse;
-  margin-bottom: 20px;
-}
-
-.freeboardlist-header {
-  background-color: #f4f4f4;
-  font-weight: bold;
-  padding: 10px;
-  text-align: center;
-  border: 1px solid #ddd;
-}
-
+/* 각 게시판의 제목, 이름, 추천수, 날짜 열 스타일 */
 .freeboardlist-row {
-  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.freeboardlist-row.header {
+  font-weight: bold;
+  background-color: #f4f4f4;
+}
+
+.freeboardlist-titleColumn {
+  width: 55%;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.freeboardlist-nameColumn,
+.freeboardlist-voteColumn,
+.freeboardlist-dateColumn {
+  width: 15%;
   text-align: center;
-  border: 1px solid #ddd;
 }
 
-.freeboardlist-row:nth-child(odd) {
-  background-color: #f9f9f9;
-}
-
+/* 페이지 네비게이션 스타일 */
 #freeboardlist-pages {
   display: flex;
   height: 50px;
   justify-content: center;
   align-items: center;
   gap: 10px;
+  margin-top: 20px;
 }
 
 .freeboardlist-page {
@@ -88,6 +90,7 @@ main {
   cursor: pointer;
 }
 
+/* 글 작성 버튼 스타일 */
 .freeboardlist-writeButton {
   width: 30%;
   padding: 10px;
@@ -96,6 +99,11 @@ main {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
+#pagination {
+  margin-top: 30px;
+  position: relative;
+  left: 43%;
+}

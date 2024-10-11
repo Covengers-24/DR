@@ -74,9 +74,9 @@ main {
 }
 
 .error-message {
-  color: red;
-  font-size: 12px;
-  display: none;
+  font-size: 15px;
+  color: red; /* 오류 메시지는 빨간색 */
+  margin-bottom: 8px;
 }
 
 /* 새로 추가된 부분 */
