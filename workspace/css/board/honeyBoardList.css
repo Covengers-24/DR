@@ -29,45 +29,46 @@ main {
   font-weight: bold;
 }
 
-.honeyboardlist-leftTitle{
+.honeyboardlist-leftTitle {
   color: #317FF0;
 }
 
-.honeyboardlist-rightTitle{
+.honeyboardlist-rightTitle {
   color: #ebaa39;
 }
 
-.honeyboardlist-smallTitle{
+.honeyboardlist-smallTitle {
   color: rgba(0, 0, 0, 0.35);
   font-size: 25px;
-  left: 1px;
 }
 
-.honeyboardlist-grid {
-  display: grid;
-  grid-template-columns: 4fr 1fr 1fr 1fr; /* 제목은 3배 크기로, 나머지 열은 동일한 크기로 */
-  border-collapse: collapse;
-  margin-bottom: 20px;
-}
-
-.honeyboardlist-header {
-  background-color: #f4f4f4;
-  font-weight: bold;
-  padding: 10px;
-  text-align: center;
-  border: 1px solid #ddd;
-}
-
+/* 각 게시판의 제목, 이름, 추천수, 날짜 열 스타일 */
 .honeyboardlist-row {
-  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.honeyboardlist-row.header {
+  font-weight: bold;
+  background-color: #f4f4f4;
+}
+
+.honeyboardlist-titleColumn {
+  width: 55%;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.honeyboardlist-nameColumn,
+.honeyboardlist-voteColumn,
+.honeyboardlist-dateColumn {
+  width: 15%;
   text-align: center;
-  border: 1px solid #ddd;
 }
 
-.honeyboardlist-row:nth-child(odd) {
-  background-color: #f9f9f9;
-}
-
+/* 페이지 네비게이션 스타일 */
 #honeyboardlist-pages {
   display: flex;
   height: 50px;
@@ -88,6 +89,7 @@ main {
   cursor: pointer;
 }
 
+/* 글 작성 버튼 스타일 */
 .honeyboardlist-writeButton {
   width: 30%;
   padding: 10px;
@@ -98,4 +100,3 @@ main {
   cursor: pointer;
   margin-top: 100px;
 }
-
