@@ -15,7 +15,6 @@ main {
 
 .apijoin-container {
   background-color: white;
-  /* padding: 20px; */
   border-radius: 5px;
   max-width: 400px;
   width: 1100px;
@@ -76,7 +75,7 @@ main {
 .error-message {
   font-size: 15px;
   color: red; /* 오류 메시지는 빨간색 */
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 /* 새로 추가된 부분 */

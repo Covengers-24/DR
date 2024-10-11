@@ -1,12 +1,12 @@
-$(document).ready(function() {
+$(document).ready(function () {
   // 전체 동의 체크박스 클릭 시 나머지 체크박스 모두 체크 또는 해제
-  $('#checkAll').on('change', function() {
+  $('#checkAll').on('change', function () {
     var isChecked = $(this).is(':checked');
     $('.drjoin-checkboxInput').not('#checkAll').prop('checked', isChecked);
   });
 
   // 개별 체크박스 상태 변경 시 전체 동의 체크박스 상태도 변경
-  $('.drjoin-checkboxInput').not('#checkAll').on('change', function() {
+  $('.drjoin-checkboxInput').not('#checkAll').on('change', function () {
     var allChecked = $('.drjoin-checkboxInput').not('#checkAll').length === $('.drjoin-checkboxInput:checked').not('#checkAll').length;
     $('#checkAll').prop('checked', allChecked);
   });
@@ -15,38 +15,59 @@ $(document).ready(function() {
   const userIdRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
   // 아이디(이메일) blur 시 정규표현식 검사
-  $('#userId').on("blur", function() {
+  $('#userId').on("blur", function () {
     const userIdValue = $(this).val();
     if (!userIdRegex.test(userIdValue)) {
       $("#userIdError").text("형식에 맞게 입력해주세요.")
-                       .css({"color": "red", "display": "block"});
+        .css({ "color": "red", "display": "block" });
     } else {
       $("#userIdError").text("").hide();
       $(this).css("border", "");
     }
   });
 
-  // 비밀번호 유효성 검사
-  $('#password').on('input', function() {
-    const passwordValue = $(this).val().trim();
-    if (passwordValue.length < 6) {
-      $("#passwordError").text("비밀번호는 최소 6자리 이상이어야 합니다.").css('color', 'red');
+   // 비밀번호 정규표현식 검사 함수
+   function validatePassword(password) {
+    const regex =
+      /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    return regex.test(password);
+  }
+
+  // 첫 번째 비밀번호 필드 blur 이벤트
+  const pw = document.getElementById("password");
+  const confirmPw = document.getElementById("confirmPassword");
+
+  const passwordError = document.getElementById("passwordError");
+  const confirmPasswordError = document.getElementById("confirmPasswordError");
+
+  // 첫 번째 비밀번호 필드 blur 이벤트
+pw.addEventListener("blur", function () {
+  const password = pw.value;
+  if (!validatePassword(password)) {
+    passwordError.innerHTML =
+      "비밀번호는 최소 8자 이상이어야 하며, 문자, 숫자, 특수문자를 포함해야 합니다.<br>";
+    passwordError.style.color = "red";
+  } else {
+    passwordError.innerHTML = ""; // 오류 메시지 초기화
+  }
+});
+
+  // 두 번째 비밀번호 필드 blur 이벤트
+  confirmPw.addEventListener("blur", function () {
+    const password = pw.value;
+    const confirmPassword = confirmPw.value;
+    if (password === confirmPassword) {
+      confirmPasswordError.innerHTML = 
+      "비밀번호가 일치합니다.<br>";
+      confirmPasswordError.style.color = "green";
     } else {
-      $("#passwordError").text("").hide();
+      confirmPasswordError.innerHTML = "비밀번호가 일치하지 않습니다.<br>";
+      confirmPasswordError.style.color = "red";
     }
   });
 
-  // 비밀번호 확인 유효성 검사 (실시간)
-  $('#confirmPassword').on('input', function() {
-    const passwordValue = $("#password").val().trim();
-    const confirmPasswordValue = $(this).val().trim();
-    
-    if (passwordValue !== confirmPasswordValue) {
-      $("#confirmPasswordError").text("비밀번호가 일치하지 않습니다.").css('color', 'red');
-    } else {
-      $("#confirmPasswordError").text("").hide();
-    }
-  });
+
+
 
   // 휴대폰 번호 유효성 검사 정규표현식 (하이픈 없이 숫자만 10~11자리)
   const phonePattern = /^[0-9]{10,11}$/;
@@ -124,13 +145,14 @@ $(document).ready(function() {
     }
 
     // 유효성 검사를 통과했는지 확인
-    if (isValid) {
-      alert("회원가입이 완료되었습니다.");
-      // 추가 작업 (예: 폼 제출)
-      // $('#drjoinForm').submit(); // 필요에 따라 주석 해제
-    } else {
-      alert("형식에 맞지 않습니다. 다시 입력해주세요.");
-    }
+if (isValid) {
+  alert("회원가입이 완료되었습니다.");
+  
+  // 페이지 리다이렉트
+  window.location.href = './../user/login.html'; // 원하는 URL로 변경
+} else {
+  alert("형식에 맞지 않습니다. 다시 입력해주세요.");
+}
   });
 });
 
