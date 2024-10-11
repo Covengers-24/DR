@@ -1,3 +1,4 @@
+ // --------사진 이미지 업로드 ------- //  
  // 수레바퀴 이미지를 클릭하면 파일 업로드 창이 열림
  document.getElementById('uploadIcon').addEventListener('click', function() {
      document.getElementById('imageUpload').click(); // 숨겨진 input을 클릭함
@@ -12,5 +13,17 @@
              document.getElementById('profileImage').src = e.target.result; // 미리 보기 이미지 업데이트
          };
          reader.readAsDataURL(file);
+     }
+ });
+
+ //  ------ 수정 완료 alert 창 ----- //
+
+ document.getElementById('uploadIcon').addEventListener('click', function() {
+     document.getElementById('imageUpload').click();
+ });
+
+ document.getElementById('completeWriteBtn').addEventListener('click', function() {
+     if (confirm('정말 수정하시겠습니까?')) {
+         alert('수정이 완료되었습니다');
      }
  });
