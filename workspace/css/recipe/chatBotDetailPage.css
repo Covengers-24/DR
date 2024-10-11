@@ -195,6 +195,7 @@ main{
 
 .chatBotDetailPage-commentInput {
     margin-top: 20px;
+    display: none;
 }
 
 .chatBotDetailPage-commentInput textarea {

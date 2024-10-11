@@ -31,3 +31,12 @@ document.getElementById('deleteButtons').addEventListener('click', function () {
     return;
   }
 });
+
+function showEditComment() {
+  var commentInput = document.getElementById("commentInput");
+  if (commentInput.style.display === "none") {
+    commentInput.style.display = "block";
+  } else {
+    commentInput.style.display = "none";
+  }
+}
