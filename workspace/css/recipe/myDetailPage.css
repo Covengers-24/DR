@@ -197,6 +197,7 @@ main{
 
 .myDetailPage-commentInput {
     margin-top: 20px;
+    display: none;
 }
 
 .myDetailPage-commentInput textarea {
