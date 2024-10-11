@@ -122,4 +122,10 @@ main{
     border-radius: 5px;
     cursor: pointer;
   }
+
+  #pagination {
+    margin-top: 30px;
+    position: relative;
+    left: 43%;
+  }
   
