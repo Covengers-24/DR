@@ -54,9 +54,9 @@ main{
     border: none;
     cursor: pointer;
 }
-.chatBotDetailPage-buttonOne:last-child{
+/* .chatBotDetailPage-buttonOne:last-child{
     margin-right: 0;
-}
+} */
 .chatBotDetailPage-secondButton{
     display: flex;
     align-items: center;

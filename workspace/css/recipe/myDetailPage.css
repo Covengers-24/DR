@@ -53,9 +53,9 @@ main{
     border: none;
     cursor: pointer;
 }
-.myDetailPage-buttonOne:last-child{
+/* .myDetailPage-buttonOne:last-child{
     margin-right: 0;
-}
+} */
 .myDetailPage-secondButton{
     display: flex;
     align-items: center;
