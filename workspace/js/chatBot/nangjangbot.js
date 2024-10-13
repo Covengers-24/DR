@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     deleteButtons.forEach(button => {
         button.addEventListener('click', function() {
-            if (confirm("정말로 삭제하시겠습니까?\n삭제된 채팅을 복구가 불가능합니다.")) {
+            if (confirm("정말로 삭제하시겠습니까?\n삭제된 채팅은 복구가 불가능합니다.")) {
                 alert("삭제되었습니다.");
                 // 여기서 삭제 관련 로직 추가 가능
             }
@@ -49,7 +49,7 @@ $(document).ready(function() {
       $('#nangjangbot-sendMsg').val('');
   
       // 유저가 처음 메세지를 입력했을 때만 이 부분 숨기기
-      $('.nangjangbot-pageTitle, #nangjangbot-text').hide();
+      $('.nangjangbot-pageTitle, #nangjangbot-text').css('display', 'none');
       $('.nangjangbot-block, .nangjangbot-myMsg, .nangjangbot-chatBotMsg').css('display', 'block');
   
       // 챗봇 메세지 출력 부분 (여기서는 매번 같은 답변을 제공)
