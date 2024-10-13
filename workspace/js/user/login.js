@@ -40,7 +40,9 @@ document.addEventListener('DOMContentLoaded', function () {
       } else {
           // 입력값이 모두 유효할 경우 폼 제출
           // loginForm.submit(); // 주석 해제하여 실제 제출할 경우 사용
-          alert("로그인 시도!"); // 로그인 처리 로직 추가
+          alert("로그인이 완료되었습니다."); // 로그인 처리 로직 추가
+          window.location.href = './../main/main.html';
       }
   });
 });
+

@@ -5,14 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DR - 꿀팁게시판 목록</title>
-  <link rel="stylesheet" href="./../../css/board/honeyBoardList.css">
+  <link rel="stylesheet" href="./../../css/board/honeyboardList.css">
   <link rel="stylesheet" href="../../css/main/header.css">
   <link rel="stylesheet" href="../../css/main/footer.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.css" />
   <!-- 네비바 폰트 -->
   <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
   <!-- 제이쿼리 -->
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
     crossorigin="anonymous"></script>
+  <!-- 페이지네이션 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.min.js"></script>
   <script defer src="../../js/main/header.js"></script>
 </head>
 
@@ -77,17 +82,25 @@
       </div>
     </div>
   </header>
+
   <main>
     <div class="honeyboardlist-container">
+
       <div class="honeyboardlist-title">
         <span class="honeyboardlist-leftTitle">꿀팁</span>
         <span class="honeyboardlist-rightTitle">게시판</span>
       </div>
+
       <br>
-      <span class="honeyboardlist-smallTitle">회원들의 이야기가 담긴 꿀팁 게시판입니다.</span>
+      <span class="honeyboardlist-smallTitle">회원들의 이야기가 담긴 자유 게시판입니다.</span>
       <br><br><br>
 
-      <!-- flexbox를 사용한 게시판 레이아웃 -->
+      <div class="honeyboardlist-rightButton">
+        <button class="honeyboardlist-secondButton">최신순</button>
+        <button class="honeyboardlist-thirdButton">추천순</button>
+      </div>
+      <br>
+
       <div class="honeyboardlist-row header">
         <div class="honeyboardlist-titleColumn">제목</div>
         <div class="honeyboardlist-nameColumn">이름</div>
@@ -95,73 +108,182 @@
         <div class="honeyboardlist-dateColumn">날짜</div>
       </div>
 
-      <div class="honeyboardlist-row">
-        <div class="honeyboardlist-titleColumn">굿모닝</div>
-        <div class="honeyboardlist-nameColumn">양혁수</div>
-        <div class="honeyboardlist-voteColumn">22,065</div>
-        <div class="honeyboardlist-dateColumn">17/01/30</div>
-      </div>
+      <div id="honeyboardlist-page">
+        <div class="honeyboardlist-row">
+          <div class="honeyboardlist-titleColumn">이븐하게 익었어요</div>
+          <div class="honeyboardlist-nameColumn">안성재</div>
+          <div class="honeyboardlist-voteColumn">23,065</div>
+          <div class="honeyboardlist-dateColumn">17/01/30</div>
+        </div>
 
-      <div class="honeyboardlist-row">
-        <div class="honeyboardlist-titleColumn">아 졸려</div>
-        <div class="honeyboardlist-nameColumn">이</div>
-        <div class="honeyboardlist-voteColumn">22,065</div>
-        <div class="honeyboardlist-dateColumn">17/01/30</div>
-      </div>
+        <div class="honeyboardlist-row">
+          <div class="honeyboardlist-titleColumn">빠스 아니야 ?</div>
+          <div class="honeyboardlist-nameColumn">백주부</div>
+          <div class="honeyboardlist-voteColumn">12,065</div>
+          <div class="honeyboardlist-dateColumn">17/01/30</div>
+        </div>
 
-      <div class="honeyboardlist-row">
-        <div class="honeyboardlist-titleColumn">떡만두국</div>
-        <div class="honeyboardlist-nameColumn">익명</div>
-        <div class="honeyboardlist-voteColumn">22,065</div>
-        <div class="honeyboardlist-dateColumn">17/01/30</div>
-      </div>
+        <div class="honeyboardlist-row">
+          <div class="honeyboardlist-titleColumn">아야 ~</div>
+          <div class="honeyboardlist-nameColumn">김승진</div>
+          <div class="honeyboardlist-voteColumn">42,065</div>
+          <div class="honeyboardlist-dateColumn">17/01/30</div>
+        </div>
 
-      <div class="honeyboardlist-row">
-        <div class="honeyboardlist-titleColumn">초밥 2만개</div>
-        <div class="honeyboardlist-nameColumn">양태풍</div>
-        <div class="honeyboardlist-voteColumn">22,065</div>
-        <div class="honeyboardlist-dateColumn">17/01/30</div>
-      </div>
+        <div class="honeyboardlist-row">
+          <div class="honeyboardlist-titleColumn">아 배고파</div>
+          <div class="honeyboardlist-nameColumn">양혁수</div>
+          <div class="honeyboardlist-voteColumn">22,065</div>
+          <div class="honeyboardlist-dateColumn">17/01/30</div>
+        </div>
 
-      <div class="honeyboardlist-row">
-        <div class="honeyboardlist-titleColumn">많이 한 거 같은데 많이 남았네?</div>
-        <div class="honeyboardlist-nameColumn">양??</div>
-        <div class="honeyboardlist-voteColumn">122,065</div>
-        <div class="honeyboardlist-dateColumn">17/01/30</div>
-      </div>
+        <div class="honeyboardlist-row">
+          <div class="honeyboardlist-titleColumn">멀리서 응원할게요.</div>
+          <div class="honeyboardlist-nameColumn">이재서</div>
+          <div class="honeyboardlist-voteColumn">31,065</div>
+          <div class="honeyboardlist-dateColumn">17/01/30</div>
+        </div>
 
-      <div class="honeyboardlist-row">
-        <div class="honeyboardlist-titleColumn">아아</div>
-        <div class="honeyboardlist-nameColumn">바나</div>
-        <div class="honeyboardlist-voteColumn">22,065</div>
-        <div class="honeyboardlist-dateColumn">17/01/30</div>
-      </div>
+        <div class="honeyboardlist-row">
+          <div class="honeyboardlist-titleColumn">밥 뭐먹지</div>
+          <div class="honeyboardlist-nameColumn">정승환</div>
+          <div class="honeyboardlist-voteColumn">52,065</div>
+          <div class="honeyboardlist-dateColumn">17/01/30</div>
+        </div>
 
-      <div class="honeyboardlist-row">
-        <div class="honeyboardlist-titleColumn">뜨아</div>
-        <div class="honeyboardlist-nameColumn">투썸</div>
-        <div class="honeyboardlist-voteColumn">22,065</div>
-        <div class="honeyboardlist-dateColumn">17/01/30</div>
-      </div>
+        <div class="honeyboardlist-row">
+          <div class="honeyboardlist-titleColumn">나 2팀장 송아성</div>
+          <div class="honeyboardlist-nameColumn">송아성</div>
+          <div class="honeyboardlist-voteColumn">72,065</div>
+          <div class="honeyboardlist-dateColumn">17/01/30</div>
+        </div>
 
-      <div id="honeyboardlist-pages">
-        <div class="honeyboardlist-page">&lt;</div>
-        <div class="honeyboardlist-page">1</div>
-        <div class="honeyboardlist-page">2</div>
-        <div class="honeyboardlist-page">3</div>
-        <div class="honeyboardlist-page">4</div>
-        <div class="honeyboardlist-page">5</div>
-        <div class="honeyboardlist-page">&gt;</div>
-      </div>
 
-      <a href="./../board/honeyBoardWrite.html"><button class="honeyboardlist-writeButton">글 작성</button></a>
+        <div class="honeyboardlist-row">
+          <div class="honeyboardlist-titleColumn">아야 ~</div>
+          <div class="honeyboardlist-nameColumn">김승진</div>
+          <div class="honeyboardlist-voteColumn">42,065</div>
+          <div class="honeyboardlist-dateColumn">17/01/30</div>
+        </div>
+
+
+        <div class="honeyboardlist-row">
+          <div class="honeyboardlist-titleColumn">아야 ~</div>
+          <div class="honeyboardlist-nameColumn">김승진</div>
+          <div class="honeyboardlist-voteColumn">42,065</div>
+          <div class="honeyboardlist-dateColumn">17/01/30</div>
+        </div>
+
+
+        <div class="honeyboardlist-row">
+          <div class="honeyboardlist-titleColumn">아야 ~</div>
+          <div class="honeyboardlist-nameColumn">김승진</div>
+          <div class="honeyboardlist-voteColumn">42,065</div>
+          <div class="honeyboardlist-dateColumn">17/01/30</div>
+        </div>
+
+
+        <div class="honeyboardlist-row">
+          <div class="honeyboardlist-titleColumn">아야 ~</div>
+          <div class="honeyboardlist-nameColumn">김승진</div>
+          <div class="honeyboardlist-voteColumn">42,065</div>
+          <div class="honeyboardlist-dateColumn">17/01/30</div>
+        </div>
+
+
+        <div class="honeyboardlist-row">
+          <div class="honeyboardlist-titleColumn">아야 ~</div>
+          <div class="honeyboardlist-nameColumn">김승진</div>
+          <div class="honeyboardlist-voteColumn">42,065</div>
+          <div class="honeyboardlist-dateColumn">17/01/30</div>
+        </div>
+
+
+        <div class="honeyboardlist-row">
+          <div class="honeyboardlist-titleColumn">아야 ~</div>
+          <div class="honeyboardlist-nameColumn">김승진</div>
+          <div class="honeyboardlist-voteColumn">42,065</div>
+          <div class="honeyboardlist-dateColumn">17/01/30</div>
+        </div>
+
+
+        <div class="honeyboardlist-row">
+          <div class="honeyboardlist-titleColumn">아야 ~</div>
+          <div class="honeyboardlist-nameColumn">김승진</div>
+          <div class="honeyboardlist-voteColumn">42,065</div>
+          <div class="honeyboardlist-dateColumn">17/01/30</div>
+        </div>
+
+        <div class="honeyboardlist-row">
+          <div class="honeyboardlist-titleColumn">아 배고파</div>
+          <div class="honeyboardlist-nameColumn">양혁수</div>
+          <div class="honeyboardlist-voteColumn">22,065</div>
+          <div class="honeyboardlist-dateColumn">17/01/30</div>
+        </div>
+
+        <div class="honeyboardlist-row">
+          <div class="honeyboardlist-titleColumn">멀리서 응원할게요.</div>
+          <div class="honeyboardlist-nameColumn">이재서</div>
+          <div class="honeyboardlist-voteColumn">31,065</div>
+          <div class="honeyboardlist-dateColumn">17/01/30</div>
+        </div>
+
+        <div class="honeyboardlist-row">
+          <div class="honeyboardlist-titleColumn">아 배고파</div>
+          <div class="honeyboardlist-nameColumn">양혁수</div>
+          <div class="honeyboardlist-voteColumn">22,065</div>
+          <div class="honeyboardlist-dateColumn">17/01/30</div>
+        </div>
+
+        <div class="honeyboardlist-row">
+          <div class="honeyboardlist-titleColumn">멀리서 응원할게요.</div>
+          <div class="honeyboardlist-nameColumn">이재서</div>
+          <div class="honeyboardlist-voteColumn">31,065</div>
+          <div class="honeyboardlist-dateColumn">17/01/30</div>
+        </div>
+
+        <div class="honeyboardlist-row">
+          <div class="honeyboardlist-titleColumn">아 배고파</div>
+          <div class="honeyboardlist-nameColumn">양혁수</div>
+          <div class="honeyboardlist-voteColumn">22,065</div>
+          <div class="honeyboardlist-dateColumn">17/01/30</div>
+        </div>
+
+        <div class="honeyboardlist-row">
+          <div class="honeyboardlist-titleColumn">멀리서 응원할게요.</div>
+          <div class="honeyboardlist-nameColumn">이재서</div>
+          <div class="honeyboardlist-voteColumn">31,065</div>
+          <div class="honeyboardlist-dateColumn">17/01/30</div>
+        </div>
+
+        <div class="honeyboardlist-row">
+          <div class="honeyboardlist-titleColumn">아 배고파</div>
+          <div class="honeyboardlist-nameColumn">양혁수</div>
+          <div class="honeyboardlist-voteColumn">22,065</div>
+          <div class="honeyboardlist-dateColumn">17/01/30</div>
+        </div>
+
+        <div class="honeyboardlist-row">
+          <div class="honeyboardlist-titleColumn">멀리서 응원할게요.</div>
+          <div class="honeyboardlist-nameColumn">이재서</div>
+          <div class="honeyboardlist-voteColumn">31,065</div>
+          <div class="honeyboardlist-dateColumn">17/01/30</div>
+        </div>
+        <div id="pagination"></div>
+
+        <a href="./../board/honeyboardWrite.html">
+          <button class="honeyboardlist-writeButton">글 작성</button>
+        </a>
+      </div>
     </div>
   </main>
+
   <!-- 푸터 -->
   <footer>
     <div class="main-footerContainer">
       <div id="main-footerText">
-        <p><strong><a href="../../html/main/terms.html">이용약관</a> | <a href="../../html/main/privacyPolicy.html">개인정보처리방침</a></strong></p>
+        <p><strong><a href="../../html/main/terms.html">이용약관</a> | <a
+              href="../../html/main/privacyPolicy.html">개인정보처리방침</a></strong></p>
         <br>
         <p>(04377)서울특별시 강남구 테헤란로 146 현익빌딩, <br>(06236)서울특별시 강남구 테헤란로26길 12 제일비전타워</p>
         <p>대표이사 : 정승환 | 사업자등록번호 : 13-72011641</p>
@@ -169,6 +291,7 @@
       </div>
     </div>
   </footer>
+  <script src="./../../js/board/honeyboardList.js"></script>
 </body>
 
 </html>
