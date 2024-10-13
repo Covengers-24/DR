@@ -1,6 +1,5 @@
 // 1. id 와 비밀번호 값 존재 여부 확인
 button.addEventListener("click", function () {
-  event.preventDefault();
   let message = "";
 
   // 아이디가 비어있는지 확인
