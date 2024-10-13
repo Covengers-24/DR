@@ -67,7 +67,7 @@ main{
     height: 37px;
 }
 .myRecipeList-firstButton, .myRecipeList-secondButton, .myRecipeList-thirdButton{
-    width: 90px;
+    width: 200px;
     height: 37px;
     border: none;
     cursor: pointer;
