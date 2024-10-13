@@ -1,6 +1,6 @@
 document.getElementById("myPage-CButton").addEventListener("click", function() {
-    const checkbox = document.getElementById("myPage-input");
-    if (!checkbox.checked) {
+    const checkbox = document.getElementById("myPage-input"); // 안내 문구
+    if (!checkbox.checked) { //안내 문구를 체크하지 않았을 경우 안내 문구 체크 if문
         alert("안내 문구를 체크해주시기 바랍니다.");
     } else {
         // 회원 탈퇴가 완료되었을 때 알림창 표시 후 페이지 이동
