@@ -13,17 +13,17 @@ button.addEventListener('click', () => {
 });
 
 closeBtn.addEventListener('click', () => {
-  sidebar.style.left = '-400px'; // 사이드바 닫기
-  isOpen = false; // 상태를 닫힘으로 설정
+    sidebar.style.left = '-400px'; // 사이드바 닫기
+    isOpen = false; // 상태를 닫힘으로 설정
 });
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     // 모든 .nangjangbot-imgFrame 요소를 선택
     const deleteButtons = document.querySelectorAll('.nangjangbot-imgFrame');
 
     deleteButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            if (confirm("정말로 삭제하시겠습니까?\n삭제된 채팅을 복구가 불가능합니다.")) {
+        button.addEventListener('click', function () {
+            if (confirm("정말로 삭제하시겠습니까?\n삭제된 채팅은 복구가 불가능합니다.")) {
                 alert("삭제되었습니다.");
                 // 여기서 삭제 관련 로직 추가 가능
             }
@@ -31,29 +31,29 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-$(document).ready(function() {
+$(document).ready(function () {
     // Send button or enter key triggers sending a message
-    $('#nangjangbot-chating').submit(function(e) {
-      e.preventDefault(); // 기본 제출 방지
-  
-      // 유저 메세지 가져오기
-      let userMsg = $('#nangjangbot-sendMsg').val();
-      if (userMsg.trim() === "") {
-        return; // 공백 입력은 무시
-      }
-  
-      // 유저 메세지를 화면에 추가
-      $('.nangjangbot-myMsg').append(`<div class="userMsgBox">${userMsg}</div>`);
-  
-      // 유저 메세지를 입력한 후 인풋창 비우기
-      $('#nangjangbot-sendMsg').val('');
-  
-      // 유저가 처음 메세지를 입력했을 때만 이 부분 숨기기
-      $('.nangjangbot-pageTitle, #nangjangbot-text').hide();
-      $('.nangjangbot-block, .nangjangbot-myMsg, .nangjangbot-chatBotMsg').css('display', 'block');
-  
-      // 챗봇 메세지 출력 부분 (여기서는 매번 같은 답변을 제공)
-      let botResponse = `남은 돼지 목살과 사과로 일식 느낌의 요리를 만들 수 있는 좋은 방법은 간단한 돼지 목살 사과 덮밥입니다. 
+    $('#nangjangbot-chating').submit(function (e) {
+        e.preventDefault(); // 기본 제출 방지
+
+        // 유저 메세지 가져오기
+        let userMsg = $('#nangjangbot-sendMsg').val();
+        if (userMsg.trim() === "") {
+            return; // 공백 입력은 무시
+        }
+
+        // 유저 메세지를 화면에 추가
+        $('.nangjangbot-myMsg').append(`<div class="userMsgBox">${userMsg}</div>`);
+
+        // 유저 메세지를 입력한 후 인풋창 비우기
+        $('#nangjangbot-sendMsg').val('');
+
+        // 유저가 처음 메세지를 입력했을 때만 이 부분 숨기기
+        $('.nangjangbot-pageTitle, #nangjangbot-text').css('display', 'none');
+        $('.nangjangbot-block, .nangjangbot-myMsg, .nangjangbot-chatBotMsg').css('display', 'block');
+
+        // 챗봇 메세지 출력 부분 (여기서는 매번 같은 답변을 제공)
+        let botResponse = `남은 돼지 목살과 사과로 일식 느낌의 요리를 만들 수 있는 좋은 방법은 간단한 돼지 목살 사과 덮밥입니다. 
       일본식 요리의 달콤짭짤한 맛을 살릴 수 있어요. 아래에 간단한 레시피를 제안할게요.<br><br>
       재료:<br>
       - 돼지 목살 100g<br>
@@ -74,14 +74,14 @@ $(document).ready(function() {
       5. 양념장 추가: 준비한 양념장을 넣고 고기와 사과에 골고루 배도록 볶아줍니다.<br>
       6. 마무리: 밥 위에 돼지 목살과 사과를 올리고, 파나 깨로 장식하면 완성!<br><br>
       이 요리는 간단하면서도 달콤하고 짭짤한 맛이 어우러져 일식 느낌을 낼 수 있을 거예요.`;
-  
-      // 챗봇 메세지를 화면에 추가
-      $('.nangjangbot-chatBotMsg').append(`<div class="botMsgBox">${botResponse}</div>`);
 
-       // 새로운 메시지가 추가된 후 페이지 스크롤을 최하단으로 이동
-       window.scrollTo({
-        top: document.body.scrollHeight,
-        behavior: 'smooth'
-      });
+        // 챗봇 메세지를 화면에 추가
+        $('.nangjangbot-chatBotMsg').append(`<div class="botMsgBox">${botResponse}</div>`);
+
+        // 새로운 메시지가 추가된 후 페이지 스크롤을 최하단으로 이동
+        window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: 'smooth'
+        });
     });
-  });
+});

@@ -1,7 +1,7 @@
-$(document).ready(function() {
+$(document).ready(function () {
   function setupMenuToggle(menuId, listClass) {
     // 메뉴 클릭 시 하위 메뉴 토글
-    $(menuId).on('click', function(event) {
+    $(menuId).on('click', function (event) {
       // 다른 모든 하위 메뉴 닫기
       $('.main-recipeList, .main-boardList, .main-myPageList').not(listClass).slideUp();
 
@@ -18,7 +18,14 @@ $(document).ready(function() {
   setupMenuToggle('#main-myPage', '.main-myPageList');
 
   // 다른 곳 클릭 시 모든 하위 메뉴 닫기
-  $(document).on('click', function() {
+  $(document).on('click', function () {
     $('.main-recipeList, .main-boardList, .main-myPageList').slideUp(); // 모든 하위 메뉴 닫기
+  });
+
+  // header-goLogin 클래스를 가진 요소에 클릭 이벤트 추가
+  $('.header-goLogin').on('click', function (event) {
+    event.preventDefault(); // 기본 링크 이동 방지
+    alert('로그인이 필요합니다'); // 알림 메시지 표시
+    window.location.href = $(this).attr('href'); // 로그인 페이지로 이동
   });
 });
