@@ -10,7 +10,7 @@
 main {
   margin: 0;
   padding: 0;
-  height: 1000px;
+  height: 1100px;
   width: 1100px;
   margin: 0 auto;
 }
@@ -37,6 +37,29 @@ main {
 
 .freeboardlist-rightTitle {
   color: #ebaa39;
+}
+
+.freeboardlist-rightButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  height: 37px;
+  margin-left: 880px;
+}
+
+.freeboardlist-firstButton, .freeboardlist-secondButton, .freeboardlist-thirdButton{
+  width: 90px;
+  height: 37px;
+  border: none;
+  cursor: pointer;
+  border: 1px solid lightgray;
+}
+
+/* 버튼이 클릭될때마다 배경색깔과 텍스트 색깔이 바뀌는거 설정 */
+.freeboardlist-rightButton button.active {
+  background-color: #EBAA39;
+  color: white;
 }
 
 .freeboardlist-smallTitle {
@@ -101,7 +124,7 @@ main {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 #pagination {
