@@ -20,6 +20,7 @@ document.getElementById('imageUpload').addEventListener('change', function(event
     }
 });
 
+
 // ------ 수정 완료 alert 창 ----- //
 document.getElementById('completeWriteBtn').addEventListener('click', function() {
     // 수정 완료 여부를 확인하는 확인 창 표시
