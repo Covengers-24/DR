@@ -14,6 +14,8 @@ function convert() {
   document.getElementById("main-washingMachine").innerHTML = round(qnt_kg * 12, 1) + " 회";
   document.getElementById("main-transCost").innerHTML = round(qnt_kg * 182, 1) + " 원";
   document.getElementById("main-processCost").innerHTML = round(qnt_kg * 260000, 1) + " 원";
+
+  
 }
 
 // 이벤트 리스너 추가
