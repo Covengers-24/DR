@@ -98,11 +98,12 @@
           <div class="freeBoardDetail-infoSecond">
             <div class="freeBoardDetail-firstButton">
               <a href="./../board/freeBoardModify.html"><button class="freeBoardDetail-buttonOne">수정</button></a>
-              <a href="./../board/freeBoardList.html"><button id="deleteButton" class="freeBoardDetail-buttonOne">삭제</button></a>
+              <a href="./../board/freeBoardList.html"><button id="deleteButton"
+                  class="freeBoardDetail-buttonOne">삭제</button></a>
             </div>
 
             <div class="freeBoardDetail-secondButton">
-              
+
 
               <a href="./../board/boardReport.html"><button class="freeBoardDetail-buttonTwo">신고</button></a>
             </div>
@@ -123,12 +124,20 @@
           <img src="./../../image/recipe/숙주나물무침.png" alt="">
 
           <div class="freeBoardDetail-recommendImg">
-            <img src="./../../image/recommend.png" alt="">
+            <img src="./../../image/recommend.png" id="recommendImg" alt="">
+            <!-- 추천 수를 표시할 요소 -->
+            <p id="recommendCount">추천수: 0</p>
           </div>
         </div>
 
         <!-- 댓글들 -->
         <div class="freeBoardDetail-commentSection">
+          <div class="freeBoardDetail-commentInput" id="commentInput">
+            <textarea placeholder="댓글을 입력하세요..." rows="3"></textarea>
+            <div class="freeBoardDetail-commentActions">
+              <button class="freeBoardDetail-addBtn" onclick="submitComment()">등록</button>
+            </div>
+          </div>
           <!-- 첫 번째 댓글: 홍상철 -->
           <div class="freeBoardDetail-comment">
             <div class="freeBoardDetail-commentUserImg">
@@ -205,7 +214,8 @@
   <footer>
     <div class="main-footerContainer">
       <div id="main-footerText">
-        <p><strong><a href="../../html/main/terms.html">이용약관</a> | <a href="../../html/main/privacyPolicy.html">개인정보처리방침</a></strong></p>
+        <p><strong><a href="../../html/main/terms.html">이용약관</a> | <a
+              href="../../html/main/privacyPolicy.html">개인정보처리방침</a></strong></p>
         <br>
         <p>(04377)서울특별시 강남구 테헤란로 146 현익빌딩, <br>(06236)서울특별시 강남구 테헤란로26길 12 제일비전타워</p>
         <p>대표이사 : 정승환 | 사업자등록번호 : 13-72011641</p>

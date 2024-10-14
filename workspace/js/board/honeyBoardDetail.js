@@ -23,15 +23,24 @@ function saveComment(commentId) {
   var editTextarea = document.getElementById('editTextarea' + commentId);
   var buttonGroup = document.getElementById('buttonGroup' + commentId); // 수정/삭제 버튼 그룹
 
-  // 수정된 내용을 댓글 텍스트에 적용
-  commentText.innerText = editTextarea.value;
+  // "수정하시겠습니까?" 확인 창
+  if (confirm("수정하시겠습니까?")) {
+    // 수정된 내용을 댓글 텍스트에 적용
+    commentText.innerText = editTextarea.value;
 
-  // 수정창을 숨기고, 댓글 텍스트를 다시 보이게 함
-  editInput.style.display = 'none';
-  commentText.style.display = 'block';
+    // 수정창을 숨기고, 댓글 텍스트를 다시 보이게 함
+    editInput.style.display = 'none';
+    commentText.style.display = 'block';
 
-  // 수정/삭제 버튼 다시 보이게 함
-  buttonGroup.style.display = 'flex';
+    // 수정/삭제 버튼 다시 보이게 함
+    buttonGroup.style.display = 'flex';
+
+    // "수정완료되었습니다" 알림 창
+    alert("수정완료되었습니다.");
+  } else {
+    // 사용자가 수정 확인을 취소한 경우
+    cancelEdit(commentId);
+  }
 }
 
 // 댓글 수정 취소 버튼을 눌렀을 때 실행되는 함수
