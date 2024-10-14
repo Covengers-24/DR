@@ -1,19 +1,28 @@
-// report.js
-
-// DOMContentLoaded 이벤트를 사용하여 DOM이 완전히 로드된 후에 실행
-document.addEventListener("DOMContentLoaded", function() {
-    // 신고 버튼 요소 선택
-    const reportButton = document.querySelector('.right-button');
-
-    // 클릭 이벤트 리스너 추가
-    reportButton.addEventListener('click', function() {
-        // alert 창 표시
-        const confirmation = confirm("정말로 신고하시겠습니까?");
-        if (confirmation) {
-            // 신고 처리 로직을 여기에 추가
-            alert("신고가 접수되었습니다."); // 확인 메시지
-        } else {
-            alert("신고가 취소되었습니다."); // 취소 메시지
-        }
+$(document).ready(function () {
+    // 신고 버튼 클릭 이벤트
+    $('.right-button').on('click', function (event) {
+      event.preventDefault(); // 기본 동작 방지
+  
+      // 체크박스 상태 확인
+      const isChecked = $('input[name="reason"]:checked').length > 0;
+  
+      if (!isChecked) {
+        // 체크된 신고 사유가 없을 경우 경고 메시지
+        alert("신고사유를 체크해주세요.");
+        return; // 신고 절차 중단
+      }
+  
+      // 신고 확인 메시지
+      const confirmReport = confirm("정말로 신고하시겠습니까?");
+  
+      if (confirmReport) {
+        // 신고 진행: 원하는 URL로 이동
+        alert("신고가 완료되었습니다.");
+        window.location.href = './../recipe/myDetailPage.html'; // 신고 후 이동할 페이지
+      } else {
+        // 신고 취소
+        alert("신고가 취소되었습니다.");
+      }
     });
-});
+  });
+  

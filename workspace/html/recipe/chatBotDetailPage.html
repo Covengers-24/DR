@@ -133,68 +133,75 @@
         </div>
 
         <!-- 댓글들 -->
-        <div class="chatBotDetailPage-commentSection">
-            <div class="chatBotDetailPage-comment">
-                <div class="chatBotDetailPage-commentUserImg">
-                    <img src="./../../image/basicProfile.png" alt="User Image">
-                </div>
-                <div class="chatBotDetailPage-commentContent">
-                    <div class="chatBotDetailPage-commentHeader">
-                        <span class="chatBotDetailPage-commentUsername">홍상철</span>
-                        <button class="chatBotDetailPage-reportBtn">신고</button>
-                    </div>
-                    <div class="chatBotDetailPage-commentText">그 뒤로는 크리스마스까지 공휴일 없음</div>
-                    <div class="chatBotDetailPage-commentTime">14:53:14</div>
-                    <div class="chatBotDetailPage-buttonGroup">
-                      <button class="chatBotDetailPage-editBtn" onclick="showEditComment()">수정</button>
-                      <button class="chatBotDetailPage-deleteBtn">삭제</button>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="chatBotDetailPage-reply">
-                <div class="chatBotDetailPage-replyUserImg">
-                    <img src="./../../image/basicProfile.png" alt="User Image">
-                </div>
-                <div class="chatBotDetailPage-replyContent">
-                    <div class="chatBotDetailPage-replyHeader">
-                        <span class="chatBotDetailPage-replyUsername">김기찬</span>
-                        <button class="chatBotDetailPage-reportBtn">신고</button>
-                    </div>
-                    <div class="chatBotDetailPage-replyText">연차 3.5일 남았는데 잘 써야겠네영 ㅠ,ㅠ</div>
-                    <div class="chatBotDetailPage-replyTime">15:03:25</div>
-                </div>
-            </div>
-        
-            <div class="chatBotDetailPage-comment">
-                <div class="chatBotDetailPage-commentUserImg">
-                    <img src="./../../image/basicProfile.png" alt="User Image">
-                </div>
-                <div class="chatBotDetailPage-commentContent">
-                    <div class="chatBotDetailPage-commentHeader">
-                        <span class="chatBotDetailPage-commentUsername">박상희</span>
-                        <button class="chatBotDetailPage-reportBtn">신고</button>
-                    </div>
-                    <div class="chatBotDetailPage-commentText">이번에도 슬로...</div>
-                    <div class="chatBotDetailPage-commentTime">14:53:14</div>
-                </div>
-            </div>
-        
-            <div class="chatBotDetailPage-commentInput" id="commentInput">
-                <textarea placeholder="댓글을 입력하세요..."></textarea>
-                <div class="chatBotDetailPage-commentActions">
-                    <button class="chatBotDetailPage-editBtn">수정</button>
-                    <button id="deleteButtons" class="chatBotDetailPage-deleteBtn">삭제</button>
-                </div>
-            </div>
-        </div>
-        
-      
-      
-      
-
+<div class="chatBotDetailPage-commentSection">
+  <!-- 첫 번째 댓글: 홍상철 -->
+  <div class="chatBotDetailPage-comment">
+      <div class="chatBotDetailPage-commentUserImg">
+          <img src="./../../image/basicProfile.png" alt="User Image">
       </div>
-    </div>
+      <div class="chatBotDetailPage-commentContent" id="commentContent1">
+          <div class="chatBotDetailPage-commentHeader">
+              <span class="chatBotDetailPage-commentUsername">홍상철</span>
+              <a href="./report.html"><button class="chatBotDetailPage-reportBtn">신고</button></a>
+          </div>
+          <div class="chatBotDetailPage-commentText" id="commentText1">그 뒤로는 크리스마스까지 공휴일 없음</div>
+          <div class="chatBotDetailPage-commentTime">14:53:14</div>
+
+          <div class="chatBotDetailPage-buttonGroup" id="buttonGroup1">
+              <button class="chatBotDetailPage-editBtn" onclick="editComment(1)">수정</button>
+              <button class="chatBotDetailPage-deleteBtn">삭제</button>
+          </div>
+
+          <!-- 댓글 수정 입력창, 기본적으로 숨김 상태 -->
+          <div class="chatBotDetailPage-commentInput" id="editInput1" style="display:none;">
+              <textarea id="editTextarea1" placeholder="댓글을 입력하세요..."></textarea>
+              <div class="chatBotDetailPage-commentActions">
+                  <button class="chatBotDetailPage-editBtn" onclick="saveComment(1)">저장</button>
+                  <button class="chatBotDetailPage-deleteBtn" onclick="cancelEdit(1)">취소</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- 두 번째 댓글: 김기찬 -->
+  <div class="chatBotDetailPage-reply">
+      <div class="chatBotDetailPage-replyUserImg">
+          <img src="./../../image/basicProfile.png" alt="User Image">
+      </div>
+      <div class="chatBotDetailPage-replyContent">
+          <div class="chatBotDetailPage-replyHeader">
+              <span class="chatBotDetailPage-replyUsername">김기찬</span>
+              <button class="chatBotDetailPage-reportBtn">신고</button>
+          </div>
+          <div class="chatBotDetailPage-replyText">연차 3.5일 남았는데 잘 써야겠네영 ㅠ,ㅠ</div>
+          <div class="chatBotDetailPage-replyTime">15:03:25</div>
+      </div>
+  </div>
+
+  <!-- 세 번째 댓글: 박상희 -->
+  <div class="chatBotDetailPage-comment">
+      <div class="chatBotDetailPage-commentUserImg">
+          <img src="./../../image/basicProfile.png" alt="User Image">
+      </div>
+      <div class="chatBotDetailPage-commentContent">
+          <div class="chatBotDetailPage-commentHeader">
+              <span class="chatBotDetailPage-commentUsername">박상희</span>
+              <button class="chatBotDetailPage-reportBtn">신고</button>
+          </div>
+          <div class="chatBotDetailPage-commentText">이번에도 슬로...</div>
+          <div class="chatBotDetailPage-commentTime">14:53:14</div>
+      </div>
+  </div>
+
+  <!-- 댓글 입력창 -->
+  <div class="chatBotDetailPage-commentInput" id="commentInput">
+      <textarea placeholder="댓글을 입력하세요..."></textarea>
+      <div class="chatBotDetailPage-commentActions">
+          <button class="chatBotDetailPage-editBtn">저장</button>
+          <button class="chatBotDetailPage-deleteBtn">취소</button>
+      </div>
+  </div>
+</div>
   </main>
 
   <!-- 푸터 -->
