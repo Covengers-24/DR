@@ -62,7 +62,7 @@ header {
 .main-searchBar {
   position: relative;
   width: 450px;
-  height: 30px;
+  /* height: 30px; */
   border: 2px solid black;
   border-radius: 5px;
   display: flex;
@@ -163,7 +163,7 @@ li {
 
 .main-headerNav {
   width: 1100px;
-  height: 31.5px;
+  /* height: 31.5px; */
 }
 
 .main-navMenu {

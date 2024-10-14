@@ -87,7 +87,7 @@ main {
 
 #nangjangbot-sideMenu div:hover,
 .nangjangbot-lastChat:hover {
-  background-color: gray;
+  background-color: rgb(184, 184, 184);
 }
 
 .nanajangbot-menuImg {
