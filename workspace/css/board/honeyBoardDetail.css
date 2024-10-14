@@ -8,13 +8,13 @@ main{
   margin-top: 100px;
   margin-bottom: 30px;
 }
-.honeyboarddetail-mainContainer{
+.honeyBoardDetail-mainContainer{
   width: 1100px;
   margin: 0 auto;
 }
 
 
-.honeyboarddetail-infobox{
+.honeyBoardDetail-infobox{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,29 +22,29 @@ main{
   border-bottom: 1px solid lightgrey;
 }
 
-.honeyboarddetail-infoFirst{
+.honeyBoardDetail-infoFirst{
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.honeyboarddetail-infoInBox1 img{
+.honeyBoardDetail-infoInBox1 img{
   width: 100px;
   height: 100px;
   margin-right: 10px;
   border-radius: 5px;
 }
 
-.honeyboarddetail-writeName, .honeyboarddetail-foodTitle{
+.honeyBoardDetail-writeName, .honeyBoardDetail-foodTitle{
   margin-bottom: 10px;
 }
-.honeyboarddetail-firstButton{
+.honeyBoardDetail-firstButton{
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
 }
 
-.honeyboarddetail-buttonOne{
+.honeyBoardDetail-buttonOne{
   border-radius: 5px;
   width: 80px;
   height: 40px;
@@ -54,30 +54,30 @@ main{
   border: none;
   cursor: pointer;
 }
-/* .honeyboarddetail-buttonOne:last-child{
+/* .honeyBoardDetail-buttonOne:last-child{
   margin-right: 0;
 } */
-.honeyboarddetail-secondButton{
+.honeyBoardDetail-secondButton{
   display: flex;
   align-items: center;
 }
-.honeyboarddetail-buttonTwo{
+.honeyBoardDetail-buttonTwo{
   background-color: white;
 }
-.honeyboarddetail-secondButton img{
+.honeyBoardDetail-secondButton img{
   width: 40px;
   height: 40px;
   margin-right: 10px;
   cursor: pointer;
 }
-.honeyboarddetail-buttonTwo{
+.honeyBoardDetail-buttonTwo{
   border: 1px solid lightgrey;
   width: 60px;
   height: 30px;
   cursor: pointer;
   margin-left: 100px;
 }
-.honeyboarddetail-writetext {
+.honeyBoardDetail-writetext {
   display: flex;
   flex-direction: column; /* 요소들을 세로로 정렬 */
   justify-content: center; /* 세로 정렬 시 가운데에 정렬 */
@@ -87,60 +87,60 @@ main{
   text-align: center; /* 텍스트 가운데 정렬 */
 }
 
-.honeyboarddetail-writetext img {
+.honeyBoardDetail-writetext img {
   width: 150px;
   height: 150px;
   border-radius: 5px;
   margin: 0 auto;
 }
 
-.honeyboarddetail-texts {
+.honeyBoardDetail-texts {
   flex: 1; /* 텍스트가 남은 공간을 차지하도록 */
   text-align: left; /* 텍스트는 왼쪽 정렬 */
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
-.honeyboarddetail-recommendImg {
+.honeyBoardDetail-recommendImg {
   flex-basis: 100%; /* 한 줄을 차지하게 만듦 */
   display: flex;
   justify-content: center; /* 가운데 정렬 */
   margin-top: 40px;
 }
 
-.honeyboarddetail-recommendImg img {
+.honeyBoardDetail-recommendImg img {
   width: 100px; /* 추천 이미지 크기 */
   height: 100px;
   cursor: pointer;
 }
 
-.honeyboarddetail-writetext {
+.honeyBoardDetail-writetext {
   height: 500px; /* 전체 높이를 500px로 설정 */
 }
 
 /* 댓글부분 */
-.honeyboarddetail-commentSection {
+.honeyBoardDetail-commentSection {
   width: 1100px; /* 넓이를 1100px로 설정 */
   margin: 20px auto; /* 중앙 정렬을 위해 마진 조정 */
 }
 
-.honeyboarddetail-comment, .honeyboarddetail-reply {
+.honeyBoardDetail-comment, .honeyBoardDetail-reply {
   display: flex;
   margin-bottom: 10px;
 }
 
-.honeyboarddetail-commentUserImg, .honeyboarddetail-replyUserImg {
+.honeyBoardDetail-commentUserImg, .honeyBoardDetail-replyUserImg {
   width: 50px;
   height: 50px;
   margin-right: 10px;
 }
 
-.honeyboarddetail-commentUserImg img, .honeyboarddetail-replyUserImg img {
+.honeyBoardDetail-commentUserImg img, .honeyBoardDetail-replyUserImg img {
   width: 100%;
   height: 100%;
 }
 
-.honeyboarddetail-commentContent, .honeyboarddetail-replyContent {
+.honeyBoardDetail-commentContent, .honeyBoardDetail-replyContent {
   flex-grow: 1;
   background-color: #f9f9f9;
   padding: 10px;
@@ -148,40 +148,40 @@ main{
   position: relative;
 }
 
-.honeyboarddetail-commentHeader, .honeyboarddetail-replyHeader {
+.honeyBoardDetail-commentHeader, .honeyBoardDetail-replyHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 5px;
 }
 
-.honeyboarddetail-commentUsername, .honeyboarddetail-replyUsername {
+.honeyBoardDetail-commentUsername, .honeyBoardDetail-replyUsername {
   font-weight: bold;
 }
 
-.honeyboarddetail-commentTime, .honeyboarddetail-replyTime {
+.honeyBoardDetail-commentTime, .honeyBoardDetail-replyTime {
   font-size: 0.9em;
   color: #888;
 }
 
-.honeyboarddetail-commentText, .honeyboarddetail-replyText {
+.honeyBoardDetail-commentText, .honeyBoardDetail-replyText {
   font-size: 1em;
 }
 
-.honeyboarddetail-reportBtn {
+.honeyBoardDetail-reportBtn {
   background-color: white;
   border: 1px solid #ccc;
   padding: 5px 10px;
   cursor: pointer;
   border-radius: 3px;
 }
-.honeyboarddetail-buttonGroup {
+.honeyBoardDetail-buttonGroup {
   display: flex;
   justify-content: flex-end; /* 버튼을 오른쪽으로 이동 */
   margin-top: 5px;
 }
 
-.honeyboarddetail-editBtn, .honeyboarddetail-deleteBtn {
+.honeyBoardDetail-editBtn, .honeyBoardDetail-deleteBtn {
   background-color: #f0a500;
   color: white;
   border: none;
@@ -190,15 +190,15 @@ main{
   cursor: pointer;
   border-radius: 5px;
 }
-.honeyboarddetail-reply {
+.honeyBoardDetail-reply {
   margin-left: 50px; /* 대댓글 들여쓰기 */
 }
 
-.honeyboarddetail-commentInput {
+.honeyBoardDetail-commentInput {
   margin-top: 20px;
 }
 
-.honeyboarddetail-commentInput textarea {
+.honeyBoardDetail-commentInput textarea {
   width: 100%;
   height: 100px;
   padding: 10px;
@@ -207,13 +207,13 @@ main{
   resize: none;
 }
 
-.honeyboarddetail-commentActions {
+.honeyBoardDetail-commentActions {
   display: flex;
   justify-content: flex-end;
   margin-top: 10px;
 }
 
-.honeyboarddetail-editBtn, .honeyboarddetail-deleteBtn {
+.honeyBoardDetail-editBtn, .honeyBoardDetail-deleteBtn {
   background-color: #f0a500;
   color: white;
   border: none;
