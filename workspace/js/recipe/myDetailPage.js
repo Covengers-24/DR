@@ -24,15 +24,6 @@ const heartImage = document.getElementById('heartImage');
       }
     });
 
-    function showEditComment() {
-      var commentInput = document.getElementById("commentInput");
-      if (commentInput.style.display === "none") {
-        commentInput.style.display = "block";
-      } else {
-        commentInput.style.display = "none";
-      }
-    }
-
     // 댓글 수정 버튼을 눌렀을 때 실행되는 함수
     function editComment(commentId) {
       var commentText = document.getElementById('commentText' + commentId);
