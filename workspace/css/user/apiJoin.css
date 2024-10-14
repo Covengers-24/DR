@@ -90,7 +90,6 @@ main {
 
 .input-withButton .apijoin-eventButton{
   position: absolute;
-  right: 0px;
   top: 50%;
   transform: translateY(-50%);
   background-color: #ebaa39;
@@ -100,6 +99,7 @@ main {
   padding: 10px;
   cursor: pointer;
   width: 80px;
+  margin-left: 10px;
 }
 
 /* 비밀번호 토글 아이콘 스타일 */

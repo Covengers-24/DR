@@ -44,10 +44,10 @@ $(document).ready(function () {
 
     if (passwordInput.attr('type') === 'password') {
       passwordInput.attr('type', 'text'); // 비밀번호 보이기
-      passwordToggleIcon.attr('src', '/image/view.png'); // 아이콘 변경
+      passwordToggleIcon.attr('src', './../../image/view.png'); // 아이콘 변경
     } else {
       passwordInput.attr('type', 'password'); // 비밀번호 숨기기
-      passwordToggleIcon.attr('src', '/image/noview.png'); // 아이콘 변경
+      passwordToggleIcon.attr('src', './../../image/noView.png'); // 아이콘 변경
     }
   });
 
@@ -58,10 +58,10 @@ $(document).ready(function () {
 
     if (confirmPasswordInput.attr('type') === 'password') {
       confirmPasswordInput.attr('type', 'text'); // 비밀번호 보이기
-      confirmPasswordToggleIcon.attr('src', '/image/view.png'); // 아이콘 변경
+      confirmPasswordToggleIcon.attr('src', './../../image/view.png'); // 아이콘 변경
     } else {
       confirmPasswordInput.attr('type', 'password'); // 비밀번호 숨기기
-      confirmPasswordToggleIcon.attr('src', '/image/noview.png'); // 아이콘 변경
+      confirmPasswordToggleIcon.attr('src', './../../image/noView.png'); // 아이콘 변경
     }
   });
 
