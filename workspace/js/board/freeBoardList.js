@@ -20,3 +20,14 @@ $(function () {
   // 처음 로드 시 첫 번째 페이지의 항목만 보여주기
   container.pagination('goToPage', 1);
 });
+
+// 최신순,추천순 버튼 액티브
+$(document).ready(function() {
+  $('.freeboardlist-rightButton button').click(function() {
+    // 모든 버튼에서 active 클래스 제거
+    $('.freeboardlist-rightButton button').removeClass('active');
+    
+    // 클릭한 버튼에 active 클래스 추가
+    $(this).addClass('active');
+  });
+});
