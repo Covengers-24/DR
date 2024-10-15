@@ -14,6 +14,10 @@
     <!-- 제이쿼리 -->
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script defer src="../../js/main/header.js"></script>
+    <!-- 페이지네이션 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.min.js"></script>
 </head>
 
 <body>
@@ -130,6 +134,7 @@
                             <li><a href="./../../html/myPage/myPageMyPost.html">내가 쓴 게시글</a></li>
                             <li><a href="./../../html/myPage/myPageMyComplaint.html">신고 받은 글</a></li>
                             <li><a href="./../../html/myPage/myPageCheck.html">출석체크</a></li>
+                            <li><a href="./../../html/myPage/myPageMyPoint.html">포인트 내역</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -221,30 +226,33 @@
             <div class="userRankNameOne">누굴까</div>
             <div class="userRankNameContributingScoreOne">1300점</div>
         </div>
-        <!-- 페이지 네이션 -->
-        <div id="myPage-steamedListPages">
-            <div class="myPage-steamedPage">
-                &lt
-            </div>
-            <div class="myPage-steamedPage">
-                1
-            </div>
-            <div class="myPage-steamedPage">
-                2
-            </div>
-            <div class="myPage-steamedPage">
-                3
-            </div>
-            <div class="myPage-steamedPage">
-                4
-            </div>
-            <div class="myPage-steamedPage">
-                5
-            </div>
-            <div class="myPage-steamedPage">
-                &gt
-            </div>
+        <!-- 페이지네이션 2번째  -->
+        <div class="userRankTypeOne">
+            <div class="userRankRankingOne">11</div>
+            <div class="userRankImageOne"><img class="userRankOneImgSet" src="./../../image/myPage/imageFour.jpg"></div>
+            <div class="userRankNameOne">누굴까</div>
+            <div class="userRankNameContributingScoreOne">1300점</div>
         </div>
+        <div class="userRankTypeOne">
+            <div class="userRankRankingOne">12</div>
+            <div class="userRankImageOne"><img class="userRankOneImgSet" src="./../../image/myPage/imageFour.jpg"></div>
+            <div class="userRankNameOne">누굴까</div>
+            <div class="userRankNameContributingScoreOne">1300점</div>
+        </div>
+        <div class="userRankTypeOne">
+            <div class="userRankRankingOne">13</div>
+            <div class="userRankImageOne"><img class="userRankOneImgSet" src="./../../image/myPage/imageFour.jpg"></div>
+            <div class="userRankNameOne">누굴까</div>
+            <div class="userRankNameContributingScoreOne">1300점</div>
+        </div>
+        <div class="userRankTypeOne">
+            <div class="userRankRankingOne">14</div>
+            <div class="userRankImageOne"><img class="userRankOneImgSet" src="./../../image/myPage/imageFour.jpg"></div>
+            <div class="userRankNameOne">누굴까</div>
+            <div class="userRankNameContributingScoreOne">1300점</div>
+        </div>
+        <!-- 페이지 네이션 -->
+        <div id="pagination"></div>
     </main>
     <!-- 푸터 -->
     <footer>
