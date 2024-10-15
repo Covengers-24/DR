@@ -19,16 +19,30 @@ $(document).ready(function () {
   // 아이디 정규표현식: 이메일 형식 검사
   const userIdRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
+  // 중복확인 버튼 클릭 시 이벤트 처리
+  $('#checkDuplicate').on('click', function () {
+    const userIdValue = userIdInput.val().trim();
 
+    // 아이디(이메일) 유효성 검사
+    if (!userIdRegex.test(userIdValue)) {
+      userIdError.text("형식에 맞게 입력해주세요.").css({ "color": "red", "display": "block" });
+      return; // 유효하지 않으면 함수 종료
+    }
 
-  // blur 시 정규표현식 검사
+    // 중복확인 로직 추가 (예: 서버로 Ajax 요청 보내기)
+    // 여기는 중복 체크를 서버에 요청하는 부분이 필요하지만, 여기서는 예시로 성공 메시지 표시
+
+    // 중복 확인 통과 시 메시지 표시
+    userIdError.text("사용 가능한 이메일입니다.").css({ "color": "green", "display": "block" });
+  });
+
+  // 아이디(이메일) 입력 필드 blur 시 정규표현식 검사
   userIdInput.on("blur", function () {
     const userIdValue = $(this).val();
 
     if (!userIdRegex.test(userIdValue)) {
       userIdError.text("형식에 맞게 입력해주세요.")
         .css({ "color": "red", "display": "block" });  // 에러 메시지 표시
-
     } else {
       userIdError.text("").hide();  // 에러 메시지 숨김
       $(this).css("border", "");
@@ -37,54 +51,54 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
- // 휴대폰 번호 유효성 검사 정규표현식 (하이픈 없이 숫자만 10~11자리)
-const phonePattern = /^[0-9]{10,11}$/;
+  // 휴대폰 번호 유효성 검사 정규표현식 (하이픈 없이 숫자만 10~11자리)
+  const phonePattern = /^[0-9]{10,11}$/;
 
-// 휴대폰 번호 입력 필드에 대한 blur 이벤트
-$('#phone').on('blur', function () {
-  const phone = $(this).val().trim();
-  if (!phone) {
-    $('#phoneError').text("휴대폰 번호를 입력하세요.").css('color', 'red');
-    return;
-  }
-  if (!phonePattern.test(phone)) {
-    $('#phoneError').text("형식에 맞게 입력하세요.").css('color', 'red');
-  } else {
-    $('#phoneError').text("");
-  }
-});
+  // 휴대폰 번호 입력 필드에 대한 blur 이벤트
+  $('#phone').on('blur', function () {
+    const phone = $(this).val().trim();
+    if (!phone) {
+      $('#phoneError').text("휴대폰 번호를 입력하세요.").css('color', 'red');
+      return;
+    }
+    if (!phonePattern.test(phone)) {
+      $('#phoneError').text("형식에 맞게 입력하세요.").css('color', 'red');
+    } else {
+      $('#phoneError').text("");
+    }
+  });
 
-// 인증요청 버튼 클릭 시 이벤트 처리
-$('#sendCode').on('click', function () {
-  const phone = $('#phone').val().trim();
-  if (!phonePattern.test(phone)) {
-    $('#phoneError').text("형식에 맞게 입력하세요.").css('color', 'red');
-    return;
-  }
-  
-  // 여기에 인증 요청 로직을 추가
-  // 예: 서버로 인증 요청을 보내는 Ajax 호출 등
-  alert("인증이 요청되었습니다");
+  // 인증요청 버튼 클릭 시 이벤트 처리
+  $('#sendCode').on('click', function () {
+    const phone = $('#phone').val().trim();
+    if (!phonePattern.test(phone)) {
+      $('#phoneError').text("형식에 맞게 입력하세요.").css('color', 'red');
+      return;
+    }
 
-  // 인증 요청 후 처리할 코드 (예: 인증번호 입력 필드 활성화)
-  $('#authCode').prop('disabled', false);
-});
+    // 여기에 인증 요청 로직을 추가
+    // 예: 서버로 인증 요청을 보내는 Ajax 호출 등
+    alert("인증이 요청되었습니다");
 
-// 인증번호 확인 버튼 클릭 시 이벤트 처리
-$('#verifyCode').on('click', function () {
-  const authCode = $('#authCode').val().trim();
-  if (!authCode) {
-    $('#authCodeError').text("인증번호를 입력하세요.").css('color', 'red');
-    return;
-  }
+    // 인증 요청 후 처리할 코드 (예: 인증번호 입력 필드 활성화)
+    $('#authCode').prop('disabled', false);
+  });
 
-  // 여기에 인증번호 확인 로직 추가
-  // 예: 서버로 인증번호 확인 요청을 보내는 Ajax 호출 등
-  alert("인증이 확인되었습니다");
+  // 인증번호 확인 버튼 클릭 시 이벤트 처리
+  $('#verifyCode').on('click', function () {
+    const authCode = $('#authCode').val().trim();
+    if (!authCode) {
+      $('#authCodeError').text("인증번호를 입력하세요.").css('color', 'red');
+      return;
+    }
 
-  // 인증 성공 시 처리할 코드 (예: 인증 완료 메시지 표시)
-  $('#authCodeError').text("인증이 완료되었습니다.").css('color', 'green');
-});
+    // 여기에 인증번호 확인 로직 추가
+    // 예: 서버로 인증번호 확인 요청을 보내는 Ajax 호출 등
+    alert("인증이 확인되었습니다");
+
+    // 인증 성공 시 처리할 코드 (예: 인증 완료 메시지 표시)
+    $('#authCodeError').text("인증이 완료되었습니다.").css('color', 'green');
+  });
 });
 
 $(document).ready(function () {
@@ -140,14 +154,3 @@ $(document).ready(function () {
     }
   });
 });
-
-
-
-
-
-
-
-
-
-
-
