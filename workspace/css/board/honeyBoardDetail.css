@@ -196,10 +196,11 @@ main{
 
 .honeyBoardDetail-commentInput {
   margin-top: 20px;
+  /* display: none; */
 }
 
 .honeyBoardDetail-commentInput textarea {
-  width: 100%;
+  width: 98%;
   height: 100px;
   padding: 10px;
   border-radius: 5px;
@@ -212,14 +213,38 @@ main{
   justify-content: flex-end;
   margin-top: 10px;
 }
-
-.honeyBoardDetail-editBtn, .honeyBoardDetail-deleteBtn {
-  background-color: #f0a500;
-  color: white;
-  border: none;
-  padding: 8px 15px;
-  margin-left: 10px;
-  cursor: pointer;
+.honeyBoardDetail-addBtn{
   border-radius: 5px;
+  width: 80px;
+  height: 40px;
+  color: white;
+  background-color: #EBAA39;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+/* 추천 이미지 기본 상태 */
+#recommendImg {
+  transition: filter 0.3s ease; /* 색상 전환 효과 부드럽게 */
+}
+
+/* 파란색 효과 (추천 활성화 상태) */
+.recommend-active {
+  transition: filter 0.3s ease; /* 색상 전환 효과 부드럽게 */
+}
+
+/* 회색 효과 (추천 비활성화 상태) */
+.recommend-inactive {
+  filter: brightness(0.5) grayscale(100%); /* 회색 톤 */
+}
+
+/* 추천 수 스타일 */
+#recommendCount {
+  margin-left: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 40px;
 }
 
