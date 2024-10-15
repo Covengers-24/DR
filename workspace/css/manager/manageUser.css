@@ -189,6 +189,11 @@ a {
   top: 19.5%;
 }
 
+#title-point {
+  position: absolute;
+  left: 89.5%;
+  top: 19.5%;
+}
 
 
 #manage-pages {
@@ -237,6 +242,5 @@ a {
 .con-email {
   width: 20%;
 }
-
 
 
