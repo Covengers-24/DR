@@ -77,11 +77,13 @@ li {
 
 .myPage-checkMainWrap {
     display: flex;
+    padding-top: 25px;
 }
 
 #calendar {
     width: 920px;
     margin-left: 30px;
+    margin-top: 35px;
 }
 
 

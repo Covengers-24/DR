@@ -119,50 +119,30 @@ li {
 
 /* 내가 쓴 레시피 글 및 이미지 */
 
+.myPage-myRecipeContainerReal {
+    position: relative;
+}
+
 .myPage-myRecipeWrap {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 290px);
+    /* 3개의 열로 구성 */
+    position: absolute;
+    top: -605px;
+    left: 205px;
 }
 
 .myPage-myRecipeprideOne {
     padding-right: 50px;
-    padding-left: 15px;
+    margin-bottom: 40px;
 }
 
 .myPage-myRecipeprideTwo {
     padding-right: 50px;
 }
 
-.myPage-myRecipeWrapMiddle {
-    display: flex;
-    margin-top: 450px;
-    margin-left: -870px;
-}
-
-.myPage-myRecipeWrapFinal {
-    display: flex;
-    margin-top: 830px;
-    margin-left: -870px;
-}
-
-
-/* 페이지네이션 메뉴바 */
-
-#myPage-myRecipePages {
-    display: flex;
-    height: 50px;
-    gap: 10px;
-    margin-top: 50px;
-    margin-left: 540px;
-}
-
-.myPage-myRecipePage {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 15px;
-    width: 20px;
-    height: 20px;
-    border: 1px solid black;
-    border-radius: 5px;
-    cursor: pointer;
+#pagination {
+    position: absolute;
+    top: 546px;
+    left: 582px;
 }
