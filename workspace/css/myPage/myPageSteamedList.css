@@ -74,6 +74,7 @@ li {
 
 .myPage-steamedListContainer {
     display: flex;
+    width: 100%;
 }
 
 .myPage-pictureInside {
@@ -84,11 +85,6 @@ li {
     width: 250px;
     height: 250px;
     border-radius: 5px;
-}
-
-.myPage-pictureWrap {
-    margin-top: 70px;
-    margin-left: 40px;
 }
 
 .myPage-pictureTitle {
@@ -127,50 +123,29 @@ li {
 
 /* 찜목록 글 및 이미지 */
 
-.myPage-pictureWrap {
-    display: flex;
+.myPage-pictureContainerReal {
+    position: relative;
 }
 
-.myPage-pictureprideOne {
-    padding-right: 50px;
-    padding-left: 15px;
+.myPage-pictureWrap {
+    display: grid;
+    grid-template-columns: repeat(3, 290px);
+    /* 3개의 열로 구성 */
+    position: absolute;
+    top: -535px;
+    left: 245px;
 }
 
 .myPage-pictureprideTwo {
     padding-right: 50px;
 }
 
-.myPage-pictureWrapMiddle {
-    display: flex;
-    margin-top: 450px;
-    margin-left: -870px;
+.myPage-pictureprideOne {
+    margin-bottom: 50px;
 }
 
-.myPage-pictureWrapFinal {
-    display: flex;
-    margin-top: 830px;
-    margin-left: -870px;
-}
-
-
-/* 페이지네이션 메뉴바 */
-
-#myPage-steamedListPages {
-    display: flex;
-    height: 50px;
-    gap: 10px;
-    margin-top: 50px;
-    margin-left: 540px;
-}
-
-.myPage-steamedPage {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 15px;
-    width: 20px;
-    height: 20px;
-    border: 1px solid black;
-    border-radius: 5px;
-    cursor: pointer;
+#pagination {
+    position: absolute;
+    top: 500px;
+    left: 582px;
 }

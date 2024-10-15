@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DR - 내가 쓴 레시피</title>
     <link rel="stylesheet" href="./../../css/myPage/myPageMyRecipe.css">
+    <script defer src="./../../js/myPage/myPageMyRecipe.js"></script>
     <link rel="stylesheet" href="../../css/main/header.css">
     <link rel="stylesheet" href="../../css/main/footer.css">
     <!-- 네비바 폰트 -->
@@ -13,6 +14,10 @@
     <!-- 제이쿼리 -->
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script defer src="../../js/main/header.js"></script>
+    <!-- 페이지네이션 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.min.js"></script>
 </head>
 
 <body>
@@ -129,6 +134,7 @@
                             <li><a href="./../../html/myPage/myPageMyPost.html">내가 쓴 게시글</a></li>
                             <li><a href="./../../html/myPage/myPageMyComplaint.html">신고 받은 글</a></li>
                             <li><a href="./../../html/myPage/myPageCheck.html">출석체크</a></li>
+                            <li><a href="./../../html/myPage/myPageMyPoint.html">포인트 내역</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -151,8 +157,11 @@
                 <div><a href="./../../html/myPage/myPageMyPost.html">&nbsp;내가 쓴 게시글</a></div>
                 <div><a href="./../../html/myPage/myPageMyComplaint.html">&nbsp;신고 받은 글</a></div>
                 <div><a href="./../../html/myPage/myPageCheck.html">&nbsp;출석 체크</a></div>
+                <div id="myPage-informationeighth"><a href="./../../html/myPage/myPageMyPoint.html">&nbsp;포인트내역</a></div>
             </div>
-            <!-- 내가 쓴 레시피 이미지 및 글 맨 위-->
+        </div>
+        <!-- 내가 쓴 레시피 이미지 및 글 맨 위-->
+        <div class="myPage-myRecipeContainerReal">
             <div class="myPage-myRecipeWrap">
                 <div class="myPage-myRecipeprideOne">
                     <div clss="myPage-myRecipeLeft"><img id="myPage-myRecipeOne" src="./../../image/myPage/egg.jpg"></div>
@@ -164,7 +173,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="myPage-myRecipeprideTwo">
+                <div class="myPage-myRecipeprideOne">
                     <div clss="myPage-myRecipeLeft"><img id="myPage-myRecipeOne" src="./../../image/myPage/sausage.jpg"></div>
                     <div class="myPage-myRecipeInside">
                         <div class="myPage-myRecipeSide">
@@ -174,7 +183,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="myPage-myRecipeprideThree">
+                <div class="myPage-myRecipeprideOne">
+                    <div clss="myPage-myRecipeLeft"><img id="myPage-myRecipeOne" src="./../../image/myPage/appetizer.jpg"></div>
+                    <div class="myPage-myRecipeInside">
+                        <div class="myPage-myRecipeSide">
+                            <div class="myPage-myRecipeMiddleTitle">숙주나물 무침</div>
+                            <div class="myPage-myRecipeName">2024-10-03</div>
+                            <div class="myPage-myRecipeListDelete">추천수 43</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="myPage-myRecipeprideOne">
                     <div clss="myPage-myRecipeLeft"><img id="myPage-myRecipeOne" src="./../../image/myPage/tofu.jpg"></div>
                     <div class="myPage-myRecipeInside">
                         <div class="myPage-myRecipeSide">
@@ -184,9 +203,16 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- 내가 쓴 레시피 이미지 및 글 중간 -->
-            <div class="myPage-myRecipeWrapMiddle">
+                <div class="myPage-myRecipeprideOne">
+                    <div clss="myPage-myRecipeLeft"><img id="myPage-myRecipeOne" src="./../../image/myPage/appetizer.jpg"></div>
+                    <div class="myPage-myRecipeInside">
+                        <div class="myPage-myRecipeSide">
+                            <div class="myPage-myRecipeMiddleTitle">숙주나물 무침</div>
+                            <div class="myPage-myRecipeName">2024-10-03</div>
+                            <div class="myPage-myRecipeListDelete">추천수 43</div>
+                        </div>
+                    </div>
+                </div>
                 <div class="myPage-myRecipeprideOne">
                     <div clss="myPage-myRecipeLeft"><img id="myPage-myRecipeOne" src="./../../image/myPage/egg.jpg"></div>
                     <div class="myPage-myRecipeInside">
@@ -197,29 +223,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="myPage-myRecipeprideTwo">
-                    <div clss="myPage-myRecipeLeft"><img id="myPage-myRecipeOne" src="./../../image/myPage/sausage.jpg"></div>
-                    <div class="myPage-myRecipeInside">
-                        <div class="myPage-myRecipeSide">
-                            <div class="myPage-myRecipeMiddleTitle">숙주나물 무침</div>
-                            <div class="myPage-myRecipeName">2024-10-03</div>
-                            <div class="myPage-myRecipeListDelete">추천수 43</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="myPage-myRecipeprideThree">
-                    <div clss="myPage-myRecipeLeft"><img id="myPage-myRecipeOne" src="./../../image/myPage/tofu.jpg"></div>
-                    <div class="myPage-myRecipeInside">
-                        <div class="myPage-myRecipeSide">
-                            <div class="myPage-myRecipeMiddleTitle">숙주나물 무침</div>
-                            <div class="myPage-myRecipeName">2024-10-03</div>
-                            <div class="myPage-myRecipeListDelete">추천수 43</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- 내가 쓴 레시피 이미지 및 글 중간 -->
-            <div class="myPage-myRecipeWrapFinal">
                 <div class="myPage-myRecipeprideOne">
                     <div clss="myPage-myRecipeLeft"><img id="myPage-myRecipeOne" src="./../../image/myPage/egg.jpg"></div>
                     <div class="myPage-myRecipeInside">
@@ -230,8 +233,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="myPage-myRecipeprideTwo">
-                    <div clss="myPage-myRecipeLeft"><img id="myPage-myRecipeOne" src="./../../image/myPage/sausage.jpg"></div>
+                <div class="myPage-myRecipeprideOne">
+                    <div clss="myPage-myRecipeLeft"><img id="myPage-myRecipeOne" src="./../../image/myPage/egg.jpg"></div>
                     <div class="myPage-myRecipeInside">
                         <div class="myPage-myRecipeSide">
                             <div class="myPage-myRecipeMiddleTitle">숙주나물 무침</div>
@@ -240,8 +243,38 @@
                         </div>
                     </div>
                 </div>
-                <div class="myPage-myRecipeprideThree">
-                    <div clss="myPage-myRecipeLeft"><img id="myPage-myRecipeOne" src="./../../image/myPage/tofu.jpg"></div>
+                <div class="myPage-myRecipeprideOne">
+                    <div clss="myPage-myRecipeLeft"><img id="myPage-myRecipeOne" src="./../../image/myPage/egg.jpg"></div>
+                    <div class="myPage-myRecipeInside">
+                        <div class="myPage-myRecipeSide">
+                            <div class="myPage-myRecipeMiddleTitle">숙주나물 무침</div>
+                            <div class="myPage-myRecipeName">2024-10-03</div>
+                            <div class="myPage-myRecipeListDelete">추천수 43</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="myPage-myRecipeprideOne">
+                    <div clss="myPage-myRecipeLeft"><img id="myPage-myRecipeOne" src="./../../image/myPage/egg.jpg"></div>
+                    <div class="myPage-myRecipeInside">
+                        <div class="myPage-myRecipeSide">
+                            <div class="myPage-myRecipeMiddleTitle">숙주나물 무침</div>
+                            <div class="myPage-myRecipeName">2024-10-03</div>
+                            <div class="myPage-myRecipeListDelete">추천수 43</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="myPage-myRecipeprideOne">
+                    <div clss="myPage-myRecipeLeft"><img id="myPage-myRecipeOne" src="./../../image/myPage/egg.jpg"></div>
+                    <div class="myPage-myRecipeInside">
+                        <div class="myPage-myRecipeSide">
+                            <div class="myPage-myRecipeMiddleTitle">숙주나물 무침</div>
+                            <div class="myPage-myRecipeName">2024-10-03</div>
+                            <div class="myPage-myRecipeListDelete">추천수 43</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="myPage-myRecipeprideOne">
+                    <div clss="myPage-myRecipeLeft"><img id="myPage-myRecipeOne" src="./../../image/myPage/egg.jpg"></div>
                     <div class="myPage-myRecipeInside">
                         <div class="myPage-myRecipeSide">
                             <div class="myPage-myRecipeMiddleTitle">숙주나물 무침</div>
@@ -251,30 +284,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- 페이지 네이션 -->
-        <div id="myPage-myRecipePages">
-            <div class="myPage-myRecipePage">
-                &lt
-            </div>
-            <div class="myPage-myRecipePage">
-                1
-            </div>
-            <div class="myPage-myRecipePage">
-                2
-            </div>
-            <div class="myPage-myRecipePage">
-                3
-            </div>
-            <div class="myPage-myRecipePage">
-                4
-            </div>
-            <div class="myPage-myRecipePage">
-                5
-            </div>
-            <div class="myPage-myRecipePage">
-                &gt
-            </div>
+            <!-- 페이지 네이션 -->
+            <div id="pagination"></div>
         </div>
     </main>
     <footer>
