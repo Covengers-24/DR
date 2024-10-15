@@ -14,6 +14,10 @@
     <!-- 제이쿼리 -->
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script defer src="../../js/main/header.js"></script>
+    <!-- 페이지네이션 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.min.js"></script>
 </head>
 
 <body>
@@ -130,6 +134,7 @@
                             <li><a href="./../../html/myPage/myPageMyPost.html">내가 쓴 게시글</a></li>
                             <li><a href="./../../html/myPage/myPageMyComplaint.html">신고 받은 글</a></li>
                             <li><a href="./../../html/myPage/myPageCheck.html">출석체크</a></li>
+                            <li><a href="./../../html/myPage/myPageMyPoint.html">포인트 내역</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -152,148 +157,135 @@
                 <div><a href="./../../html/myPage/myPageMyPost.html">&nbsp;내가 쓴 게시글</a></div>
                 <div><a href="./../../html/myPage/myPageMyComplaint.html">&nbsp;신고 받은 글</a></div>
                 <div><a href="./../../html/myPage/myPageCheck.html">&nbsp;출석 체크</a></div>
-            </div>
-            <!-- 찜목록 이미지 및 글 맨 위-->
-            <div class="myPage-pictureWrap">
-                <div class="myPage-pictureprideOne">
-                    <div clss="myPage-pictureLeft"><img id="myPage-pictureOne" src="./../../image/myPage/egg.jpg"></div>
-                    <div class="myPage-pictureInside">
-                        <div class="myPage-pictureSide">
-                            <div class="myPage-pictureTitle">숙주나물 무침</div>
-                            <div class="myPage-pictureName">송아성</div>
-                        </div>
-                        <div class="myPage-pictureSideRight">
-                            <div class="myPage-pictureListDelete">찜 삭제</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="myPage-pictureprideTwo">
-                    <div clss="myPage-pictureLeft"><img id="myPage-pictureOne" src="./../../image/myPage/sausage.jpg"></div>
-                    <div class="myPage-pictureInside">
-                        <div class="myPage-pictureSide">
-                            <div class="myPage-pictureTitle">베이컨덮밥♡</div>
-                            <div class="myPage-pictureName">송아성</div>
-                        </div>
-                        <div class="myPage-pictureSideRight">
-                            <div class="myPage-pictureListDelete">찜 삭제</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="myPage-pictureprideThree">
-                    <div clss="myPage-pictureLeft"><img id="myPage-pictureOne" src="./../../image/myPage/tofu.jpg"></div>
-                    <div class="myPage-pictureInside">
-                        <div class="myPage-pictureSide">
-                            <div class="myPage-pictureTitle">두부말이구이</div>
-                            <div class="myPage-pictureName">송아성</div>
-                        </div>
-                        <div class="myPage-pictureSideRight">
-                            <div class="myPage-pictureListDelete">찜 삭제</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- 찜목록 이미지 및 글 중간-->
-            <div class="myPage-pictureWrapMiddle">
-                <div class="myPage-pictureprideOne">
-                    <div clss="myPage-pictureLeft"><img id="myPage-pictureOne" src="./../../image/myPage/appetizer.jpg"></div>
-                    <div class="myPage-pictureInside">
-                        <div class="myPage-pictureSide">
-                            <div class="myPage-pictureTitle">숙주나물 무침</div>
-                            <div class="myPage-pictureName">송아성</div>
-                        </div>
-                        <div class="myPage-pictureSideRight">
-                            <div class="myPage-pictureListDelete">찜 삭제</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="myPage-pictureprideTwo">
-                    <div clss="myPage-pictureLeft"><img id="myPage-pictureOne" src="./../../image/myPage/egg.jpg"></div>
-                    <div class="myPage-pictureInside">
-                        <div class="myPage-pictureSide">
-                            <div class="myPage-pictureTitle">숙주나물 무침</div>
-                            <div class="myPage-pictureName">송아성</div>
-                        </div>
-                        <div class="myPage-pictureSideRight">
-                            <div class="myPage-pictureListDelete">찜 삭제</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="myPage-pictureprideThree">
-                    <div clss="myPage-pictureLeft"><img id="myPage-pictureOne" src="./../../image/myPage/egg.jpg"></div>
-                    <div class="myPage-pictureInside">
-                        <div class="myPage-pictureSide">
-                            <div class="myPage-pictureTitle">숙주나물 무침</div>
-                            <div class="myPage-pictureName">송아성</div>
-                        </div>
-                        <div class="myPage-pictureSideRight">
-                            <div class="myPage-pictureListDelete">찜 삭제</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- 찜목록 이미지 및 글 끝-->
-            <div class="myPage-pictureWrapFinal">
-                <div class="myPage-pictureprideOne">
-                    <div clss="myPage-pictureLeft"><img id="myPage-pictureOne" src="./../../image/myPage/egg.jpg"></div>
-                    <div class="myPage-pictureInside">
-                        <div class="myPage-pictureSide">
-                            <div class="myPage-pictureTitle">숙주나물 무침</div>
-                            <div class="myPage-pictureName">송아성</div>
-                        </div>
-                        <div class="myPage-pictureSideRight">
-                            <div class="myPage-pictureListDelete">찜 삭제</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="myPage-pictureprideTwo">
-                    <div clss="myPage-pictureLeft"><img id="myPage-pictureOne" src="./../../image/myPage/appetizer.jpg"></div>
-                    <div class="myPage-pictureInside">
-                        <div class="myPage-pictureSide">
-                            <div class="myPage-pictureTitle">숙주나물 무침</div>
-                            <div class="myPage-pictureName">송아성</div>
-                        </div>
-                        <div class="myPage-pictureSideRight">
-                            <div class="myPage-pictureListDelete">찜 삭제</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="myPage-pictureprideThree">
-                    <div clss="myPage-pictureLeft"><img id="myPage-pictureOne" src="./../../image/myPage/sausage.jpg"></div>
-                    <div class="myPage-pictureInside">
-                        <div class="myPage-pictureSide">
-                            <div class="myPage-pictureTitle">숙주나물 무침</div>
-                            <div class="myPage-pictureName">송아성</div>
-                        </div>
-                        <div class="myPage-pictureSideRight">
-                            <div class="myPage-pictureListDelete">찜 삭제</div>
-                        </div>
-                    </div>
-                </div>
+                <div id="myPage-informationeighth"><a href="./../../html/myPage/myPageMyPoint.html">&nbsp;포인트내역</a></div>
             </div>
         </div>
-        <!-- 페이지 네이션 -->
-        <div id="myPage-steamedListPages">
-            <div class="myPage-steamedPage">
-                &lt
+        <!-- 찜목록 이미지 및 글 맨 위-->
+        <div class="myPage-pictureContainerReal">
+            <div class="myPage-pictureWrap">
+                <div class="myPage-pictureprideOne">
+                    <div class="myPage-pictureLeft"><img id="myPage-pictureOne" src="./../../image/myPage/egg.jpg"></div>
+                    <div class="myPage-pictureInside">
+                        <div class="myPage-pictureSide">
+                            <div class="myPage-pictureTitle">숙주나물 무침</div>
+                            <div class="myPage-pictureName">송아성</div>
+                        </div>
+                        <div class="myPage-pictureSideRight">
+                            <div class="myPage-pictureListDelete">찜 삭제</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="myPage-pictureprideOne">
+                    <div class="myPage-pictureLeft"><img id="myPage-pictureOne" src="./../../image/myPage/appetizer.jpg"></div>
+                    <div class="myPage-pictureInside">
+                        <div class="myPage-pictureSide">
+                            <div class="myPage-pictureTitle">숙주나물 무침</div>
+                            <div class="myPage-pictureName">송아성</div>
+                        </div>
+                        <div class="myPage-pictureSideRight">
+                            <div class="myPage-pictureListDelete">찜 삭제</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="myPage-pictureprideOne">
+                    <div class="myPage-pictureLeft"><img id="myPage-pictureOne" src="./../../image/myPage/tofu.jpg"></div>
+                    <div class="myPage-pictureInside">
+                        <div class="myPage-pictureSide">
+                            <div class="myPage-pictureTitle">숙주나물 무침</div>
+                            <div class="myPage-pictureName">송아성</div>
+                        </div>
+                        <div class="myPage-pictureSideRight">
+                            <div class="myPage-pictureListDelete">찜 삭제</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="myPage-pictureprideOne">
+                    <div class="myPage-pictureLeft"><img id="myPage-pictureOne" src="./../../image/myPage/sausage.jpg"></div>
+                    <div class="myPage-pictureInside">
+                        <div class="myPage-pictureSide">
+                            <div class="myPage-pictureTitle">숙주나물 무침</div>
+                            <div class="myPage-pictureName">송아성</div>
+                        </div>
+                        <div class="myPage-pictureSideRight">
+                            <div class="myPage-pictureListDelete">찜 삭제</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="myPage-pictureprideOne">
+                    <div class="myPage-pictureLeft"><img id="myPage-pictureOne" src="./../../image/myPage/egg.jpg"></div>
+                    <div class="myPage-pictureInside">
+                        <div class="myPage-pictureSide">
+                            <div class="myPage-pictureTitle">숙주나물 무침</div>
+                            <div class="myPage-pictureName">송아성</div>
+                        </div>
+                        <div class="myPage-pictureSideRight">
+                            <div class="myPage-pictureListDelete">찜 삭제</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="myPage-pictureprideOne">
+                    <div class="myPage-pictureLeft"><img id="myPage-pictureOne" src="./../../image/myPage/egg.jpg"></div>
+                    <div class="myPage-pictureInside">
+                        <div class="myPage-pictureSide">
+                            <div class="myPage-pictureTitle">숙주나물 무침</div>
+                            <div class="myPage-pictureName">송아성</div>
+                        </div>
+                        <div class="myPage-pictureSideRight">
+                            <div class="myPage-pictureListDelete">찜 삭제</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="myPage-pictureprideOne">
+                    <div class="myPage-pictureLeft"><img id="myPage-pictureOne" src="./../../image/myPage/egg.jpg"></div>
+                    <div class="myPage-pictureInside">
+                        <div class="myPage-pictureSide">
+                            <div class="myPage-pictureTitle">숙주나물 무침</div>
+                            <div class="myPage-pictureName">송아성</div>
+                        </div>
+                        <div class="myPage-pictureSideRight">
+                            <div class="myPage-pictureListDelete">찜 삭제</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="myPage-pictureprideOne">
+                    <div class="myPage-pictureLeft"><img id="myPage-pictureOne" src="./../../image/myPage/egg.jpg"></div>
+                    <div class="myPage-pictureInside">
+                        <div class="myPage-pictureSide">
+                            <div class="myPage-pictureTitle">숙주나물 무침</div>
+                            <div class="myPage-pictureName">송아성</div>
+                        </div>
+                        <div class="myPage-pictureSideRight">
+                            <div class="myPage-pictureListDelete">찜 삭제</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="myPage-pictureprideOne">
+                    <div class="myPage-pictureLeft"><img id="myPage-pictureOne" src="./../../image/myPage/egg.jpg"></div>
+                    <div class="myPage-pictureInside">
+                        <div class="myPage-pictureSide">
+                            <div class="myPage-pictureTitle">숙주나물 무침</div>
+                            <div class="myPage-pictureName">송아성</div>
+                        </div>
+                        <div class="myPage-pictureSideRight">
+                            <div class="myPage-pictureListDelete">찜 삭제</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="myPage-pictureprideOne">
+                    <div class="myPage-pictureLeft"><img id="myPage-pictureOne" src="./../../image/myPage/egg.jpg"></div>
+                    <div class="myPage-pictureInside">
+                        <div class="myPage-pictureSide">
+                            <div class="myPage-pictureTitle">숙주나물 무침</div>
+                            <div class="myPage-pictureName">송아성</div>
+                        </div>
+                        <div class="myPage-pictureSideRight">
+                            <div class="myPage-pictureListDelete">찜 삭제</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="myPage-steamedPage">
-                1
-            </div>
-            <div class="myPage-steamedPage">
-                2
-            </div>
-            <div class="myPage-steamedPage">
-                3
-            </div>
-            <div class="myPage-steamedPage">
-                4
-            </div>
-            <div class="myPage-steamedPage">
-                5
-            </div>
-            <div class="myPage-steamedPage">
-                &gt
-            </div>
+            <!-- 페이지 네이션 -->
+            <div id="pagination"></div>
         </div>
     </main>
     <!-- 푸터 -->
