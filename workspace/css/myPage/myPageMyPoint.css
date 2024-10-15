@@ -14,7 +14,7 @@ li {
     list-style: none;
 }
 
-.myPage-myPostTitleTop {
+.myPage-myPointTitleTop {
     font-weight: bold;
     text-align: center;
     margin-top: 100px;
@@ -32,7 +32,7 @@ li {
     font-size: 21px;
 }
 
-#myPage-informationFifth {
+#myPage-informationeighth {
     color: #EBAA39;
 }
 
@@ -88,7 +88,7 @@ li {
     margin-right: 5px;
 }
 
-.myPage-myPostTitleMain li {
+.myPage-myPointTitleMain li {
     display: flex;
     align-items: center;
     border-top: 1px solid black;
@@ -97,75 +97,74 @@ li {
     padding-top: 5px;
 }
 
-.myPage-myPostMain {
+.myPage-myPointMain {
     display: flex;
 }
 
-.myPage-myPostTitle {
+.myPage-myPointTitle {
     font-size: 25px;
     font-weight: bold;
     color: #525252;
 }
 
-.myPage-myPostTitleType {
+.myPage-myPointTitleType {
     font-size: 25px;
     font-weight: bold;
     color: #525252;
 }
 
-.myPage-myPostTitleContentType {
+.myPage-myPointTitleContentType {
     font-size: 22px;
     font-weight: bold;
     color: #525252;
-    width: 120px;
+    width: 79px;
 }
 
-.myPage-myPostTitleDate {
+.myPage-myPointTitleDate {
     font-size: 22px;
     font-weight: bold;
     color: #525252;
-    width: 180px;
+    padding-right: 100px;
 }
 
-.myPage-myPostTitleContent {
+.myPage-myPointTitleContent {
     font-size: 22px;
     font-weight: bold;
     color: #525252;
-    width: 400px;
+    padding-right: 170px;
 }
 
-.myPage-myPostTitleMain {
+.myPage-myPointTitleMain {
     padding-top: 45px;
     padding-left: 50px;
 }
 
-.myPage-myPostTitleCause {
+.myPage-myPointTitleCause {
     font-size: 22px;
     font-weight: bold;
     color: #525252;
-    width: 100px;
+    margin-right: 165px;
 }
 
-.myPage-myPostTitleNumber {
+.myPage-myPointTitleNumber {
     font-size: 22px;
     font-weight: bold;
     color: #525252;
-    width: 53px;
+    padding-right: 10px;
 }
 
-.myPage-myPostTitleNumberZero {
+.myPage-myPointTitleNumberZero {
     font-size: 20px;
     color: #525252;
     width: 54px;
 }
 
-.myPage-myPostTitleContentOne {
+.myPage-myPointTitleContentOne {
     font-size: 20px;
     color: #525252;
-    width: 100%;
     display: inline-block;
     /* 또는 block */
-    width: 400px;
+    width: 288px;
     /* 원하는 너비 값 설정 */
     white-space: nowrap;
     /* 텍스트 줄 바꿈 방지 */
@@ -175,27 +174,27 @@ li {
     /* 넘치는 텍스트를 생략(...) 처리 */
 }
 
-.myPage-myPostTitleContentTypeTwo {
+.myPage-myPointTitleContentTypeTwo {
     font-size: 20px;
     color: #525252;
-    width: 120px;
+    width: 80px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     display: inline-block;
 }
 
-.myPage-myPostTitleCauseThree {
+.myPage-myPointTitleCauseThree {
     font-size: 20px;
     color: #525252;
-    width: 105px;
+    width: 210px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     display: inline-block;
 }
 
-.myPage-myPostTitleDateFour {
+.myPage-myPointTitleDateFour {
     font-size: 20px;
     color: #525252;
     display: inline-block;
@@ -204,11 +203,11 @@ li {
     text-overflow: ellipsis;
 }
 
-.myPage-myPostTitleMainOne {
+.myPage-myPointTitleMainOne {
     padding-left: 50px;
 }
 
-.myPage-myPostTitleMainOne li {
+.myPage-myPointTitleMainOne li {
     display: flex;
     align-items: center;
     border-bottom: 1px dotted #424242;
@@ -216,17 +215,20 @@ li {
     padding-bottom: 5px;
 }
 
-.myPage-myPostTitleMainFinal {
+.myPage-myPointTitleMainFinal {
     padding-left: 50px;
 }
 
-.myPage-myPostTitleMainFinal li {
+.myPage-myPointTitleMainFinal li {
     display: flex;
     align-items: center;
     border-bottom: 1px solid #424242;
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
+
+/* 페이지 네이션 */
 
 #pagination {
     position: relative;

@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
 
             isCheckedIn = true; // 출석 체크 상태 업데이트
-            alert("20포인트가 적립되었습니다.");
+            alert("10 포인트가 적립되었습니다.");
         }
     });
 });
