@@ -28,4 +28,14 @@ $(document).ready(function () {
     alert('로그인이 필요합니다'); // 알림 메시지 표시
     window.location.href = $(this).attr('href'); // 로그인 페이지로 이동
   });
+
+  // 로그아웃 안내창
+  $('.main-logout').on('click', function () {
+    let check = confirm('로그아웃 하시겠습니까?');
+    if (check) {
+      alert = ('로그아웃 되었습니다');
+    } else {
+      return;
+    }
+  })
 });
