@@ -1,5 +1,9 @@
-// 최신순,추천순 버튼 액티브
+// 최신순, 추천순 버튼 액티브
 $(document).ready(function() {
+  // 페이지 로드 시 최신순 버튼에 active 클래스 추가
+  $('.honeyboardlist-secondButton').addClass('active');
+  
+  // 버튼 클릭 시 active 클래스 변경
   $('.honeyboardlist-rightButton button').click(function() {
     // 모든 버튼에서 active 클래스 제거
     $('.honeyboardlist-rightButton button').removeClass('active');

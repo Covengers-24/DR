@@ -125,12 +125,21 @@
           <img src="./../../image/recipe/숙주나물무침.png" alt="">
 
           <div class="myDetailPage-recommendImg">
-            <img src="./../../image/recommend.png" alt="">
+            <img src="./../../image/recommend.png" id="recommendImg" alt="">
+            <!-- 추천 수를 표시할 요소 -->
+            <p id="recommendCount">추천수: 0</p>
           </div>
+
         </div>
 
         <!-- 댓글들 -->
         <div class="myDetailPage-commentSection">
+          <div class="myDetailPage-commentInput" id="commentInput">
+            <textarea placeholder="댓글을 입력하세요..." rows="3"></textarea>
+            <div class="myDetailPage-commentActions">
+                <button class="myDetailPage-addBtn" onclick="submitComment()">등록</button>
+            </div>
+          </div>
           <!-- 첫 번째 댓글: 홍상철 -->
           <div class="myDetailPage-comment">
             <div class="myDetailPage-commentUserImg">
