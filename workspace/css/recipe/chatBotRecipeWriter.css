@@ -45,7 +45,7 @@ main{
 }
 .chatBotRecipeWriter-warningText{
     color: red;
-    font-size: 10px;
+    font-size: 15px;
     margin-bottom: 10px;
 }
 .chatBotRecipeWriter-warningText:last-child{
