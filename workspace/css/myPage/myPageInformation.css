@@ -112,7 +112,7 @@ li {
 .myPage-informationLeft {
     background-color: #F5F5F5;
     width: 50px;
-    height: 80px;
+    height: 90px;
     font-weight: bold;
     display: flex;
     justify-content: center;
@@ -128,10 +128,12 @@ li {
     display: flex;
     align-items: center;
     border-bottom: 1px dotted #424242;
+    position: relative;
 }
 
 .myPage-informationRight {
-    padding-left: 20px;
+    width: 93px;
+    margin-left: 30px;
 }
 
 .mypage-informationIdLeft {
@@ -154,7 +156,7 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 20px;
+    padding-left: 30px;
     padding-right: 200px;
 }
 
@@ -195,7 +197,7 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 20px;
+    padding-left: 30px;
     padding-right: 340px;
 }
 
@@ -237,7 +239,7 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 20px;
+    padding-left: 30px;
     padding-right: 340px;
 }
 
@@ -274,4 +276,35 @@ li {
     align-items: center;
     margin-top: 30px;
     float: right;
+}
+
+.myPage-nickNameChange {
+    border: none;
+    color: white;
+    background-color: #EBAA39;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 60px;
+}
+
+#nicknameError {
+    position: absolute;
+    left: 144px;
+    top: 71px;
+    font-size: 13px;
+}
+
+#nicknameInput {
+    border: 1px solid #EBAA39;
+    padding: 8px;
+    border-radius: 5px;
+    width: 85px;
+    margin-left: 20px;
 }
